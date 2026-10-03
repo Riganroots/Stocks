@@ -4,13 +4,63 @@ from pathlib import Path
 from calculate_technicals import sma, rsi_wilder, atr_wilder, ret
 from calculate_swing_setups import score
 
-MODEL_VERSION="swing-backtest-v0.1.0"
+MODEL_VERSION="swing-backtest-v0.2.0"
 MIN_HISTORY=50
 ENTRY_WINDOW=3
 MAX_HOLD=10
 
 def load(path):
     return json.loads(Path(path).read_text())
+
+def brokerage_charge(turnover,costs):
+    for slab in costs["equityBrokerage"]:
+        lo=slab.get("minTurnover")
+        hi=slab.get("maxTurnover")
+        if lo is not None and turnover<=float(lo):
+            continue
+        if hi is not None and turnover>float(hi):
+            continue
+        if slab.get("flat") is not None:
+            return float(slab["flat"])
+        return turnover*float(slab["ratePct"])/100
+    raise ValueError("No brokerage slab for turnover")
+
+def trade_costs(entry,exit_price,qty,costs,holding_days):
+    slip=float(costs["referenceBacktest"].get("slippageBpsPerSide",0))/10000
+    buy_px=entry*(1+slip)
+    sell_px=exit_price*(1-slip)
+    buy_turnover=buy_px*qty
+    sell_turnover=sell_px*qty
+    buy_broker=brokerage_charge(buy_turnover,costs)
+    sell_broker=brokerage_charge(sell_turnover,costs)
+    reg=float(costs["regulatoryFeePct"])/100
+    buy_reg=buy_turnover*reg
+    sell_reg=sell_turnover*reg
+    dp=float(costs.get("dpChargeSell",0))
+    buy_total=buy_turnover+buy_broker+buy_reg
+    sell_before_tax=sell_turnover-sell_broker-sell_reg-dp
+    taxable_gain=max(0,sell_before_tax-buy_total)
+    cgt_cfg=costs["capitalGainsTax"]
+    cgt_rate=float(cgt_cfg["residentIndividualShortTermPct"] if holding_days<=int(cgt_cfg["shortTermMaxDays"]) else cgt_cfg["residentIndividualLongTermPct"])/100
+    cgt=taxable_gain*cgt_rate
+    net_proceeds=sell_before_tax-cgt
+    net_profit=net_proceeds-buy_total
+    return {
+        "quantity":qty,
+        "buyTurnover":round(buy_turnover,2),
+        "sellTurnover":round(sell_turnover,2),
+        "buyBrokerage":round(buy_broker,2),
+        "sellBrokerage":round(sell_broker,2),
+        "buyRegulatoryFee":round(buy_reg,2),
+        "sellRegulatoryFee":round(sell_reg,2),
+        "dpCharge":round(dp,2),
+        "capitalGainsTax":round(cgt,2),
+        "taxableGain":round(taxable_gain,2),
+        "buyTotal":round(buy_total,2),
+        "netProceeds":round(net_proceeds,2),
+        "netProfit":round(net_profit,2),
+        "holdingDays":holding_days
+    }
 
 def snapshot(rows):
     closes=[float(r["close"]) for r in rows]
@@ -62,7 +112,9 @@ def bucket(score_value):
 
 def summarize(trades):
     rs=[t["rMultiple"] for t in trades]
+    net_rs=[t.get("netRMultiple",t["rMultiple"]) for t in trades]
     pos=[r for r in rs if r>0]; neg=[r for r in rs if r<0]
+    net_pos=[r for r in net_rs if r>0]; net_neg=[r for r in net_rs if r<0]
     return {
         "trades":len(trades),
         "wins":len(pos),
@@ -71,6 +123,12 @@ def summarize(trades):
         "avgR":round(sum(rs)/len(rs),3) if rs else None,
         "medianR":round(statistics.median(rs),3) if rs else None,
         "profitFactorR":round(sum(pos)/abs(sum(neg)),3) if neg and sum(neg)!=0 else None,
+        "netWins":len(net_pos),
+        "netLosses":len(net_neg),
+        "netWinRatePct":round(len(net_pos)/len(trades)*100,2) if trades else None,
+        "netAvgR":round(sum(net_rs)/len(net_rs),3) if net_rs else None,
+        "netMedianR":round(statistics.median(net_rs),3) if net_rs else None,
+        "netProfitFactorR":round(sum(net_pos)/abs(sum(net_neg)),3) if net_neg and sum(net_neg)!=0 else None,
         "target1Hits":sum(1 for t in trades if t["exitReason"]=="target1"),
         "stopHits":sum(1 for t in trades if t["exitReason"].startswith("stop")),
         "timeExits":sum(1 for t in trades if t["exitReason"]=="time_exit")
@@ -79,6 +137,9 @@ def summarize(trades):
 def main():
     universe=load("data/universe.json")
     market=load("data/market_history.json")
+    costs=load("data/trading_costs.json")
+    reference_capital=float(costs["referenceBacktest"]["capital"])
+    reference_risk_pct=float(costs["referenceBacktest"]["riskPctPerTrade"])
     meta={x["symbol"]:x for x in universe["symbols"]}
     trades=[]
     per_symbol={}
@@ -102,6 +163,18 @@ def main():
             if not result:
                 i=fill_idx+1;continue
             exit_idx,exit_price,r_mult,reason=result
+            planned_risk_per_share=fill-float(setup["draft"]["stop"])
+            risk_budget=reference_capital*reference_risk_pct/100
+            qty_by_risk=int(risk_budget/planned_risk_per_share) if planned_risk_per_share>0 else 0
+            qty_by_capital=int(reference_capital/fill) if fill>0 else 0
+            qty=max(0,min(qty_by_risk,qty_by_capital))
+            if qty<1:
+                i=exit_idx+1;continue
+            from datetime import date
+            holding_days=(date.fromisoformat(rows[exit_idx]["date"])-date.fromisoformat(rows[fill_idx]["date"])).days
+            cost_detail=trade_costs(fill,exit_price,qty,costs,holding_days)
+            planned_risk_npr=planned_risk_per_share*qty
+            net_r=(cost_detail["netProfit"]/planned_risk_npr) if planned_risk_npr>0 else r_mult
             metrics=setup.get("metrics",{})
             trade={
                 "symbol":sym,"signalDate":rows[i]["date"],"fillDate":rows[fill_idx]["date"],
@@ -120,6 +193,9 @@ def main():
                 "entry":round(fill,2),
                 "stop":setup["draft"]["stop"],"target1":setup["draft"]["target1"],
                 "exitPrice":round(exit_price,2),"rMultiple":round(r_mult,3),
+                "netRMultiple":round(net_r,3),
+                "referencePosition":{"capital":reference_capital,"riskPct":reference_risk_pct,"quantity":qty,"plannedRiskNpr":round(planned_risk_npr,2)},
+                "costs":cost_detail,
                 "exitReason":reason
             }
             trades.append(trade);per_symbol.setdefault(sym,[]).append(trade)
@@ -140,9 +216,15 @@ def main():
             "maxHoldSessions":MAX_HOLD,
             "targetUsed":"target1",
             "sameDayStopAndTarget":"stop assumed first (conservative)",
-            "feesIncluded":False,
-            "taxesIncluded":False,
-            "slippageIncluded":False
+            "referenceCapital":reference_capital,
+            "referenceRiskPctPerTrade":reference_risk_pct,
+            "costConfigAsOf":costs.get("asOf"),
+            "brokerageIncluded":True,
+            "regulatoryFeeIncluded":True,
+            "dpChargeIncluded":True,
+            "capitalGainsTaxIncluded":True,
+            "slippageBpsPerSide":costs["referenceBacktest"].get("slippageBpsPerSide",0),
+            "dpChargeStatus":"provisional until confirmed from user's Naasa contract note"
         },
         "overall":summarize(trades),"byScoreBucket":by_bucket,"bySymbol":by_symbol,
         "trades":trades
