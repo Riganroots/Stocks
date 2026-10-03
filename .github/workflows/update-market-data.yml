@@ -48,13 +48,14 @@ jobs:
           python scripts/calculate_daily_swing_plan.py
           python scripts/analyze_cost_sensitivity.py
           python scripts/update_regulatory_announcements.py
+          python scripts/calculate_after_market_alerts.py
           python scripts/build_static_data.py
 
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/market_history.json data/technicals.json data/scores.json data/generated_market.js data/fundamentals.js data/announcements.json data/announcements.js data/swing_setups.json data/swing_setups.js data/swing_backtest.json data/swing_backtest.js data/swing_diagnostics.json data/daily_swing_plan.json data/daily_swing_plan.js data/trading_costs.json data/trading_costs.js data/swing_cost_sensitivity.json data/swing_cost_sensitivity.js
+          git add data/market_history.json data/technicals.json data/scores.json data/generated_market.js data/fundamentals.js data/announcements.json data/announcements.js data/swing_setups.json data/swing_setups.js data/swing_backtest.json data/swing_backtest.js data/swing_diagnostics.json data/daily_swing_plan.json data/daily_swing_plan.js data/trading_costs.json data/trading_costs.js data/swing_cost_sensitivity.json data/swing_cost_sensitivity.js data/daily_swing_plan_history.json data/after_market_alerts.json data/after_market_alerts.js
           if git diff --cached --quiet; then
             echo "No market-data changes"
           else
