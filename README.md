@@ -34,3 +34,7 @@ The current history window is deliberately small while the ingestion/provider la
 6. Secure portfolio storage
 7. Evidence-grounded AI explanations
 8. Alert delivery
+
+## Portfolio privacy
+
+Personal holdings are not committed to this repository. The static app stores imported holdings in browser localStorage. Users can import/export a JSON portfolio file. Missing average purchase prices remain unknown, so the app does not fabricate invested amount or P/L.
