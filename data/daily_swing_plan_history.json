@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03T18:27:45.778643+00:00",
+  "generatedAt": "2026-10-03T19:25:47.894986+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
       "marketAsOf": "2026-10-02",
-      "generatedAt": "2026-10-03T18:27:45.778643+00:00",
+      "generatedAt": "2026-10-03T19:25:47.894986+00:00",
       "ruleVersion": "support-pullback-v0.1.0",
       "candidateSymbols": [
         "NABIL",

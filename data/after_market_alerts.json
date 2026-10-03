@@ -1,88 +1,23 @@
 {
-  "generatedAt": "2026-10-03T18:27:48.557786+00:00",
+  "generatedAt": "2026-10-03T19:25:50.400840+00:00",
   "marketAsOf": "2026-10-02",
-  "modelVersion": "after-market-alerts-v0.1.0",
+  "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": null,
+  "dataAgeCalendarDays": 1,
+  "headline": "5 Daily Plan candidates · 0 new/change alerts · 0 warnings",
   "summary": {
-    "total": 15,
+    "total": 10,
+    "actionable": 10,
     "danger": 0,
-    "warn": 5,
+    "warn": 0,
     "info": 10,
-    "good": 0
+    "good": 0,
+    "continuing": 0,
+    "changes": 0
   },
   "alerts": [
     {
-      "id": "technical_warning-11",
-      "kind": "technical_warning",
-      "severity": "warn",
-      "title": "GBIME: technical warning",
-      "message": "close below SMA20, close below SMA50.",
-      "symbol": "GBIME",
-      "marketAsOf": "2026-10-02",
-      "technicalAsOf": "2026-10-02",
-      "reasons": [
-        "close below SMA20",
-        "close below SMA50"
-      ]
-    },
-    {
-      "id": "technical_warning-9",
-      "kind": "technical_warning",
-      "severity": "warn",
-      "title": "KAHL: technical warning",
-      "message": "close below SMA20, close below SMA50.",
-      "symbol": "KAHL",
-      "marketAsOf": "2026-10-02",
-      "technicalAsOf": "2026-10-02",
-      "reasons": [
-        "close below SMA20",
-        "close below SMA50"
-      ]
-    },
-    {
-      "id": "technical_warning-7",
-      "kind": "technical_warning",
-      "severity": "warn",
-      "title": "NABIL: technical warning",
-      "message": "close below SMA20, close below SMA50.",
-      "symbol": "NABIL",
-      "marketAsOf": "2026-10-02",
-      "technicalAsOf": "2026-10-02",
-      "reasons": [
-        "close below SMA20",
-        "close below SMA50"
-      ]
-    },
-    {
-      "id": "technical_warning-13",
-      "kind": "technical_warning",
-      "severity": "warn",
-      "title": "SPDL: technical warning",
-      "message": "close below SMA20, close below SMA50.",
-      "symbol": "SPDL",
-      "marketAsOf": "2026-10-02",
-      "technicalAsOf": "2026-10-02",
-      "reasons": [
-        "close below SMA20",
-        "close below SMA50"
-      ]
-    },
-    {
-      "id": "technical_warning-15",
-      "kind": "technical_warning",
-      "severity": "warn",
-      "title": "UPPER: technical warning",
-      "message": "close below SMA20, close below SMA50.",
-      "symbol": "UPPER",
-      "marketAsOf": "2026-10-02",
-      "technicalAsOf": "2026-10-02",
-      "reasons": [
-        "close below SMA20",
-        "close below SMA50"
-      ]
-    },
-    {
-      "id": "candidate_seed-1",
+      "id": "2026-10-02-candidate_seed-GBIME-gbime-daily-plan-candidate",
       "kind": "candidate_seed",
       "severity": "info",
       "title": "GBIME: Daily Plan candidate",
@@ -91,7 +26,7 @@
       "marketAsOf": "2026-10-02"
     },
     {
-      "id": "price_level-10",
+      "id": "2026-10-02-price_level-GBIME-gbime-entry-range",
       "kind": "price_level",
       "severity": "info",
       "title": "GBIME: entry range",
@@ -112,7 +47,7 @@
       }
     },
     {
-      "id": "candidate_seed-2",
+      "id": "2026-10-02-candidate_seed-KAHL-kahl-daily-plan-candidate",
       "kind": "candidate_seed",
       "severity": "info",
       "title": "KAHL: Daily Plan candidate",
@@ -121,7 +56,7 @@
       "marketAsOf": "2026-10-02"
     },
     {
-      "id": "price_level-8",
+      "id": "2026-10-02-price_level-KAHL-kahl-entry-range",
       "kind": "price_level",
       "severity": "info",
       "title": "KAHL: entry range",
@@ -142,7 +77,7 @@
       }
     },
     {
-      "id": "candidate_seed-3",
+      "id": "2026-10-02-candidate_seed-NABIL-nabil-daily-plan-candidate",
       "kind": "candidate_seed",
       "severity": "info",
       "title": "NABIL: Daily Plan candidate",
@@ -151,7 +86,7 @@
       "marketAsOf": "2026-10-02"
     },
     {
-      "id": "price_level-6",
+      "id": "2026-10-02-price_level-NABIL-nabil-entry-range",
       "kind": "price_level",
       "severity": "info",
       "title": "NABIL: entry range",
@@ -172,7 +107,7 @@
       }
     },
     {
-      "id": "candidate_seed-4",
+      "id": "2026-10-02-candidate_seed-SPDL-spdl-daily-plan-candidate",
       "kind": "candidate_seed",
       "severity": "info",
       "title": "SPDL: Daily Plan candidate",
@@ -181,7 +116,7 @@
       "marketAsOf": "2026-10-02"
     },
     {
-      "id": "price_level-12",
+      "id": "2026-10-02-price_level-SPDL-spdl-entry-range",
       "kind": "price_level",
       "severity": "info",
       "title": "SPDL: entry range",
@@ -202,7 +137,7 @@
       }
     },
     {
-      "id": "candidate_seed-5",
+      "id": "2026-10-02-candidate_seed-UPPER-upper-daily-plan-candidate",
       "kind": "candidate_seed",
       "severity": "info",
       "title": "UPPER: Daily Plan candidate",
@@ -211,7 +146,7 @@
       "marketAsOf": "2026-10-02"
     },
     {
-      "id": "price_level-14",
+      "id": "2026-10-02-price_level-UPPER-upper-entry-range",
       "kind": "price_level",
       "severity": "info",
       "title": "UPPER: entry range",
