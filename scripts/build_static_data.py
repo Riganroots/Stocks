@@ -8,7 +8,9 @@ def main():
     Path("data/fundamentals.js").write_text(payload)
     announcements=json.loads(Path("data/announcements.json").read_text())
     Path("data/announcements.js").write_text("window.NEPSE_ANNOUNCEMENTS = "+json.dumps(announcements,separators=(",",":"),ensure_ascii=False)+";\n")
-    print("Rebuilt static fundamentals and announcements data")
+    swing=json.loads(Path("data/swing_setups.json").read_text())
+    Path("data/swing_setups.js").write_text("window.NEPSE_SWING_SETUPS = "+json.dumps(swing,separators=(",",":"),ensure_ascii=False)+";\n")
+    print("Rebuilt static fundamentals, announcements and swing scanner data")
 
 if __name__=="__main__":
     main()
