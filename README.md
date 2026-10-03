@@ -58,3 +58,8 @@ The scanner ranks technical setup quality across tracked equities using trend al
 ## Swing backtest
 
 A walk-forward backtest now validates the technical scanner without using future data to create a signal. Signals are generated from rolling history, entry may fill within three sessions, Target 1 is the test objective, maximum holding period is ten sessions, and same-candle stop/target ambiguity is resolved conservatively in favor of the stop. Results are summarized overall, by scanner score bucket and by symbol. Fees, taxes and slippage remain excluded until confirmed.
+
+
+## Swing diagnostics
+
+The backtest now stores the signal-time scanner components and technical metrics for every historical trade. `scripts/analyze_swing_backtest.py` groups outcomes by trend, momentum, liquidity, volume participation, support distance, RSI, ATR and risk flags. This is used to diagnose non-monotonic score behavior before changing scanner weights or thresholds.
