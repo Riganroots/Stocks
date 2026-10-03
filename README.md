@@ -18,6 +18,12 @@ The development price snapshot was sourced from the public socrateai-official/ne
 
 NEPSE Copilot is designed for research prioritisation and portfolio decision support, not automatic trade execution. A production score should become unavailable when required verified evidence is missing.
 
+## Historical data progress
+
+Seven-session historical OHLC and volume data is now wired into the eight V1 stock pages. Each page calculates a recent close return, close range and average volume from the dated source rows.
+
+The current history window is deliberately small while the ingestion/provider layer is being built; it is not yet sufficient for indicators such as RSI-14 or 20/50/200-day moving averages.
+
 ## Next
 
 1. Historical OHLC provider
