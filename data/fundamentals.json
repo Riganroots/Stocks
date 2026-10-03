@@ -1,0 +1,97 @@
+{
+  "generated_for": "NEPSE Copilot V1",
+  "note": "Secondary-source fundamentals/corporate-action snapshot. Price-dependent ratios in the app are recalculated using the selected OHLC close.",
+  "source": "MeroLagani public company-detail pages",
+  "records": {
+    "NABIL": {
+      "eps": 27.01,
+      "bookValue": 240.27,
+      "period": "FY 082-083 Q4",
+      "dividend": 10.8,
+      "bonus": 5,
+      "actionFY": "082-083",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-02",
+      "sourcePrice": 528.7
+    },
+    "GBIME": {
+      "eps": 15.71,
+      "bookValue": 179.94,
+      "period": "FY 082-083 Q4",
+      "dividend": 6,
+      "bonus": 4,
+      "actionFY": "082-083",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-01",
+      "sourcePrice": 243.9
+    },
+    "SHIVM": {
+      "eps": 14.03,
+      "bookValue": 188.76,
+      "period": "FY 082-083 Q4",
+      "dividend": 10,
+      "bonus": 2.5,
+      "actionFY": "081-082",
+      "source": "MeroLagani",
+      "sourceDate": "2026-09-18",
+      "sourcePrice": 688
+    },
+    "CHCL": {
+      "eps": 7.59,
+      "bookValue": 123.9,
+      "period": "FY 082-083 Q4",
+      "dividend": 4,
+      "bonus": 8,
+      "actionFY": "081-082",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-02",
+      "sourcePrice": 341
+    },
+    "NLIC": {
+      "eps": 3.64,
+      "bookValue": 126.07,
+      "period": "FY 082-083 Q4",
+      "dividend": 16.05,
+      "bonus": 5,
+      "actionFY": "081-082",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-02",
+      "sourcePrice": 726.9
+    },
+    "NRIC": {
+      "eps": -58.02,
+      "bookValue": 109.2,
+      "period": "FY 082-083 Q3",
+      "dividend": null,
+      "bonus": null,
+      "actionFY": null,
+      "source": "MeroLagani",
+      "sourceDate": "2026-09-11",
+      "sourcePrice": 797
+    },
+    "API": {
+      "eps": 15.06,
+      "bookValue": 119.51,
+      "period": "FY 082-083 Q4",
+      "dividend": 0.26,
+      "bonus": 5,
+      "rightShare": "1:0.40",
+      "actionFY": "081-082",
+      "rightFY": "080-081",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-02",
+      "sourcePrice": 338.8
+    },
+    "HDL": {
+      "eps": 32.71,
+      "bookValue": 141.43,
+      "period": "FY 082-083 Q4",
+      "dividend": 5,
+      "bonus": 20,
+      "actionFY": "081-082",
+      "source": "MeroLagani",
+      "sourceDate": "2026-10-02",
+      "sourcePrice": 1293
+    }
+  }
+}
