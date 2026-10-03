@@ -86,6 +86,12 @@ function validationText(x){
 function num(v,d){return v==null||!isFinite(Number(v))?null:Number(Number(v).toFixed(d==null?2:d));}
 function marketDate(){return MARKET_META.latestMarketDate||META.priceDate;}
 function generatedTime(){return MARKET_META.generatedAt||'not generated yet';}
+function dataAgeLabel(asOf){
+  if(!asOf)return 'date unavailable';
+  var d=new Date(asOf+'T00:00:00'),now=new Date(),days=Math.floor((now-d)/86400000);
+  if(!isFinite(days))return asOf;
+  return asOf+' · '+Math.max(0,days)+' calendar day'+(days===1?'':'s')+' old';
+}
 function swingDraft(x){
   var t=technical(x.symbol);
   if(!t||t.atr14==null||t.support20==null||t.resistance20==null||t.sma20==null)return null;
@@ -100,7 +106,7 @@ function swingDraft(x){
     symbol:x.symbol,entryLow:num(entryLow),entryHigh:num(entryHigh),stop:num(stop),
     target1:num(mid+1.5*risk),target2:num(mid+2.5*risk),atr14:num(atr),
     support20:num(support),resistance20:num(t.resistance20),asOf:t.asOf||marketDate(),
-    method:'ATR/support template'
+    method:'ATR/support template',dataAge:dataAgeLabel(t.asOf||marketDate())
   };
 }
 function getPlan(sym){return state.swingPlans[sym]||null;}
@@ -270,13 +276,13 @@ function swingDesk(){
   }).join('');
   var watchCards=watched.map(function(x){
     var t=technical(x.symbol),d=swingDraft(x),p=getPlan(x.symbol);
-    return '<div class="swingCandidate"><div><b>'+x.symbol+'</b><small>'+x.name+'</small></div><div><span>Close</span><b>'+money(x.price)+'</b></div><div><span>RSI</span><b>'+(t?techValue(t.rsi14):'Pending')+'</b></div><div><span>Support / Resistance</span><b>'+(t&&t.support20!=null?money(t.support20)+' / '+money(t.resistance20):'Pending')+'</b></div><div><span>Draft entry</span><b>'+(d?money(d.entryLow)+'–'+money(d.entryHigh):'Pending refresh')+'</b></div><button class="small '+(p?'':'primary')+'" data-draft-plan="'+x.symbol+'">'+(p?'Refresh draft':'Create draft')+'</button></div>';
+    return '<div class="swingCandidate"><div><b>'+x.symbol+'</b><small>'+x.name+'</small></div><div><span>Close</span><b>'+money(x.price)+'</b></div><div><span>RSI</span><b>'+(t?techValue(t.rsi14):'Pending')+'</b></div><div><span>Support / Resistance</span><b>'+(t&&t.support20!=null?money(t.support20)+' / '+money(t.resistance20):'Pending')+'</b></div><div><span>Draft entry</span><b>'+(d?money(d.entryLow)+'–'+money(d.entryHigh):'Pending refresh')+'</b>'+(d?'<small>'+esc(d.dataAge)+'</small>':'')+'</div><button class="small '+(p?'':'primary')+'" data-draft-plan="'+x.symbol+'">'+(p?'Refresh draft':'Create draft')+'</button></div>';
   }).join('');
   var marketNews=ANNOUNCEMENTS.slice().sort(function(a,b){return String(b.publishedAt).localeCompare(String(a.publishedAt));}).slice(0,4).map(function(a){
     return '<div class="announcement"><div><b>'+esc(a.title)+'</b><small>'+esc(a.source)+' · published '+esc(a.publishedAt)+' · fetched '+esc(a.fetchedAt||'—')+'</small></div>'+(a.sourceUrl?'<a href="'+esc(a.sourceUrl)+'" target="_blank" rel="noopener">Source</a>':'')+'</div>';
   }).join('');
   return header('Swing Desk','Short-term planning · manual execution')+
-  '<section class="metrics">'+card('Swing watchlist',watched.length,'Symbols under review')+card('Saved plans',plans.length,'Local browser only')+card('Triggered alerts',alertsNow.length,'At latest stored close')+card('Market as-of',marketDate(),'Generated '+generatedTime())+'</section>'+
+  '<section class="metrics">'+card('Swing watchlist',watched.length,'Symbols under review')+card('Saved plans',plans.length,'Local browser only')+card('Triggered alerts',alertsNow.length,'At latest stored close')+card('Market as-of',marketDate(),dataAgeLabel(marketDate()))+'</section>'+
   '<div class="card block"><div class="title"><div><h2>Risk & position sizing</h2><p>Optional account inputs; fees are not included yet</p></div></div><form id="swingSettingsForm" class="form"><input name="capital" type="number" min="0" step="0.01" placeholder="Capital available" value="'+esc(state.swingSettings.capital||'')+'"><input name="riskPct" type="number" min="0" step="0.1" placeholder="Risk % per trade" value="'+esc(state.swingSettings.riskPct||'')+'"><button class="primary">Save sizing inputs</button></form><p class="muted">Position size = min(risk-budget shares, capital-limit shares). Current holdings are not inferred from historical trades.</p></div>'+
   '<section class="two swingTwo"><div class="card block"><div class="title"><div><h2>Swing watchlist</h2><p>Technical drafts use ATR14 + 20-session support</p></div></div><div class="swingCandidates">'+(watchCards||'<p class="muted">Add symbols to Watchlist first.</p>')+'</div></div>'+
   '<div class="card block"><div class="title"><div><h2>Plan editor</h2><p>All levels remain editable</p></div></div><form id="swingPlanForm" class="planForm"><select name="symbol" id="planSymbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><div class="planGrid"><label>Entry low<input name="entryLow" type="number" step="0.01" required></label><label>Entry high<input name="entryHigh" type="number" step="0.01" required></label><label>Stop<input name="stop" type="number" step="0.01" required></label><label>Target 1<input name="target1" type="number" step="0.01" required></label><label>Target 2<input name="target2" type="number" step="0.01" required></label><label>Status<select name="status"><option value="planned">Planned</option><option value="active">Active</option><option value="closed">Closed</option></select></label></div><div class="form"><button type="button" id="useDraftPlan">Use technical draft</button><button class="primary">Save plan</button></div></form></div></section>'+
