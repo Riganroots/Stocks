@@ -10,7 +10,9 @@ def main():
     Path("data/announcements.js").write_text("window.NEPSE_ANNOUNCEMENTS = "+json.dumps(announcements,separators=(",",":"),ensure_ascii=False)+";\n")
     swing=json.loads(Path("data/swing_setups.json").read_text())
     Path("data/swing_setups.js").write_text("window.NEPSE_SWING_SETUPS = "+json.dumps(swing,separators=(",",":"),ensure_ascii=False)+";\n")
-    print("Rebuilt static fundamentals, announcements and swing scanner data")
+    backtest=json.loads(Path("data/swing_backtest.json").read_text())
+    Path("data/swing_backtest.js").write_text("window.NEPSE_SWING_BACKTEST = "+json.dumps(backtest,separators=(",",":"),ensure_ascii=False)+";\n")
+    print("Rebuilt static fundamentals, announcements, swing scanner and backtest data")
 
 if __name__=="__main__":
     main()
