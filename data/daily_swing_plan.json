@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T18:02:48.171595+00:00",
+  "generatedAt": "2026-10-03T18:16:36.953887+00:00",
   "marketAsOf": "2026-10-02",
   "ruleVersion": "support-pullback-v0.1.0",
   "validationStatus": "provisional",
@@ -17,23 +17,33 @@
       "trades": 89,
       "winRatePct": 69.66,
       "avgR": 0.526,
-      "profitFactorR": 3.794
+      "profitFactorR": 3.794,
+      "netWinRatePct": 60.67,
+      "netAvgR": 0.225,
+      "netProfitFactorR": 1.826
     },
     "laterPeriod": {
       "trades": 25,
       "winRatePct": 64.0,
       "avgR": 0.464,
-      "profitFactorR": 2.898
+      "profitFactorR": 2.898,
+      "netWinRatePct": 64.0,
+      "netAvgR": 0.19,
+      "netProfitFactorR": 1.587
     },
     "allMatched": {
       "trades": 114,
       "winRatePct": 68.42,
       "avgR": 0.512,
-      "profitFactorR": 3.554
+      "profitFactorR": 3.554,
+      "netWinRatePct": 61.4,
+      "netAvgR": 0.218,
+      "netProfitFactorR": 1.766
     },
-    "feesIncluded": false,
-    "taxesIncluded": false,
-    "slippageIncluded": false
+    "feesIncluded": true,
+    "taxesIncluded": true,
+    "slippageIncluded": false,
+    "costModel": "data/trading_costs.json"
   },
   "candidates": [
     {
