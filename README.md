@@ -63,3 +63,8 @@ A walk-forward backtest now validates the technical scanner without using future
 ## Swing diagnostics
 
 The backtest now stores the signal-time scanner components and technical metrics for every historical trade. `scripts/analyze_swing_backtest.py` groups outcomes by trend, momentum, liquidity, volume participation, support distance, RSI, ATR and risk flags. This is used to diagnose non-monotonic score behavior before changing scanner weights or thresholds.
+
+
+## Daily swing plan
+
+A provisional daily-plan gate now surfaces current support-pullback pattern matches. Criteria: within 6% of 20-session support, RSI 30–49, 20-session average volume at least 20,000 shares, and ATR under 5% of price. The app displays both development-period and later-period retrospective statistics and explicitly labels the rule provisional because it was derived from the same historical universe.
