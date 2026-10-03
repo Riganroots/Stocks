@@ -119,14 +119,55 @@ function swingDraft(x){
   };
 }
 function getPlan(sym){return state.swingPlans[sym]||null;}
+function brokerageCharge(turnover){
+  var slabs=TRADING_COSTS.equityBrokerage||[];
+  for(var i=0;i<slabs.length;i++){
+    var x=slabs[i],lo=x.minTurnover,hi=x.maxTurnover;
+    if(lo!=null&&turnover<=Number(lo))continue;
+    if(hi!=null&&turnover>Number(hi))continue;
+    if(x.flat!=null)return Number(x.flat);
+    if(x.ratePct!=null)return turnover*Number(x.ratePct)/100;
+  }
+  return 0;
+}
+function estimateTradeCosts(plan,qty,exitPrice){
+  qty=Number(qty);if(!plan||!isFinite(qty)||qty<=0)return null;
+  var entry=(Number(plan.entryLow)+Number(plan.entryHigh))/2,exit=Number(exitPrice);
+  if(!isFinite(entry)||!isFinite(exit))return null;
+  var reg=Number(TRADING_COSTS.regulatoryFeePct||0)/100,dp=Number(TRADING_COSTS.dpChargeSell||0);
+  var buyTurnover=entry*qty,sellTurnover=exit*qty;
+  var buyBroker=brokerageCharge(buyTurnover),sellBroker=brokerageCharge(sellTurnover);
+  var buyReg=buyTurnover*reg,sellReg=sellTurnover*reg;
+  var buyTotal=buyTurnover+buyBroker+buyReg;
+  var sellBeforeTax=sellTurnover-sellBroker-sellReg-dp;
+  var taxable=Math.max(0,sellBeforeTax-buyTotal);
+  var cgtCfg=TRADING_COSTS.capitalGainsTax||{},cgtRate=Number(cgtCfg.residentIndividualShortTermPct||0)/100;
+  var cgt=taxable*cgtRate,netProceeds=sellBeforeTax-cgt,netProfit=netProceeds-buyTotal;
+  return {entry:num(entry),quantity:qty,buyTotal:num(buyTotal),netProceeds:num(netProceeds),netProfit:num(netProfit),brokerage:num(buyBroker+sellBroker),regulatory:num(buyReg+sellReg),dp:num(dp),cgt:num(cgt)};
+}
 function sizePosition(plan,capital,riskPct){
   capital=Number(capital);riskPct=Number(riskPct);
   if(!plan||!isFinite(capital)||capital<=0||!isFinite(riskPct)||riskPct<=0)return null;
   var mid=(Number(plan.entryLow)+Number(plan.entryHigh))/2,perShare=mid-Number(plan.stop);
   if(!isFinite(perShare)||perShare<=0)return null;
-  var budget=capital*riskPct/100;
-  var byRisk=Math.floor(budget/perShare),byCapital=Math.floor(capital/mid),qty=Math.max(0,Math.min(byRisk,byCapital));
-  return {qty:qty,riskBudget:num(budget),positionValue:num(qty*mid),plannedRisk:num(qty*perShare),perShareRisk:num(perShare)};
+  var budget=capital*riskPct/100,upper=Math.max(0,Math.min(Math.floor(budget/perShare),Math.floor(capital/mid)));
+  var lo=0,hi=upper,best=0,bestStop=null;
+  while(lo<=hi){
+    var q=Math.floor((lo+hi)/2),stopCase=q>0?estimateTradeCosts(plan,q,Number(plan.stop)):null;
+    var stopLoss=stopCase?Math.max(0,-Number(stopCase.netProfit)):0;
+    var cash=stopCase?Number(stopCase.buyTotal):0;
+    if(q===0||(stopLoss<=budget&&cash<=capital)){best=q;bestStop=stopCase;lo=q+1;}else hi=q-1;
+  }
+  if(best<1)return {qty:0,riskBudget:num(budget),positionValue:0,plannedRisk:0,perShareRisk:num(perShare)};
+  var t1=estimateTradeCosts(plan,best,Number(plan.target1)),t2=estimateTradeCosts(plan,best,Number(plan.target2));
+  var stopLoss=bestStop?Math.max(0,-Number(bestStop.netProfit)):best*perShare;
+  return {
+    qty:best,riskBudget:num(budget),positionValue:num(best*mid),cashRequired:bestStop?bestStop.buyTotal:num(best*mid),
+    plannedRisk:num(stopLoss),perShareRisk:num(perShare),
+    target1Net:t1?t1.netProfit:null,target2Net:t2?t2.netProfit:null,
+    target1NetR:t1&&stopLoss>0?num(Number(t1.netProfit)/stopLoss):null,
+    target2NetR:t2&&stopLoss>0?num(Number(t2.netProfit)/stopLoss):null
+  };
 }
 function planAlert(x,plan){
   if(!plan)return {level:'none',text:'No saved swing plan'};
@@ -135,7 +176,9 @@ function planAlert(x,plan){
   if(close<=Number(plan.stop))return {level:'danger',text:'STOP level reached/breached at latest close'};
   if(close>=Number(plan.target2))return {level:'good',text:'Target 2 reached/exceeded at latest close'};
   if(close>=Number(plan.target1))return {level:'good',text:'Target 1 reached/exceeded at latest close'};
-  if(t&&t.sma20!=null&&close<Number(t.sma20))return {level:'warn',text:'Trend warning: close is below SMA20'};
+  if(t&&t.support20!=null&&close<Number(t.support20))return {level:'danger',text:'Close is below 20-session support'};
+  if(t&&t.rsi14!=null&&Number(t.rsi14)<30)return {level:'warn',text:'RSI has fallen below 30'};
+  if(t&&t.atrPct14!=null&&Number(t.atrPct14)>=5)return {level:'warn',text:'ATR has risen to 5% or more'};
   if(close>=Number(plan.entryLow)&&close<=Number(plan.entryHigh))return {level:'info',text:'Latest close is inside planned entry range'};
   return {level:'none',text:'No price trigger at latest close'};
 }
@@ -320,7 +363,7 @@ function swingDesk(){
   var alertsNow=plans.map(function(p){var x=s(p.symbol);return x?{symbol:p.symbol,alert:planAlert(x,p),plan:p}:null;}).filter(function(v){return v&&v.alert.level!=='none';});
   var planRows=plans.map(function(p){
     var x=s(p.symbol),sz=sizePosition(p,p.capital||state.swingSettings.capital,p.riskPct||state.swingSettings.riskPct),al=x?planAlert(x,p):{level:'none',text:'Symbol missing'};
-    return '<tr><td><b>'+esc(p.symbol)+'</b><small>'+esc(p.status||'planned')+'</small></td><td>'+money(p.entryLow)+'–'+money(p.entryHigh)+'</td><td>'+money(p.stop)+'</td><td>'+money(p.target1)+' / '+money(p.target2)+'</td><td>'+(sz?sz.qty+' sh<br><small>risk '+money(sz.plannedRisk)+'</small>':'—')+'</td><td><span class="swingAlert '+al.level+'">'+esc(al.text)+'</span></td><td><button class="small" data-edit-plan="'+esc(p.symbol)+'">Edit</button> <button class="danger small" data-delete-plan="'+esc(p.symbol)+'">Delete</button></td></tr>';
+    return '<tr><td><b>'+esc(p.symbol)+'</b><small>'+esc(p.status||'planned')+'</small></td><td>'+money(p.entryLow)+'–'+money(p.entryHigh)+'</td><td>'+money(p.stop)+'</td><td>'+money(p.target1)+' / '+money(p.target2)+'</td><td>'+(sz?sz.qty+' sh<br><small>cash '+money(sz.cashRequired)+' · stop risk '+money(sz.plannedRisk)+'</small>':'—')+'</td><td>'+(sz&&sz.qty?'<b>T1 '+money(sz.target1Net)+'</b><small>'+((sz.target1NetR==null)?'':sz.target1NetR+'R net')+'</small><b>T2 '+money(sz.target2Net)+'</b><small>'+((sz.target2NetR==null)?'':sz.target2NetR+'R net')+'</small>':'—')+'</td><td><span class="swingAlert '+al.level+'">'+esc(al.text)+'</span></td><td><button class="small" data-edit-plan="'+esc(p.symbol)+'">Edit</button> <button class="danger small" data-delete-plan="'+esc(p.symbol)+'">Delete</button></td></tr>';
   }).join('');
   var watchCards=watched.map(function(x){
     var t=technical(x.symbol),d=swingDraft(x),p=getPlan(x.symbol);
@@ -350,10 +393,10 @@ function swingDesk(){
   '<div class="card block scannerBlock"><div class="title"><div><h2>Swing Scanner</h2><p>Technical setup quality only · '+esc(SWING_SCANNER_META.marketAsOf||marketDate())+' · model '+esc(SWING_SCANNER_META.modelVersion||'pending')+'</p></div><div class="scannerFilter"><label>Min score <input id="scannerMinScore" type="number" min="0" max="100" value="'+esc(state.swingScannerMin==null?50:state.swingScannerMin)+'"></label></div></div><div id="scannerTable" class="table"><table><thead><tr><th>Symbol</th><th>Setup</th><th>RSI</th><th>Vol ratio</th><th>From support</th><th>To resistance</th><th>Risk flags</th><th></th></tr></thead><tbody>'+(scanRows||'<tr><td colspan="8">No scanner results yet.</td></tr>')+'</tbody></table></div><p class="muted">Setup score combines trend, RSI regime, liquidity, current volume participation and distance from 20-session support. It is not the long-term research score and is not a trade recommendation.</p></div>'+
   '<div class="card block costModel"><div class="title"><div><h2>Trading cost model</h2><p>Sourced defaults · configurable</p></div></div><div class="costGrid">'+card('Broker',esc(TRADING_COSTS.broker||'—'),'Current public pricing')+card('Regulatory fee',TRADING_COSTS.regulatoryFeePct==null?'—':TRADING_COSTS.regulatoryFeePct+'%','Both buy & sell')+card('Short-term CGT',TRADING_COSTS.capitalGainsTax?TRADING_COSTS.capitalGainsTax.residentIndividualShortTermPct+'%':'—','Profitable resident-individual sale')+card('DP sell charge',TRADING_COSTS.dpChargeSell==null?'—':money(TRADING_COSTS.dpChargeSell),'Provisional; confirm contract note')+'</div><p class="muted">Cost model as of '+esc(TRADING_COSTS.asOf||'—')+'. Actual broker contract notes override this model.</p></div>'+
   '<div class="card block stressBlock"><div class="title"><div><h2>Slippage stress test</h2><p>Later-period support-pullback validation</p></div></div><div class="table"><table><thead><tr><th>Slippage</th><th>Trades</th><th>Net win rate</th><th>Net avg R</th><th>Net PF</th></tr></thead><tbody>'+(stressRows||'<tr><td colspan="5">Awaiting sensitivity refresh.</td></tr>')+'</tbody></table></div><p class="muted">This checks whether the provisional pattern survives less favorable execution prices. Slippage is modeled on both entry and exit.</p></div>'+'<div class="card block backtestBlock"><div class="title"><div><h2>Walk-forward validation</h2><p>Historical scanner behavior · no look-ahead signals</p></div></div>'+btCards+'<div class="table"><table><thead><tr><th>Scanner bucket</th><th>Trades</th><th>Gross win rate</th><th>Gross avg R</th><th>Net avg R</th><th>Net PF</th></tr></thead><tbody>'+bucketRows+'</tbody></table></div><p class="muted">Assumptions: up to 3 sessions for entry, Target 1 objective, max 10-session hold, same-candle stop/target assumes stop first. Net results use the sourced Naasa brokerage slabs, 0.015% regulatory fee, short-term CGT and a provisional Rs 25 sell-side DP charge. Slippage remains 0 until execution data is available.</p></div>'+
-  '<div class="card block"><div class="title"><div><h2>Risk & position sizing</h2><p>Optional account inputs; fees are not included yet</p></div></div><form id="swingSettingsForm" class="form"><input name="capital" type="number" min="0" step="0.01" placeholder="Capital available" value="'+esc(state.swingSettings.capital||'')+'"><input name="riskPct" type="number" min="0" step="0.1" placeholder="Risk % per trade" value="'+esc(state.swingSettings.riskPct||'')+'"><button class="primary">Save sizing inputs</button></form><p class="muted">Position size = min(risk-budget shares, capital-limit shares). Current holdings are not inferred from historical trades.</p></div>'+
+  '<div class="card block"><div class="title"><div><h2>Risk & position sizing</h2><p>Optional account inputs · modeled trading costs included</p></div></div><form id="swingSettingsForm" class="form"><input name="capital" type="number" min="0" step="0.01" placeholder="Capital available" value="'+esc(state.swingSettings.capital||'')+'"><input name="riskPct" type="number" min="0" step="0.1" placeholder="Risk % per trade" value="'+esc(state.swingSettings.riskPct||'')+'"><button class="primary">Save sizing inputs</button></form><p class="muted">Position size is reduced until modeled stop loss, brokerage/regulatory fees and provisional DP charge fit inside your risk budget. Target values show modeled net profit after costs and short-term CGT. Current holdings are not inferred from historical trades.</p></div>'+
   '<section class="two swingTwo"><div class="card block"><div class="title"><div><h2>Swing watchlist</h2><p>Technical drafts use ATR14 + 20-session support</p></div></div><div class="swingCandidates">'+(watchCards||'<p class="muted">Add symbols to Watchlist first.</p>')+'</div></div>'+
   '<div class="card block"><div class="title"><div><h2>Plan editor</h2><p>All levels remain editable</p></div></div><form id="swingPlanForm" class="planForm"><select name="symbol" id="planSymbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><div class="planGrid"><label>Entry low<input name="entryLow" type="number" step="0.01" required></label><label>Entry high<input name="entryHigh" type="number" step="0.01" required></label><label>Stop<input name="stop" type="number" step="0.01" required></label><label>Target 1<input name="target1" type="number" step="0.01" required></label><label>Target 2<input name="target2" type="number" step="0.01" required></label><label>Status<select name="status"><option value="planned">Planned</option><option value="active">Active</option><option value="closed">Closed</option></select></label></div><div class="form"><button type="button" id="useDraftPlan">Use technical draft</button><button class="primary">Save plan</button></div></form></div></section>'+
-  '<div class="card block swingPlans"><div class="title"><div><h2>Saved plans & sell alerts</h2><p>Alerts evaluate the latest stored close only; no order is sent</p></div></div><div class="table"><table><thead><tr><th>Symbol</th><th>Entry</th><th>Stop</th><th>Targets</th><th>Position size</th><th>Alert</th><th></th></tr></thead><tbody>'+(planRows||'<tr><td colspan="7">No saved swing plans.</td></tr>')+'</tbody></table></div></div>'+
+  '<div class="card block swingPlans"><div class="title"><div><h2>Saved plans & sell alerts</h2><p>Alerts evaluate the latest stored close only; no order is sent</p></div></div><div class="table"><table><thead><tr><th>Symbol</th><th>Entry</th><th>Stop</th><th>Targets</th><th>Position size</th><th>Net scenarios</th><th>Alert</th><th></th></tr></thead><tbody>'+(planRows||'<tr><td colspan="8">No saved swing plans.</td></tr>')+'</tbody></table></div></div>'+
   '<section class="two"><div class="card block"><div class="title"><div><h2>Sourced announcements</h2><p>Announcement dates are kept separate from market-data timestamps</p></div></div><div class="announcementList">'+(marketNews||'<p class="muted">No announcement data loaded.</p>')+'</div></div><div class="card block"><div class="title"><div><h2>Historical trade journal</h2><p>Private browser storage</p></div></div><p>Nine historical transactions can be imported locally for review. They are not committed to Git, and they are not treated as current holdings.</p><div class="form"><button type="button" id="importTrades">Import trades JSON</button><input id="tradesFile" type="file" accept=".json,application/json" hidden><button type="button" id="exportTrades">Export journal</button></div><p class="muted">'+state.tradeJournal.length+' journal records currently stored in this browser. Fees remain unconfirmed unless included in an imported record.</p></div></section>';
 }
 
