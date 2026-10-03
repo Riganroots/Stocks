@@ -56,6 +56,8 @@ def main():
             "asOf":rows[-1]["date"] if rows else None,
             "sessions":len(rows),
             "close":round(closes[-1],2) if closes else None,
+            "prevClose":round(closes[-2],2) if len(closes)>=2 else None,
+            "lastVolume":round(vols[-1],2) if vols else None,
             "atr14":round(atr14,2) if atr14 is not None else None,
             "atrPct14":round((atr14/closes[-1]*100),2) if atr14 is not None and closes and closes[-1] else None,
             "support20":round(support20,2) if support20 is not None else None,
