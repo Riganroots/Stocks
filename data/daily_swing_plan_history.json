@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-10-03T18:27:45.778643+00:00",
+  "ruleVersion": "support-pullback-v0.1.0",
+  "entries": [
+    {
+      "marketAsOf": "2026-10-02",
+      "generatedAt": "2026-10-03T18:27:45.778643+00:00",
+      "ruleVersion": "support-pullback-v0.1.0",
+      "candidateSymbols": [
+        "NABIL",
+        "KAHL",
+        "GBIME",
+        "SPDL",
+        "UPPER"
+      ],
+      "candidates": [
+        {
+          "symbol": "NABIL",
+          "close": 528.7,
+          "entryLow": 525.0,
+          "entryHigh": 531.06,
+          "stop": 517.91,
+          "target1": 543.21,
+          "target2": 553.33
+        },
+        {
+          "symbol": "KAHL",
+          "close": 458.0,
+          "entryLow": 448.61,
+          "entryHigh": 462.7,
+          "stop": 434.51,
+          "target1": 487.36,
+          "target2": 508.5
+        },
+        {
+          "symbol": "GBIME",
+          "close": 243.0,
+          "entryLow": 239.65,
+          "entryHigh": 244.68,
+          "stop": 228.42,
+          "target1": 262.77,
+          "target2": 276.51
+        },
+        {
+          "symbol": "SPDL",
+          "close": 345.1,
+          "entryLow": 338.06,
+          "entryHigh": 348.62,
+          "stop": 322.48,
+          "target1": 374.63,
+          "target2": 395.49
+        },
+        {
+          "symbol": "UPPER",
+          "close": 189.9,
+          "entryLow": 187.32,
+          "entryHigh": 191.19,
+          "stop": 177.61,
+          "target1": 206.72,
+          "target2": 218.37
+        }
+      ]
+    }
+  ]
+}
