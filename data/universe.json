@@ -1,10 +1,22 @@
 {
-  "version": 1,
+  "version": 2,
   "symbols": [
     {
-      "symbol": "NABIL",
-      "name": "Nabil Bank Limited",
+      "symbol": "ADBL",
+      "name": "Agricultural Development Bank Limited",
       "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "API",
+      "name": "Api Power Company Ltd.",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "CHCL",
+      "name": "Chilime Hydropower Company Limited",
+      "sector": "Hydro Power",
       "instrumentType": "equity"
     },
     {
@@ -14,16 +26,46 @@
       "instrumentType": "equity"
     },
     {
-      "symbol": "SHIVM",
-      "name": "Shivam Cements Ltd.",
+      "symbol": "HDL",
+      "name": "Himalayan Distillery Limited",
       "sector": "Manufacturing And Processing",
       "instrumentType": "equity"
     },
     {
-      "symbol": "CHCL",
-      "name": "Chilime Hydropower Company Limited",
+      "symbol": "KAHL",
+      "name": "Kalanga Hydro Limited",
       "sector": "Hydro Power",
       "instrumentType": "equity"
+    },
+    {
+      "symbol": "KBL",
+      "name": "Kumari Bank Limited",
+      "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "MBJC",
+      "name": "Madhya Bhotekoshi Jalavidyut Company Limited",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "MKHC",
+      "name": "Maya Khola Hydropower Company Limited",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "NABIL",
+      "name": "Nabil Bank Limited",
+      "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "NIBSF2",
+      "name": "NIBL Samriddhi Fund 2",
+      "sector": "Mutual Fund",
+      "instrumentType": "fund"
     },
     {
       "symbol": "NLIC",
@@ -38,15 +80,57 @@
       "instrumentType": "equity"
     },
     {
-      "symbol": "API",
-      "name": "Api Power Company Ltd.",
+      "symbol": "OMPL",
+      "name": "Om Megashree Pharmaceuticals Limited",
+      "sector": "Manufacturing And Processing",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "PSF",
+      "name": "Prabhu Select Fund",
+      "sector": "Mutual Fund",
+      "instrumentType": "fund"
+    },
+    {
+      "symbol": "RHGCL",
+      "name": "Rapti Hydro and General Construction Limited",
       "sector": "Hydro Power",
       "instrumentType": "equity"
     },
     {
-      "symbol": "HDL",
-      "name": "Himalayan Distillery Limited",
+      "symbol": "RHPL",
+      "name": "Rasuwagadhi Hydropower Company Limited",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "SAIL",
+      "name": "Shreenagar Agritech Industries Limited",
       "sector": "Manufacturing And Processing",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "SCB",
+      "name": "Standard Chartered Bank Limited",
+      "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "SHIVM",
+      "name": "Shivam Cements Ltd.",
+      "sector": "Manufacturing And Processing",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "SPDL",
+      "name": "Synergy Power Development Ltd.",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "UPPER",
+      "name": "Upper Tamakoshi Hydropower Ltd",
+      "sector": "Hydro Power",
       "instrumentType": "equity"
     }
   ]
