@@ -102,10 +102,22 @@ def main():
             if not result:
                 i=fill_idx+1;continue
             exit_idx,exit_price,r_mult,reason=result
+            metrics=setup.get("metrics",{})
             trade={
                 "symbol":sym,"signalDate":rows[i]["date"],"fillDate":rows[fill_idx]["date"],
                 "exitDate":rows[exit_idx]["date"],"setupScore":setup["setupScore"],
-                "scoreBucket":bucket(setup["setupScore"]),"entry":round(fill,2),
+                "scoreBucket":bucket(setup["setupScore"]),
+                "components":setup.get("components",{}),
+                "riskFlags":setup.get("riskFlags",[]),
+                "signalMetrics":{
+                    "rsi14":metrics.get("rsi14"),
+                    "volumeRatio":metrics.get("volumeRatio"),
+                    "supportDistancePct":metrics.get("supportDistancePct"),
+                    "resistanceHeadroomPct":metrics.get("resistanceHeadroomPct"),
+                    "atrPct14":metrics.get("atrPct14"),
+                    "avgVolume20":metrics.get("avgVolume20")
+                },
+                "entry":round(fill,2),
                 "stop":setup["draft"]["stop"],"target1":setup["draft"]["target1"],
                 "exitPrice":round(exit_price,2),"rMultiple":round(r_mult,3),
                 "exitReason":reason
