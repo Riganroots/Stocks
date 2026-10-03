@@ -2,6 +2,14 @@ name: Refresh NEPSE market data
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - "data/universe.json"
+      - "data/fundamentals.json"
+      - ".github/workflows/update-market-data.yml"
   schedule:
     - cron: "30 10 * * 0-4"
 
