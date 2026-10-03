@@ -84,8 +84,9 @@ def main():
     dev=[t for t in matched if t.get("signalDate","")<=CUTOFF]
     hold=[t for t in matched if t.get("signalDate","")>CUTOFF]
 
+    generated_at=datetime.now(timezone.utc).isoformat()
     payload={
-        "generatedAt":datetime.now(timezone.utc).isoformat(),
+        "generatedAt":generated_at,
         "marketAsOf":swing.get("marketAsOf"),
         "ruleVersion":RULE_VERSION,
         "validationStatus":"provisional",
@@ -110,7 +111,42 @@ def main():
         "candidates":candidates
     }
     Path("data/daily_swing_plan.json").write_text(json.dumps(payload,indent=2))
-    print("Daily plan candidates:",len(candidates))
+
+    history_path=Path("data/daily_swing_plan_history.json")
+    if history_path.exists():
+        try:
+            history=json.loads(history_path.read_text())
+        except Exception:
+            history={"entries":[]}
+    else:
+        history={"entries":[]}
+    entries=history.get("entries",[])
+    market_date=payload.get("marketAsOf")
+    snapshot={
+        "marketAsOf":market_date,
+        "generatedAt":generated_at,
+        "ruleVersion":RULE_VERSION,
+        "candidateSymbols":[c["symbol"] for c in candidates],
+        "candidates":[{
+            "symbol":c["symbol"],
+            "close":c.get("close"),
+            "entryLow":(c.get("draft") or {}).get("entryLow"),
+            "entryHigh":(c.get("draft") or {}).get("entryHigh"),
+            "stop":(c.get("draft") or {}).get("stop"),
+            "target1":(c.get("draft") or {}).get("target1"),
+            "target2":(c.get("draft") or {}).get("target2")
+        } for c in candidates]
+    }
+    entries=[e for e in entries if e.get("marketAsOf")!=market_date]
+    entries.append(snapshot)
+    entries=sorted(entries,key=lambda e:e.get("marketAsOf") or "")[-60:]
+    history={
+        "generatedAt":generated_at,
+        "ruleVersion":RULE_VERSION,
+        "entries":entries
+    }
+    history_path.write_text(json.dumps(history,indent=2))
+    print("Daily plan candidates:",len(candidates),"history entries:",len(entries))
 
 if __name__=="__main__":
     main()
