@@ -35,6 +35,7 @@ const SWING_BACKTEST = window.NEPSE_SWING_BACKTEST || {};
 const DAILY_SWING_PLAN = window.NEPSE_DAILY_SWING_PLAN || {};
 const TRADING_COSTS = window.NEPSE_TRADING_COSTS || {};
 const COST_SENSITIVITY = window.NEPSE_SWING_COST_SENSITIVITY || {};
+const AFTER_MARKET_ALERTS = window.NEPSE_AFTER_MARKET_ALERTS || {};
 STOCKS.forEach(function(x){var t=TECHNICALS[x.symbol];if(!t)return;if(t.close!=null)x.price=Number(t.close);if(t.prevClose!=null)x.prev=Number(t.prevClose);if(t.lastVolume!=null)x.volume=Number(t.lastVolume);});
 const HISTORY = {"API":[{"date":"2026-09-23","close":334,"open":338,"high":338.9,"low":333.5,"volume":233458},{"date":"2026-09-24","close":334.8,"open":334,"high":335.7,"low":330.1,"volume":222689},{"date":"2026-09-28","close":335,"open":336,"high":337.9,"low":333,"volume":156452},{"date":"2026-09-29","close":334,"open":336,"high":336,"low":331,"volume":172257},{"date":"2026-09-30","close":335,"open":335,"high":336.5,"low":333.4,"volume":202365},{"date":"2026-10-01","close":341,"open":335,"high":345,"low":332,"volume":673559},{"date":"2026-10-02","close":338.8,"open":341,"high":344,"low":335.2,"volume":262514}],"CHCL":[{"date":"2026-09-23","close":354.5,"open":361,"high":362,"low":352.5,"volume":68382},{"date":"2026-09-24","close":352,"open":336.8,"high":359,"low":336.8,"volume":83517},{"date":"2026-09-28","close":353.3,"open":352,"high":360,"low":345.3,"volume":73527},{"date":"2026-09-29","close":349,"open":351,"high":355,"low":346.4,"volume":30207},{"date":"2026-09-30","close":348.8,"open":350,"high":350,"low":345,"volume":65137},{"date":"2026-10-01","close":341.7,"open":349.1,"high":350,"low":341.2,"volume":61162},{"date":"2026-10-02","close":339,"open":341.7,"high":345,"low":339,"volume":53796}],"GBIME":[{"date":"2026-09-23","close":243,"open":247.5,"high":247.5,"low":240.8,"volume":265691},{"date":"2026-09-24","close":243.8,"open":247.5,"high":247.5,"low":240.4,"volume":223433},{"date":"2026-09-28","close":243.2,"open":243.8,"high":244,"low":240,"volume":152777},{"date":"2026-09-29","close":242.2,"open":243.5,"high":244,"low":241,"volume":175880},{"date":"2026-09-30","close":243.5,"open":230.1,"high":245,"low":230.1,"volume":156159},{"date":"2026-10-01","close":243.9,"open":245,"high":245,"low":242,"volume":160436},{"date":"2026-10-02","close":243,"open":244,"high":244.9,"low":242,"volume":78565}],"HDL":[{"date":"2026-09-23","close":1278.3,"open":1284,"high":1290,"low":1270.2,"volume":160341},{"date":"2026-09-24","close":1312,"open":1280,"high":1320,"low":1270.2,"volume":269642},{"date":"2026-09-28","close":1323,"open":1312,"high":1363,"low":1305.1,"volume":269014},{"date":"2026-09-29","close":1297,"open":1323,"high":1329,"low":1285,"volume":177277},{"date":"2026-09-30","close":1292,"open":1261,"high":1296,"low":1261,"volume":106475},{"date":"2026-10-01","close":1286,"open":1292,"high":1298.8,"low":1283,"volume":78951},{"date":"2026-10-02","close":1293,"open":1350,"high":1350,"low":1285,"volume":102119}],"NABIL":[{"date":"2026-09-23","close":565,"open":570,"high":570,"low":565,"volume":88866},{"date":"2026-09-24","close":569,"open":566,"high":570,"low":566,"volume":70719},{"date":"2026-09-28","close":567,"open":570,"high":570.4,"low":567,"volume":71595},{"date":"2026-09-29","close":566,"open":567,"high":568,"low":563,"volume":124364},{"date":"2026-09-30","close":530.7,"open":538,"high":538.9,"low":529,"volume":96131},{"date":"2026-10-01","close":528.5,"open":531,"high":532,"low":525,"volume":73612},{"date":"2026-10-02","close":528.7,"open":529,"high":533,"low":525,"volume":60383}],"NLIC":[{"date":"2026-09-23","close":743.4,"open":792.7,"high":792.7,"low":736,"volume":19283},{"date":"2026-09-24","close":745,"open":706.3,"high":745,"low":706.3,"volume":8391},{"date":"2026-09-28","close":736,"open":745,"high":745,"low":735,"volume":26881},{"date":"2026-09-29","close":735,"open":736,"high":736,"low":730.1,"volume":20365},{"date":"2026-09-30","close":727.8,"open":734,"high":745,"low":725,"volume":14088},{"date":"2026-10-01","close":727.9,"open":727,"high":739,"low":721,"volume":12080},{"date":"2026-10-02","close":726.9,"open":691.6,"high":740,"low":691.6,"volume":7723}],"NRIC":[{"date":"2026-09-23","close":820,"open":873.6,"high":873.6,"low":799,"volume":13340},{"date":"2026-09-24","close":817,"open":800,"high":847,"low":800,"volume":9109},{"date":"2026-09-28","close":806.2,"open":817,"high":820,"low":805.3,"volume":15010},{"date":"2026-09-29","close":805,"open":765.9,"high":817.9,"low":765.9,"volume":19736},{"date":"2026-09-30","close":806,"open":805,"high":808,"low":799,"volume":7214},{"date":"2026-10-01","close":803,"open":800.1,"high":809.4,"low":795.5,"volume":12520},{"date":"2026-10-02","close":802.9,"open":795,"high":809,"low":795,"volume":7826}],"SHIVM":[{"date":"2026-09-23","close":687,"open":686,"high":697,"low":685,"volume":555257},{"date":"2026-09-24","close":702,"open":689,"high":704.5,"low":686.1,"volume":513184},{"date":"2026-09-28","close":695.1,"open":737.1,"high":737.1,"low":691,"volume":424127},{"date":"2026-09-29","close":690.1,"open":693,"high":697,"low":685,"volume":250541},{"date":"2026-09-30","close":684.5,"open":691,"high":691,"low":683,"volume":222414},{"date":"2026-10-01","close":685,"open":685,"high":689.5,"low":680.1,"volume":134104},{"date":"2026-10-02","close":681,"open":692,"high":692,"low":680.3,"volume":106558}]};
 const DEFAULT_HOLDINGS = [];
@@ -137,6 +138,33 @@ function planAlert(x,plan){
   if(t&&t.sma20!=null&&close<Number(t.sma20))return {level:'warn',text:'Trend warning: close is below SMA20'};
   if(close>=Number(plan.entryLow)&&close<=Number(plan.entryHigh))return {level:'info',text:'Latest close is inside planned entry range'};
   return {level:'none',text:'No price trigger at latest close'};
+}
+function localPlanAlertItems(){
+  var out=[];
+  Object.keys(state.swingPlans).forEach(function(sym){
+    var p=state.swingPlans[sym],x=s(sym);
+    if(!p||!x||p.status==='closed')return;
+    var t=technical(sym),close=Number(x.price);
+    function push(level,title,text){out.push({symbol:sym,level:level,title:title,text:text});}
+    if(close<=Number(p.stop))push('danger','Stop level reached','Latest close '+money(close)+' is at/below saved stop '+money(p.stop)+'.');
+    else if(close>=Number(p.target2))push('good','Target 2 reached','Latest close '+money(close)+' is at/above saved Target 2 '+money(p.target2)+'.');
+    else if(close>=Number(p.target1))push('good','Target 1 reached','Latest close '+money(close)+' is at/above saved Target 1 '+money(p.target1)+'.');
+    else if(close>=Number(p.entryLow)&&close<=Number(p.entryHigh))push('info','Entry range reached','Latest close '+money(close)+' is inside saved entry range '+money(p.entryLow)+'–'+money(p.entryHigh)+'.');
+    if(t){
+      var reasons=[];
+      if(t.sma20!=null&&close<Number(t.sma20))reasons.push('below SMA20');
+      if(t.sma50!=null&&close<Number(t.sma50))reasons.push('below SMA50');
+      if(t.rsi14!=null&&Number(t.rsi14)<30)reasons.push('RSI below 30');
+      if(reasons.length)push('warn','Technical deterioration',reasons.join(', ')+'.');
+    }
+  });
+  return out;
+}
+function alertLevelClass(level){
+  if(level==='danger')return 'bad';
+  if(level==='good')return 'good';
+  if(level==='info')return 'info';
+  return 'warn';
 }
 function scannerRows(minScore){
   minScore=Number(minScore==null?50:minScore);
@@ -335,7 +363,20 @@ function watchlist(){
 }
 
 function alerts(){
-  return header('Alerts','Prototype alert rules')+'<div class="card block"><form id="alertForm" class="form"><select name="symbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><select name="type"><option>Price</option><option>Score</option><option>Volume</option><option>Disclosure</option></select><input name="rule" placeholder="e.g. Below Rs 500" required><button class="primary">Add alert</button></form><div class="alertList">'+state.alerts.map(function(a,i){return '<div><span><b>'+esc(a.symbol)+'</b><small>'+esc(a.type)+' · '+esc(a.rule)+'</small></span><button class="danger small" data-alert-remove="'+i+'">Remove</button></div>';}).join('')+'</div></div>';
+  var generated=(AFTER_MARKET_ALERTS.alerts||[]),summary=AFTER_MARKET_ALERTS.summary||{},local=localPlanAlertItems();
+  var important=generated.filter(function(a){return a.severity!=='none';});
+  var generatedRows=important.map(function(a){
+    return '<div class="alertCard '+esc(a.severity||'info')+'"><div class="alertIcon">'+(a.severity==='danger'?'!':a.severity==='warn'?'△':a.severity==='good'?'✓':'i')+'</div><div><div class="alertHead"><b>'+esc(a.title||a.kind)+'</b><span class="pill '+alertLevelClass(a.severity)+'">'+esc(a.severity||'info')+'</span></div><p>'+esc(a.message||'')+'</p><small>'+(a.symbol?esc(a.symbol)+' · ':'')+'market '+esc(a.marketAsOf||AFTER_MARKET_ALERTS.marketAsOf||marketDate())+(a.publishedAt?' · published '+esc(a.publishedAt):'')+'</small>'+(a.sourceUrl?'<a href="'+esc(a.sourceUrl)+'" target="_blank" rel="noopener">Source</a>':'')+'</div></div>';
+  }).join('');
+  var localRows=local.map(function(a){
+    return '<div class="alertCard '+esc(a.level)+'"><div class="alertIcon">'+(a.level==='danger'?'!':a.level==='warn'?'△':a.level==='good'?'✓':'i')+'</div><div><div class="alertHead"><b>'+esc(a.symbol)+' · '+esc(a.title)+'</b><span class="pill '+alertLevelClass(a.level)+'">'+esc(a.level)+'</span></div><p>'+esc(a.text)+'</p><small>Local saved plan · latest close '+esc(marketDate())+'</small></div></div>';
+  }).join('');
+  var customRows=state.alerts.map(function(a,i){return '<div><span><b>'+esc(a.symbol)+'</b><small>'+esc(a.type)+' · '+esc(a.rule)+'</small></span><button class="danger small" data-alert-remove="'+i+'">Remove</button></div>';}).join('');
+  return header('Alert Center','After-market conditions · manual execution')+
+    '<section class="metrics">'+card('Generated alerts',summary.total==null?generated.length:summary.total,'Market '+esc(AFTER_MARKET_ALERTS.marketAsOf||marketDate()))+card('Warnings',(summary.danger||0)+(summary.warn||0),'Generated danger + warning')+card('Local plan triggers',local.length,'Browser-only saved plans')+card('Custom rules',state.alerts.length,'Manual reminders')+'</section>'+
+    '<div class="card block"><div class="title"><div><h2>After-market alerts</h2><p>Generated '+esc(AFTER_MARKET_ALERTS.generatedAt||'pending')+' · compares market-day state when history exists</p></div></div><div class="alertCards">'+(generatedRows||'<p class="muted">No actionable generated alerts at the latest stored close.</p>')+'</div><p class="muted">Candidate removal means the pattern no longer matches; it is not a sell instruction. Orders remain manual.</p></div>'+
+    '<div class="card block"><div class="title"><div><h2>Saved-plan alerts</h2><p>Evaluated locally from your private browser plans</p></div></div><div class="alertCards">'+(localRows||'<p class="muted">No local saved-plan triggers at the latest stored close.</p>')+'</div></div>'+
+    '<div class="card block"><div class="title"><div><h2>Custom reminders</h2><p>Manual alert notes stored in this browser</p></div></div><form id="alertForm" class="form"><select name="symbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><select name="type"><option>Price</option><option>Score</option><option>Volume</option><option>Disclosure</option></select><input name="rule" placeholder="e.g. Review below Rs 500" required><button class="primary">Add reminder</button></form><div class="alertList">'+(customRows||'<p class="muted">No custom reminders.</p>')+'</div></div>';
 }
 
 function page(){
