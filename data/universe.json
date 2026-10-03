@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "symbols": [
+    {
+      "symbol": "NABIL",
+      "name": "Nabil Bank Limited",
+      "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "GBIME",
+      "name": "Global IME Bank Limited",
+      "sector": "Commercial Banks",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "SHIVM",
+      "name": "Shivam Cements Ltd.",
+      "sector": "Manufacturing And Processing",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "CHCL",
+      "name": "Chilime Hydropower Company Limited",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "NLIC",
+      "name": "Nepal Life Insurance Co. Ltd.",
+      "sector": "Life Insurance",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "NRIC",
+      "name": "Nepal Re-Insurance Company Limited",
+      "sector": "Others",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "API",
+      "name": "Api Power Company Ltd.",
+      "sector": "Hydro Power",
+      "instrumentType": "equity"
+    },
+    {
+      "symbol": "HDL",
+      "name": "Himalayan Distillery Limited",
+      "sector": "Manufacturing And Processing",
+      "instrumentType": "equity"
+    }
+  ]
+}
