@@ -78,3 +78,55 @@ create table alerts (
   is_enabled boolean not null default true,
   created_at timestamptz not null default now()
 );
+
+create table announcements (
+  id text primary key,
+  scope text not null,
+  symbol text,
+  category text not null,
+  title text not null,
+  summary text,
+  published_at timestamptz,
+  fetched_at timestamptz not null,
+  source_name text not null,
+  source_url text not null
+);
+
+create table swing_plans (
+  id bigserial primary key,
+  symbol text not null,
+  entry_low numeric not null,
+  entry_high numeric not null,
+  stop_loss numeric not null,
+  target_1 numeric not null,
+  target_2 numeric not null,
+  planned_quantity numeric,
+  status text not null default 'planned',
+  market_as_of date,
+  model_version text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table swing_alert_events (
+  id bigserial primary key,
+  swing_plan_id bigint not null references swing_plans(id),
+  alert_type text not null,
+  observed_price numeric,
+  market_as_of date,
+  message text not null,
+  created_at timestamptz not null default now()
+);
+
+create table trade_journal (
+  id bigserial primary key,
+  symbol text not null,
+  side text not null check (side in ('BUY','SELL')),
+  quantity numeric not null,
+  price numeric not null,
+  trade_date date,
+  fees numeric,
+  fees_confirmed boolean not null default false,
+  notes text,
+  created_at timestamptz not null default now()
+);
