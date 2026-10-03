@@ -73,3 +73,8 @@ A provisional daily-plan gate now surfaces current support-pullback pattern matc
 ## Cost-aware backtest
 
 Backtest v0.2 sizes each reference trade from NPR 100,000 capital at 1% planned risk, then applies brokerage, regulatory fee, DP charge and short-term capital-gains tax before calculating net R. Gross and net results are shown separately. The DP amount remains provisional until confirmed from an actual Naasa contract note, and slippage remains zero until execution data is available.
+
+
+## Slippage sensitivity
+
+The cost-aware swing model is stress-tested at 0, 10 and 25 basis points of slippage per side. Results are reported separately for the full scanner and for the provisional support-pullback daily-plan gate, including the later-period robustness split.
