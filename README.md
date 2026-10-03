@@ -53,3 +53,8 @@ The static app now supports short-term swing planning with a local watchlist, AT
 ## Swing Scanner
 
 The scanner ranks technical setup quality across tracked equities using trend alignment, RSI regime, 20-session average liquidity, latest-volume participation and distance from 20-session support. It emits setup score, label, risk flags and the ATR/support draft plan. The scanner is separate from the evidence-gated research score and is not an automatic trade recommendation.
+
+
+## Swing backtest
+
+A walk-forward backtest now validates the technical scanner without using future data to create a signal. Signals are generated from rolling history, entry may fill within three sessions, Target 1 is the test objective, maximum holding period is ten sessions, and same-candle stop/target ambiguity is resolved conservatively in favor of the stop. Results are summarized overall, by scanner score bucket and by symbol. Fees, taxes and slippage remain excluded until confirmed.
