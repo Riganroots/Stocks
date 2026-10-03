@@ -68,3 +68,8 @@ The backtest now stores the signal-time scanner components and technical metrics
 ## Daily swing plan
 
 A provisional daily-plan gate now surfaces current support-pullback pattern matches. Criteria: within 6% of 20-session support, RSI 30–49, 20-session average volume at least 20,000 shares, and ATR under 5% of price. The app displays both development-period and later-period retrospective statistics and explicitly labels the rule provisional because it was derived from the same historical universe.
+
+
+## Cost-aware backtest
+
+Backtest v0.2 sizes each reference trade from NPR 100,000 capital at 1% planned risk, then applies brokerage, regulatory fee, DP charge and short-term capital-gains tax before calculating net R. Gross and net results are shown separately. The DP amount remains provisional until confirmed from an actual Naasa contract note, and slippage remains zero until execution data is available.
