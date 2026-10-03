@@ -43,6 +43,7 @@ jobs:
           python scripts/calculate_technicals.py
           python scripts/calculate_scores.py
           python scripts/calculate_swing_setups.py
+          python scripts/backtest_swing_scanner.py
           python scripts/update_regulatory_announcements.py
           python scripts/build_static_data.py
 
@@ -50,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/market_history.json data/technicals.json data/scores.json data/generated_market.js data/fundamentals.js data/announcements.json data/announcements.js data/swing_setups.json data/swing_setups.js
+          git add data/market_history.json data/technicals.json data/scores.json data/generated_market.js data/fundamentals.js data/announcements.json data/announcements.js data/swing_setups.json data/swing_setups.js data/swing_backtest.json data/swing_backtest.js
           if git diff --cached --quiet; then
             echo "No market-data changes"
           else
