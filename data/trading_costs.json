@@ -1,0 +1,93 @@
+{
+  "asOf": "2026-10-03",
+  "currency": "NPR",
+  "broker": "Naasa Securities Company Limited",
+  "referenceBacktest": {
+    "capital": 100000,
+    "riskPctPerTrade": 1,
+    "slippageBpsPerSide": 0
+  },
+  "equityBrokerage": [
+    {
+      "maxTurnover": 2500,
+      "flat": 10,
+      "ratePct": null
+    },
+    {
+      "minTurnover": 2500,
+      "maxTurnover": 50000,
+      "flat": null,
+      "ratePct": 0.36
+    },
+    {
+      "minTurnover": 50000,
+      "maxTurnover": 500000,
+      "flat": null,
+      "ratePct": 0.33
+    },
+    {
+      "minTurnover": 500000,
+      "maxTurnover": 2000000,
+      "flat": null,
+      "ratePct": 0.31
+    },
+    {
+      "minTurnover": 2000000,
+      "maxTurnover": 10000000,
+      "flat": null,
+      "ratePct": 0.27
+    },
+    {
+      "minTurnover": 10000000,
+      "maxTurnover": null,
+      "flat": null,
+      "ratePct": 0.24
+    }
+  ],
+  "regulatoryFeePct": 0.015,
+  "dpChargeSell": 25,
+  "capitalGainsTax": {
+    "residentIndividualShortTermPct": 7.5,
+    "residentIndividualLongTermPct": 5,
+    "shortTermMaxDays": 365
+  },
+  "notes": [
+    "Brokerage and regulatory fee use Naasa's current public pricing.",
+    "CGT uses current IRD guidance for resident natural persons.",
+    "Capital-gain base follows CDSC guidance: net sale after selling costs minus purchase amount plus purchase costs.",
+    "DP charge is modeled at NPR 25 per company/settlement; confirm against the user's actual Naasa contract note.",
+    "Slippage defaults to zero and is shown separately because no execution-level slippage data is available."
+  ],
+  "sources": [
+    {
+      "name": "Naasa Securities pricing",
+      "url": "https://new.naasasecurities.com.np/pricing/1",
+      "covers": [
+        "brokerage",
+        "regulatory fee"
+      ]
+    },
+    {
+      "name": "Inland Revenue Department FAQ",
+      "url": "https://ird.gov.np/faq/",
+      "covers": [
+        "capital gains tax rates"
+      ]
+    },
+    {
+      "name": "CDS and Clearing FAQ",
+      "url": "https://cdsc.com.np/faq/FAQ.pdf",
+      "covers": [
+        "capital gain calculation",
+        "WACC/cost treatment"
+      ]
+    },
+    {
+      "name": "Current Nepal broker public calculator cross-check",
+      "url": "https://sagarmathasecurities.com/",
+      "covers": [
+        "DP charge cross-check"
+      ]
+    }
+  ]
+}
