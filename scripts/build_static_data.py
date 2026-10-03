@@ -18,6 +18,8 @@ def main():
     Path("data/trading_costs.js").write_text("window.NEPSE_TRADING_COSTS = "+json.dumps(costs,separators=(",",":"),ensure_ascii=False)+";\n")
     sensitivity=json.loads(Path("data/swing_cost_sensitivity.json").read_text())
     Path("data/swing_cost_sensitivity.js").write_text("window.NEPSE_SWING_COST_SENSITIVITY = "+json.dumps(sensitivity,separators=(",",":"),ensure_ascii=False)+";\n")
+    alerts=json.loads(Path("data/after_market_alerts.json").read_text())
+    Path("data/after_market_alerts.js").write_text("window.NEPSE_AFTER_MARKET_ALERTS = "+json.dumps(alerts,separators=(",",":"),ensure_ascii=False)+";\n")
     print("Rebuilt static fundamentals, announcements, scanner, backtest and daily plan data")
 
 if __name__=="__main__":
