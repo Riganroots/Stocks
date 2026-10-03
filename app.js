@@ -46,7 +46,8 @@ const state = {
   ]),
   swingPlans:read('nepseSwingPlans',{}),
   swingSettings:read('nepseSwingSettings',{capital:'',riskPct:''}),
-  tradeJournal:read('nepseTradeJournal',[])
+  tradeJournal:read('nepseTradeJournal',[]),
+  swingScannerMin:read('nepseSwingScannerMin',50)
 };
 
 function read(k,fallback){try{var v=localStorage.getItem(k);return v?JSON.parse(v):fallback;}catch(e){return fallback;}}
@@ -57,6 +58,7 @@ function save(){
   localStorage.setItem('nepseSwingPlans',JSON.stringify(state.swingPlans));
   localStorage.setItem('nepseSwingSettings',JSON.stringify(state.swingSettings));
   localStorage.setItem('nepseTradeJournal',JSON.stringify(state.tradeJournal));
+  localStorage.setItem('nepseSwingScannerMin',JSON.stringify(state.swingScannerMin));
 }
 function s(sym){return STOCKS.find(function(x){return x.symbol===sym;});}
 function money(n){return 'Rs '+Math.round(n).toLocaleString('en-IN');}
@@ -292,7 +294,7 @@ function swingDesk(){
     var t=technical(x.symbol),d=swingDraft(x),p=getPlan(x.symbol);
     return '<div class="swingCandidate"><div><b>'+x.symbol+'</b><small>'+x.name+'</small></div><div><span>Close</span><b>'+money(x.price)+'</b></div><div><span>RSI</span><b>'+(t?techValue(t.rsi14):'Pending')+'</b></div><div><span>Support / Resistance</span><b>'+(t&&t.support20!=null?money(t.support20)+' / '+money(t.resistance20):'Pending')+'</b></div><div><span>Draft entry</span><b>'+(d?money(d.entryLow)+'–'+money(d.entryHigh):'Pending refresh')+'</b>'+(d?'<small>'+esc(d.dataAge)+'</small>':'')+'</div><button class="small '+(p?'':'primary')+'" data-draft-plan="'+x.symbol+'">'+(p?'Refresh draft':'Create draft')+'</button></div>';
   }).join('');
-  var scan=scannerRows(50);
+  var scan=scannerRows(state.swingScannerMin==null?50:state.swingScannerMin);
   var scanRows=scan.map(function(v){
     var x=v.stock,q=v.setup,m=q.metrics||{},flags=(q.riskFlags||[]);
     return '<tr><td><b>'+x.symbol+'</b><small>'+x.name+'</small></td><td><span class="pill '+scannerLabelClass(q.label)+'">'+q.setupScore+'/100</span><small>'+q.label+'</small></td><td>'+techValue(m.rsi14)+'</td><td>'+(m.volumeRatio==null?'—':Number(m.volumeRatio).toFixed(2)+'×')+'</td><td>'+(m.supportDistancePct==null?'—':Number(m.supportDistancePct).toFixed(1)+'%')+'</td><td>'+(m.resistanceHeadroomPct==null?'—':Number(m.resistanceHeadroomPct).toFixed(1)+'%')+'</td><td>'+(flags.length?flags.map(function(f){return '<span class="riskTag">'+esc(f.replaceAll('_',' '))+'</span>';}).join(' '):'<span class="muted">none</span>')+'</td><td><button class="small" data-add-swing-watch="'+x.symbol+'">'+(state.watchlist.indexOf(x.symbol)>=0?'Watching':'Add watch')+'</button> <button class="small primary" data-scanner-draft="'+x.symbol+'">Draft plan</button></td></tr>';
@@ -302,7 +304,7 @@ function swingDesk(){
   }).join('');
   return header('Swing Desk','Short-term planning · manual execution')+
   '<section class="metrics">'+card('Swing watchlist',watched.length,'Symbols under review')+card('Saved plans',plans.length,'Local browser only')+card('Triggered alerts',alertsNow.length,'At latest stored close')+card('Market as-of',marketDate(),dataAgeLabel(marketDate()))+'</section>'+
-  '<div class="card block scannerBlock"><div class="title"><div><h2>Swing Scanner</h2><p>Technical setup quality only · '+esc(SWING_SCANNER_META.marketAsOf||marketDate())+' · model '+esc(SWING_SCANNER_META.modelVersion||'pending')+'</p></div><div class="scannerFilter"><label>Min score <input id="scannerMinScore" type="number" min="0" max="100" value="50"></label></div></div><div id="scannerTable" class="table"><table><thead><tr><th>Symbol</th><th>Setup</th><th>RSI</th><th>Vol ratio</th><th>From support</th><th>To resistance</th><th>Risk flags</th><th></th></tr></thead><tbody>'+(scanRows||'<tr><td colspan="8">No scanner results yet.</td></tr>')+'</tbody></table></div><p class="muted">Setup score combines trend, RSI regime, liquidity, current volume participation and distance from 20-session support. It is not the long-term research score and is not a trade recommendation.</p></div>'+
+  '<div class="card block scannerBlock"><div class="title"><div><h2>Swing Scanner</h2><p>Technical setup quality only · '+esc(SWING_SCANNER_META.marketAsOf||marketDate())+' · model '+esc(SWING_SCANNER_META.modelVersion||'pending')+'</p></div><div class="scannerFilter"><label>Min score <input id="scannerMinScore" type="number" min="0" max="100" value="'+esc(state.swingScannerMin==null?50:state.swingScannerMin)+'"></label></div></div><div id="scannerTable" class="table"><table><thead><tr><th>Symbol</th><th>Setup</th><th>RSI</th><th>Vol ratio</th><th>From support</th><th>To resistance</th><th>Risk flags</th><th></th></tr></thead><tbody>'+(scanRows||'<tr><td colspan="8">No scanner results yet.</td></tr>')+'</tbody></table></div><p class="muted">Setup score combines trend, RSI regime, liquidity, current volume participation and distance from 20-session support. It is not the long-term research score and is not a trade recommendation.</p></div>'+
   '<div class="card block"><div class="title"><div><h2>Risk & position sizing</h2><p>Optional account inputs; fees are not included yet</p></div></div><form id="swingSettingsForm" class="form"><input name="capital" type="number" min="0" step="0.01" placeholder="Capital available" value="'+esc(state.swingSettings.capital||'')+'"><input name="riskPct" type="number" min="0" step="0.1" placeholder="Risk % per trade" value="'+esc(state.swingSettings.riskPct||'')+'"><button class="primary">Save sizing inputs</button></form><p class="muted">Position size = min(risk-budget shares, capital-limit shares). Current holdings are not inferred from historical trades.</p></div>'+
   '<section class="two swingTwo"><div class="card block"><div class="title"><div><h2>Swing watchlist</h2><p>Technical drafts use ATR14 + 20-session support</p></div></div><div class="swingCandidates">'+(watchCards||'<p class="muted">Add symbols to Watchlist first.</p>')+'</div></div>'+
   '<div class="card block"><div class="title"><div><h2>Plan editor</h2><p>All levels remain editable</p></div></div><form id="swingPlanForm" class="planForm"><select name="symbol" id="planSymbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><div class="planGrid"><label>Entry low<input name="entryLow" type="number" step="0.01" required></label><label>Entry high<input name="entryHigh" type="number" step="0.01" required></label><label>Stop<input name="stop" type="number" step="0.01" required></label><label>Target 1<input name="target1" type="number" step="0.01" required></label><label>Target 2<input name="target2" type="number" step="0.01" required></label><label>Status<select name="status"><option value="planned">Planned</option><option value="active">Active</option><option value="closed">Closed</option></select></label></div><div class="form"><button type="button" id="useDraftPlan">Use technical draft</button><button class="primary">Save plan</button></div></form></div></section>'+
@@ -361,6 +363,7 @@ function bind(){
   var af=document.getElementById('alertForm');if(af)af.onsubmit=function(e){e.preventDefault();var f=new FormData(af);state.alerts.push({symbol:f.get('symbol'),type:f.get('type'),rule:f.get('rule')});save();render();};
   document.querySelectorAll('[data-alert-remove]').forEach(function(b){b.onclick=function(){state.alerts.splice(Number(b.dataset.alertRemove),1);save();render();};});
   var swingSettingsForm=document.getElementById('swingSettingsForm');if(swingSettingsForm)swingSettingsForm.onsubmit=function(e){e.preventDefault();var f=new FormData(swingSettingsForm);state.swingSettings={capital:f.get('capital')||'',riskPct:f.get('riskPct')||''};save();render();};
+  var scannerMinScore=document.getElementById('scannerMinScore');if(scannerMinScore)scannerMinScore.onchange=function(){var v=Math.max(0,Math.min(100,Number(scannerMinScore.value)||0));state.swingScannerMin=v;save();render();};
   function fillPlanForm(sym,useDraft){
     var form=document.getElementById('swingPlanForm');if(!form)return;
     var x=s(sym),p=useDraft?(x?swingDraft(x):null):getPlan(sym);
