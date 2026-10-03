@@ -12,7 +12,8 @@
       "actionFY": "082-083",
       "source": "MeroLagani",
       "sourceDate": "2026-10-02",
-      "sourcePrice": 528.7
+      "sourcePrice": 528.7,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=NABIL"
     },
     "GBIME": {
       "eps": 15.71,
@@ -23,7 +24,8 @@
       "actionFY": "082-083",
       "source": "MeroLagani",
       "sourceDate": "2026-10-01",
-      "sourcePrice": 243.9
+      "sourcePrice": 243.9,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=GBIME"
     },
     "SHIVM": {
       "eps": 14.03,
@@ -34,7 +36,8 @@
       "actionFY": "081-082",
       "source": "MeroLagani",
       "sourceDate": "2026-09-18",
-      "sourcePrice": 688
+      "sourcePrice": 688,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=SHIVM"
     },
     "CHCL": {
       "eps": 7.59,
@@ -45,7 +48,8 @@
       "actionFY": "081-082",
       "source": "MeroLagani",
       "sourceDate": "2026-10-02",
-      "sourcePrice": 341
+      "sourcePrice": 341,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=CHCL"
     },
     "NLIC": {
       "eps": 3.64,
@@ -56,7 +60,8 @@
       "actionFY": "081-082",
       "source": "MeroLagani",
       "sourceDate": "2026-10-02",
-      "sourcePrice": 726.9
+      "sourcePrice": 726.9,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=NLIC"
     },
     "NRIC": {
       "eps": -58.02,
@@ -67,7 +72,8 @@
       "actionFY": null,
       "source": "MeroLagani",
       "sourceDate": "2026-09-11",
-      "sourcePrice": 797
+      "sourcePrice": 797,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=NRIC"
     },
     "API": {
       "eps": 15.06,
@@ -80,7 +86,8 @@
       "rightFY": "080-081",
       "source": "MeroLagani",
       "sourceDate": "2026-10-02",
-      "sourcePrice": 338.8
+      "sourcePrice": 338.8,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=API"
     },
     "HDL": {
       "eps": 32.71,
@@ -91,7 +98,8 @@
       "actionFY": "081-082",
       "source": "MeroLagani",
       "sourceDate": "2026-10-02",
-      "sourcePrice": 1293
+      "sourcePrice": 1293,
+      "sourceUrl": "https://eng.merolagani.com/CompanyDetail.aspx?symbol=HDL"
     },
     "ADBL": {
       "eps": 16.11,
