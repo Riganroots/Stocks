@@ -78,3 +78,8 @@ Backtest v0.2 sizes each reference trade from NPR 100,000 capital at 1% planned 
 ## Slippage sensitivity
 
 The cost-aware swing model is stress-tested at 0, 10 and 25 basis points of slippage per side. Results are reported separately for the full scanner and for the provisional support-pullback daily-plan gate, including the later-period robustness split.
+
+
+## After-market alert center
+
+The pipeline now preserves up to 60 market-date Daily Plan snapshots and generates after-market alerts for candidate additions/removals/continuations, draft price-level states, technical deterioration, recent sourced announcements and stale market data. The browser Alert Center combines these generated alerts with alerts evaluated from private local saved plans and manual reminder rules. Candidate removal or technical warnings never execute a trade.
