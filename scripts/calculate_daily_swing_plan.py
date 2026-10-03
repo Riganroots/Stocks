@@ -22,15 +22,19 @@ def passes(setup):
 
 def summarize(trades):
     if not trades:
-        return {"trades":0,"winRatePct":None,"avgR":None,"profitFactorR":None}
+        return {"trades":0,"winRatePct":None,"avgR":None,"profitFactorR":None,"netWinRatePct":None,"netAvgR":None,"netProfitFactorR":None}
     rs=[float(t["rMultiple"]) for t in trades]
-    wins=[r for r in rs if r>0]
-    losses=[r for r in rs if r<0]
+    net_rs=[float(t.get("netRMultiple",t["rMultiple"])) for t in trades]
+    wins=[r for r in rs if r>0]; losses=[r for r in rs if r<0]
+    net_wins=[r for r in net_rs if r>0]; net_losses=[r for r in net_rs if r<0]
     return {
         "trades":len(trades),
         "winRatePct":round(len(wins)/len(trades)*100,2),
         "avgR":round(sum(rs)/len(rs),3),
-        "profitFactorR":round(sum(wins)/abs(sum(losses)),3) if losses and sum(losses)!=0 else None
+        "profitFactorR":round(sum(wins)/abs(sum(losses)),3) if losses and sum(losses)!=0 else None,
+        "netWinRatePct":round(len(net_wins)/len(trades)*100,2),
+        "netAvgR":round(sum(net_rs)/len(net_rs),3),
+        "netProfitFactorR":round(sum(net_wins)/abs(sum(net_losses)),3) if net_losses and sum(net_losses)!=0 else None
     }
 
 def trade_passes(t):
@@ -98,9 +102,10 @@ def main():
             "development":summarize(dev),
             "laterPeriod":summarize(hold),
             "allMatched":summarize(matched),
-            "feesIncluded":False,
-            "taxesIncluded":False,
-            "slippageIncluded":False
+            "feesIncluded":True,
+            "taxesIncluded":True,
+            "slippageIncluded":False,
+            "costModel":"data/trading_costs.json"
         },
         "candidates":candidates
     }
