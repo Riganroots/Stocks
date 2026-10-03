@@ -16,6 +16,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: nepse-market-refresh
+  cancel-in-progress: true
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -49,6 +53,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No market-data changes"
           else
-            git commit -m "data: refresh NEPSE history and technicals"
-            git push
+            git commit -m "data: refresh NEPSE history, swing metrics and announcements"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
