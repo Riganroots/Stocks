@@ -83,3 +83,8 @@ The cost-aware swing model is stress-tested at 0, 10 and 25 basis points of slip
 ## After-market alert center
 
 The pipeline now preserves up to 60 market-date Daily Plan snapshots and generates after-market alerts for candidate additions/removals/continuations, draft price-level states, technical deterioration, recent sourced announcements and stale market data. The browser Alert Center combines these generated alerts with alerts evaluated from private local saved plans and manual reminder rules. Candidate removal or technical warnings never execute a trade.
+
+
+## Stateful after-market alerts
+
+After-market alerts compare each new market-date Daily Plan snapshot with the prior stored session. Alert model v0.2 reports new/removed candidates, entry/stop/target states, stale-data checks and sourced announcement changes. Strategy warnings are aligned to the support-pullback gate rather than generic SMA-below warnings, avoiding false deterioration signals during normal pullbacks. The Alert Center can copy a plain-text digest or export the generated JSON. No alert transmits an order.
