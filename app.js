@@ -152,10 +152,10 @@ function localPlanAlertItems(){
     else if(close>=Number(p.entryLow)&&close<=Number(p.entryHigh))push('info','Entry range reached','Latest close '+money(close)+' is inside saved entry range '+money(p.entryLow)+'–'+money(p.entryHigh)+'.');
     if(t){
       var reasons=[];
-      if(t.sma20!=null&&close<Number(t.sma20))reasons.push('below SMA20');
-      if(t.sma50!=null&&close<Number(t.sma50))reasons.push('below SMA50');
+      if(t.support20!=null&&close<Number(t.support20))reasons.push('close below 20-session support');
       if(t.rsi14!=null&&Number(t.rsi14)<30)reasons.push('RSI below 30');
-      if(reasons.length)push('warn','Technical deterioration',reasons.join(', ')+'.');
+      if(t.atrPct14!=null&&Number(t.atrPct14)>=5)reasons.push('ATR at/above 5%');
+      if(reasons.length)push(reasons.some(function(r){return r.indexOf('support')>=0;})?'danger':'warn','Technical deterioration',reasons.join(', ')+'.');
     }
   });
   return out;
@@ -362,6 +362,17 @@ function watchlist(){
   return header('Watchlist','Companies you are following for research or swing review')+'<div class="card block"><div class="title"><div><h2>Watchlist</h2><p>Open Swing Desk to create entry/stop/target plans</p></div><button data-nav="swing">Open Swing Desk</button></div>'+(rows.length?table(rows):'<p class="muted">Your watchlist is empty.</p>')+'</div>';
 }
 
+function alertDigestText(){
+  var a=AFTER_MARKET_ALERTS,items=(a.alerts||[]).filter(function(x){return x.severity!=='none';});
+  var lines=['NEPSE After-market Digest','Market: '+(a.marketAsOf||marketDate()),a.headline||''];
+  items.forEach(function(x){lines.push('- '+(x.symbol?x.symbol+' · ':'')+(x.title||x.kind)+': '+(x.message||''));});
+  lines.push('Trades remain manual. Generated '+(a.generatedAt||'—')+'.');
+  return lines.join('\n');
+}
+function downloadJson(name,obj){
+  var blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);
+}
 function alerts(){
   var generated=(AFTER_MARKET_ALERTS.alerts||[]),summary=AFTER_MARKET_ALERTS.summary||{},local=localPlanAlertItems();
   var important=generated.filter(function(a){return a.severity!=='none';});
@@ -373,7 +384,8 @@ function alerts(){
   }).join('');
   var customRows=state.alerts.map(function(a,i){return '<div><span><b>'+esc(a.symbol)+'</b><small>'+esc(a.type)+' · '+esc(a.rule)+'</small></span><button class="danger small" data-alert-remove="'+i+'">Remove</button></div>';}).join('');
   return header('Alert Center','After-market conditions · manual execution')+
-    '<section class="metrics">'+card('Generated alerts',summary.total==null?generated.length:summary.total,'Market '+esc(AFTER_MARKET_ALERTS.marketAsOf||marketDate()))+card('Warnings',(summary.danger||0)+(summary.warn||0),'Generated danger + warning')+card('Local plan triggers',local.length,'Browser-only saved plans')+card('Custom rules',state.alerts.length,'Manual reminders')+'</section>'+
+    '<section class="metrics">'+card('Actionable alerts',summary.actionable==null?important.length:summary.actionable,'Market '+esc(AFTER_MARKET_ALERTS.marketAsOf||marketDate()))+card('Warnings',(summary.danger||0)+(summary.warn||0),'Generated danger + warning')+card('Candidate changes',summary.changes==null?'—':summary.changes,'New / removed / announcement')+card('Local plan triggers',local.length,'Browser-only saved plans')+'</section>'+
+    '<div class="card block alertDigest"><div class="title"><div><h2>After-market digest</h2><p>'+esc(AFTER_MARKET_ALERTS.headline||'Awaiting generated digest')+'</p></div><div class="form compactActions"><button type="button" id="copyAlertDigest">Copy digest</button><button type="button" id="exportAlertDigest">Export JSON</button></div></div><p class="muted">Market '+esc(AFTER_MARKET_ALERTS.marketAsOf||marketDate())+' · generated '+esc(AFTER_MARKET_ALERTS.generatedAt||'pending')+'. Trades remain manual.</p></div>'+
     '<div class="card block"><div class="title"><div><h2>After-market alerts</h2><p>Generated '+esc(AFTER_MARKET_ALERTS.generatedAt||'pending')+' · compares market-day state when history exists</p></div></div><div class="alertCards">'+(generatedRows||'<p class="muted">No actionable generated alerts at the latest stored close.</p>')+'</div><p class="muted">Candidate removal means the pattern no longer matches; it is not a sell instruction. Orders remain manual.</p></div>'+
     '<div class="card block"><div class="title"><div><h2>Saved-plan alerts</h2><p>Evaluated locally from your private browser plans</p></div></div><div class="alertCards">'+(localRows||'<p class="muted">No local saved-plan triggers at the latest stored close.</p>')+'</div></div>'+
     '<div class="card block"><div class="title"><div><h2>Custom reminders</h2><p>Manual alert notes stored in this browser</p></div></div><form id="alertForm" class="form"><select name="symbol">'+STOCKS.map(function(x){return '<option>'+x.symbol+'</option>';}).join('')+'</select><select name="type"><option>Price</option><option>Score</option><option>Volume</option><option>Disclosure</option></select><input name="rule" placeholder="e.g. Review below Rs 500" required><button class="primary">Add reminder</button></form><div class="alertList">'+(customRows||'<p class="muted">No custom reminders.</p>')+'</div></div>';
@@ -419,6 +431,8 @@ function bind(){
   document.querySelectorAll('[data-remove]').forEach(function(b){b.onclick=function(){state.holdings.splice(Number(b.dataset.remove),1);save();render();};});
   var sf=document.getElementById('screenForm');if(sf)sf.onsubmit=function(e){e.preventDefault();var f=new FormData(sf),sec=f.get('sector'),score=Number(f.get('score')||0),peMax=Number(f.get('pe')||9999),pbMax=Number(f.get('pb')||9999);var rows=STOCKS.filter(function(x){var pe=currentPE(x),pb=currentPBV(x),sc=effectiveScore(x);return (!sec||x.sector===sec)&&sc!=null&&sc>=score&&pe!=null&&pe<=peMax&&pb!=null&&pb<=pbMax;});document.getElementById('screenResults').innerHTML=table(rows);document.querySelectorAll('[data-stock]').forEach(function(r){r.onclick=function(){state.selected=r.dataset.stock;state.page='stock';render();};});};
   var af=document.getElementById('alertForm');if(af)af.onsubmit=function(e){e.preventDefault();var f=new FormData(af);state.alerts.push({symbol:f.get('symbol'),type:f.get('type'),rule:f.get('rule')});save();render();};
+  var copyAlertDigest=document.getElementById('copyAlertDigest');if(copyAlertDigest)copyAlertDigest.onclick=function(){var txt=alertDigestText();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){copyAlertDigest.textContent='Copied';setTimeout(function(){copyAlertDigest.textContent='Copy digest';},1200);});}else{alert(txt);}};
+  var exportAlertDigest=document.getElementById('exportAlertDigest');if(exportAlertDigest)exportAlertDigest.onclick=function(){downloadJson('nepse-after-market-'+(AFTER_MARKET_ALERTS.marketAsOf||marketDate())+'.json',AFTER_MARKET_ALERTS);};
   document.querySelectorAll('[data-alert-remove]').forEach(function(b){b.onclick=function(){state.alerts.splice(Number(b.dataset.alertRemove),1);save();render();};});
   var swingSettingsForm=document.getElementById('swingSettingsForm');if(swingSettingsForm)swingSettingsForm.onsubmit=function(e){e.preventDefault();var f=new FormData(swingSettingsForm);state.swingSettings={capital:f.get('capital')||'',riskPct:f.get('riskPct')||''};save();render();};
   var scannerMinScore=document.getElementById('scannerMinScore');if(scannerMinScore)scannerMinScore.onchange=function(){var v=Math.max(0,Math.min(100,Number(scannerMinScore.value)||0));state.swingScannerMin=v;save();render();};
