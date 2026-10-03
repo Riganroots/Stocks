@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, re
+import json, re, hashlib
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from urllib.parse import urljoin
@@ -45,7 +45,7 @@ def parse_source(name,url,scope):
         title=next((c for c in cells if c!=date and len(c)>12 and not c.lower().startswith("title")),None)
         if not title: continue
         out.append({
-            "id":re.sub(r"[^a-z0-9]+","-",name.lower()).strip("-")+"-"+date+"-"+str(abs(hash(title)))[:8],
+            "id":re.sub(r"[^a-z0-9]+","-",name.lower()).strip("-")+"-"+date+"-"+hashlib.sha256(title.encode("utf-8")).hexdigest()[:10],
             "scope":scope,"symbols":[],"category":"regulatory","title":title,
             "publishedAt":date,"source":"Securities Board of Nepal (SEBON)",
             "sourceUrl":urljoin(url,href) if href else url,"summary":"",
