@@ -23,6 +23,23 @@ def ret(vals,n):
     if len(vals)<n+1 or vals[-n-1]==0:return None
     return (vals[-1]/vals[-n-1]-1)*100
 
+def atr_wilder(rows,n=14):
+    if len(rows)<n+1:return None
+    trs=[]
+    for i in range(1,len(rows)):
+        high=float(rows[i]["high"]); low=float(rows[i]["low"]); prev=float(rows[i-1]["close"])
+        trs.append(max(high-low,abs(high-prev),abs(low-prev)))
+    atr=sum(trs[:n])/n
+    for tr in trs[n:]:
+        atr=(atr*(n-1)+tr)/n
+    return atr
+
+def recent_low(rows,n):
+    return min((float(r["low"]) for r in rows[-n:]),default=None) if len(rows)>=n else None
+
+def recent_high(rows,n):
+    return max((float(r["high"]) for r in rows[-n:]),default=None) if len(rows)>=n else None
+
 def main():
     inp=Path("data/market_history.json")
     data=json.loads(inp.read_text())
@@ -32,9 +49,17 @@ def main():
         closes=[float(r["close"]) for r in rows]
         vols=[float(r["volume"]) for r in rows]
         recent252=rows[-252:]
+        atr14=atr_wilder(rows,14)
+        support20=recent_low(rows,20)
+        resistance20=recent_high(rows,20)
         out[sym]={
             "asOf":rows[-1]["date"] if rows else None,
             "sessions":len(rows),
+            "close":round(closes[-1],2) if closes else None,
+            "atr14":round(atr14,2) if atr14 is not None else None,
+            "atrPct14":round((atr14/closes[-1]*100),2) if atr14 is not None and closes and closes[-1] else None,
+            "support20":round(support20,2) if support20 is not None else None,
+            "resistance20":round(resistance20,2) if resistance20 is not None else None,
             "rsi14":round(rsi_wilder(closes),2) if rsi_wilder(closes) is not None else None,
             "sma20":round(sma(closes,20),2) if sma(closes,20) is not None else None,
             "sma50":round(sma(closes,50),2) if sma(closes,50) is not None else None,
