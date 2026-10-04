@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-03T19:25:50.400840+00:00",
+  "generatedAt": "2026-10-04T15:27:31.650007+00:00",
   "marketAsOf": "2026-10-02",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": null,
-  "dataAgeCalendarDays": 1,
+  "dataAgeCalendarDays": 2,
   "headline": "5 Daily Plan candidates · 0 new/change alerts · 0 warnings",
   "summary": {
     "total": 10,
