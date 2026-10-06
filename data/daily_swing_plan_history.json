@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T15:27:29.322838+00:00",
+  "generatedAt": "2026-10-06T16:53:12.785555+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
@@ -58,6 +58,85 @@
           "stop": 177.61,
           "target1": 206.72,
           "target2": 218.37
+        }
+      ]
+    },
+    {
+      "marketAsOf": "2026-10-06",
+      "generatedAt": "2026-10-06T16:53:12.785555+00:00",
+      "ruleVersion": "support-pullback-v0.1.0",
+      "candidateSymbols": [
+        "NABIL",
+        "UPPER",
+        "NLIC",
+        "GBIME",
+        "RHGCL",
+        "SPDL",
+        "KAHL"
+      ],
+      "candidates": [
+        {
+          "symbol": "NABIL",
+          "close": 531.0,
+          "entryLow": 526.61,
+          "entryHigh": 533.2,
+          "stop": 520.02,
+          "target1": 544.72,
+          "target2": 554.6
+        },
+        {
+          "symbol": "UPPER",
+          "close": 188.9,
+          "entryLow": 186.5,
+          "entryHigh": 190.1,
+          "stop": 180.3,
+          "target1": 200.3,
+          "target2": 208.3
+        },
+        {
+          "symbol": "NLIC",
+          "close": 720.0,
+          "entryLow": 710.15,
+          "entryHigh": 724.92,
+          "stop": 683.18,
+          "target1": 769.08,
+          "target2": 803.44
+        },
+        {
+          "symbol": "GBIME",
+          "close": 241.4,
+          "entryLow": 238.34,
+          "entryHigh": 242.93,
+          "stop": 228.57,
+          "target1": 258.73,
+          "target2": 270.8
+        },
+        {
+          "symbol": "RHGCL",
+          "close": 254.0,
+          "entryLow": 248.9,
+          "entryHigh": 256.55,
+          "stop": 238.65,
+          "target1": 273.84,
+          "target2": 287.91
+        },
+        {
+          "symbol": "SPDL",
+          "close": 343.8,
+          "entryLow": 337.3,
+          "entryHigh": 347.05,
+          "stop": 322.75,
+          "target1": 371.31,
+          "target2": 390.74
+        },
+        {
+          "symbol": "KAHL",
+          "close": 447.0,
+          "entryLow": 437.06,
+          "entryHigh": 451.97,
+          "stop": 416.83,
+          "target1": 486.04,
+          "target2": 513.73
         }
       ]
     }

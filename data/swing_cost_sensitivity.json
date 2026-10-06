@@ -6,22 +6,22 @@
     {
       "slippageBpsPerSide": 0,
       "allScanner": {
-        "trades": 288,
-        "netWinRatePct": 47.22,
+        "trades": 292,
+        "netWinRatePct": 46.58,
         "netAvgR": -0.016,
         "netProfitFactorR": 0.955
       },
       "dailyGateAll": {
         "trades": 114,
-        "netWinRatePct": 61.4,
-        "netAvgR": 0.218,
-        "netProfitFactorR": 1.766
+        "netWinRatePct": 59.65,
+        "netAvgR": 0.21,
+        "netProfitFactorR": 1.729
       },
       "dailyGateDevelopment": {
         "trades": 89,
-        "netWinRatePct": 60.67,
-        "netAvgR": 0.225,
-        "netProfitFactorR": 1.826
+        "netWinRatePct": 58.43,
+        "netAvgR": 0.216,
+        "netProfitFactorR": 1.775
       },
       "dailyGateLaterPeriod": {
         "trades": 25,
@@ -33,22 +33,22 @@
     {
       "slippageBpsPerSide": 10,
       "allScanner": {
-        "trades": 288,
-        "netWinRatePct": 45.14,
+        "trades": 292,
+        "netWinRatePct": 44.52,
         "netAvgR": -0.062,
-        "netProfitFactorR": 0.84
+        "netProfitFactorR": 0.839
       },
       "dailyGateAll": {
         "trades": 114,
-        "netWinRatePct": 59.65,
-        "netAvgR": 0.159,
-        "netProfitFactorR": 1.517
+        "netWinRatePct": 58.77,
+        "netAvgR": 0.153,
+        "netProfitFactorR": 1.492
       },
       "dailyGateDevelopment": {
         "trades": 89,
-        "netWinRatePct": 58.43,
-        "netAvgR": 0.165,
-        "netProfitFactorR": 1.555
+        "netWinRatePct": 57.3,
+        "netAvgR": 0.158,
+        "netProfitFactorR": 1.52
       },
       "dailyGateLaterPeriod": {
         "trades": 25,
@@ -60,22 +60,22 @@
     {
       "slippageBpsPerSide": 25,
       "allScanner": {
-        "trades": 288,
-        "netWinRatePct": 43.06,
+        "trades": 292,
+        "netWinRatePct": 43.15,
         "netAvgR": -0.132,
-        "netProfitFactorR": 0.69
+        "netProfitFactorR": 0.689
       },
       "dailyGateAll": {
         "trades": 114,
-        "netWinRatePct": 59.65,
-        "netAvgR": 0.071,
-        "netProfitFactorR": 1.207
+        "netWinRatePct": 58.77,
+        "netAvgR": 0.067,
+        "netProfitFactorR": 1.194
       },
       "dailyGateDevelopment": {
         "trades": 89,
-        "netWinRatePct": 58.43,
-        "netAvgR": 0.074,
-        "netProfitFactorR": 1.222
+        "netWinRatePct": 57.3,
+        "netAvgR": 0.07,
+        "netProfitFactorR": 1.205
       },
       "dailyGateLaterPeriod": {
         "trades": 25,
