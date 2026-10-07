@@ -9,7 +9,7 @@
         "trades": 292,
         "netWinRatePct": 46.58,
         "netAvgR": -0.016,
-        "netProfitFactorR": 0.955
+        "netProfitFactorR": 0.957
       },
       "dailyGateAll": {
         "trades": 114,
@@ -36,7 +36,7 @@
         "trades": 292,
         "netWinRatePct": 44.52,
         "netAvgR": -0.062,
-        "netProfitFactorR": 0.839
+        "netProfitFactorR": 0.84
       },
       "dailyGateAll": {
         "trades": 114,
@@ -62,8 +62,8 @@
       "allScanner": {
         "trades": 292,
         "netWinRatePct": 43.15,
-        "netAvgR": -0.132,
-        "netProfitFactorR": 0.689
+        "netAvgR": -0.131,
+        "netProfitFactorR": 0.69
       },
       "dailyGateAll": {
         "trades": 114,

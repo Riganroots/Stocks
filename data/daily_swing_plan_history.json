@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T16:53:12.785555+00:00",
+  "generatedAt": "2026-10-07T17:30:02.179487+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
@@ -137,6 +137,85 @@
           "stop": 416.83,
           "target1": 486.04,
           "target2": 513.73
+        }
+      ]
+    },
+    {
+      "marketAsOf": "2026-10-07",
+      "generatedAt": "2026-10-07T17:30:02.179487+00:00",
+      "ruleVersion": "support-pullback-v0.1.0",
+      "candidateSymbols": [
+        "NABIL",
+        "UPPER",
+        "SPDL",
+        "GBIME",
+        "NLIC",
+        "SHIVM",
+        "RHGCL"
+      ],
+      "candidates": [
+        {
+          "symbol": "NABIL",
+          "close": 532.9,
+          "entryLow": 528.64,
+          "entryHigh": 535.03,
+          "stop": 522.26,
+          "target1": 546.2,
+          "target2": 555.77
+        },
+        {
+          "symbol": "UPPER",
+          "close": 189.0,
+          "entryLow": 186.71,
+          "entryHigh": 190.15,
+          "stop": 180.85,
+          "target1": 199.79,
+          "target2": 207.36
+        },
+        {
+          "symbol": "SPDL",
+          "close": 341.0,
+          "entryLow": 334.78,
+          "entryHigh": 344.11,
+          "stop": 322.89,
+          "target1": 364.28,
+          "target2": 380.83
+        },
+        {
+          "symbol": "GBIME",
+          "close": 241.0,
+          "entryLow": 238.06,
+          "entryHigh": 242.47,
+          "stop": 228.63,
+          "target1": 257.72,
+          "target2": 269.35
+        },
+        {
+          "symbol": "NLIC",
+          "close": 721.0,
+          "entryLow": 711.65,
+          "entryHigh": 725.67,
+          "stop": 683.43,
+          "target1": 771.52,
+          "target2": 806.76
+        },
+        {
+          "symbol": "SHIVM",
+          "close": 671.0,
+          "entryLow": 662.35,
+          "entryHigh": 675.33,
+          "stop": 634.07,
+          "target1": 720.98,
+          "target2": 755.74
+        },
+        {
+          "symbol": "RHGCL",
+          "close": 254.3,
+          "entryLow": 249.32,
+          "entryHigh": 256.79,
+          "stop": 238.71,
+          "target1": 274.57,
+          "target2": 288.92
         }
       ]
     }
