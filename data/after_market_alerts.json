@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-11T16:23:23.699628+00:00",
+  "generatedAt": "2026-10-12T19:55:26.579393+00:00",
   "marketAsOf": "2026-10-07",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-10-06",
-  "dataAgeCalendarDays": 4,
-  "headline": "7 Daily Plan candidates · 2 new/change alerts · 2 warnings",
+  "dataAgeCalendarDays": 5,
+  "headline": "7 Daily Plan candidates · 3 new/change alerts · 2 warnings",
   "summary": {
-    "total": 16,
-    "actionable": 10,
+    "total": 17,
+    "actionable": 11,
     "danger": 1,
     "warn": 1,
-    "info": 8,
+    "info": 9,
     "good": 0,
     "continuing": 6,
-    "changes": 2
+    "changes": 3
   },
   "alerts": [
     {
@@ -21,9 +21,9 @@
       "kind": "data_stale",
       "severity": "danger",
       "title": "Market data may be stale",
-      "message": "Latest stored market session is 2026-10-07, 4 calendar days old. Weekend/holiday context should be checked before acting.",
+      "message": "Latest stored market session is 2026-10-07, 5 calendar days old. Weekend/holiday context should be checked before acting.",
       "marketAsOf": "2026-10-07",
-      "ageCalendarDays": 4
+      "ageCalendarDays": 5
     },
     {
       "id": "2026-10-07-candidate_removed-KAHL-kahl-no-longer-matches-daily-plan",
@@ -37,6 +37,18 @@
       "failedCriteria": [
         "RSI left the 30–49 gate"
       ]
+    },
+    {
+      "id": "2026-10-07-announcement_new-market-new-sourced-market-announcement",
+      "kind": "announcement_new",
+      "severity": "info",
+      "title": "New sourced market announcement",
+      "message": "नेपालमा प्राइभेट इक्विटी तथा भेन्चर क्यापिटल पारस्थितिक प्रणालीको मूल्यांकन तथा नियामकीय सुधारसम्बन्धी अध्ययन, 2083",
+      "marketAsOf": "2026-10-07",
+      "publishedAt": "2026-10-12",
+      "fetchedAt": "2026-10-12T19:55:23.501698+00:00",
+      "source": "Securities Board of Nepal (SEBON)",
+      "sourceUrl": "https://sebon.gov.np/news/नेपालमा-प्राइभेट-इक्विटी-तथा-भेन्चर-वयापपटल-पारक्थथततक-प्रणालीको-मू-लयाकां-न-तथा-तनयामकीय-सधुारसम्बन्धी-अध्ययन-2083"
     },
     {
       "id": "2026-10-07-price_level-GBIME-gbime-entry-range",
