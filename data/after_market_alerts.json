@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-15T15:12:19.979645+00:00",
+  "generatedAt": "2026-10-18T14:06:00.711450+00:00",
   "marketAsOf": "2026-10-15",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-10-14",
-  "dataAgeCalendarDays": 0,
-  "headline": "5 Daily Plan candidates · 4 new/change alerts · 1 warnings",
+  "dataAgeCalendarDays": 3,
+  "headline": "5 Daily Plan candidates · 6 new/change alerts · 1 warnings",
   "summary": {
-    "total": 13,
-    "actionable": 9,
+    "total": 15,
+    "actionable": 11,
     "danger": 0,
     "warn": 1,
-    "info": 8,
+    "info": 10,
     "good": 0,
     "continuing": 4,
-    "changes": 4
+    "changes": 6
   },
   "alerts": [
     {
@@ -34,10 +34,34 @@
       "kind": "announcement_new",
       "severity": "info",
       "title": "New sourced market announcement",
+      "message": "धितोपत्र बजारमा बेञ्चमार्क सूचकाङ्कको पुनर्संरचना सम्बन्धी कार्यपत्र, २०८३ परामर्शको लागि सार्बजनिक गरिएको सम्बन्धमा।",
+      "marketAsOf": "2026-10-15",
+      "publishedAt": "2026-10-16",
+      "fetchedAt": "2026-10-18T14:05:58.198680+00:00",
+      "source": "Securities Board of Nepal (SEBON)",
+      "sourceUrl": "https://sebon.gov.np/news/धितोपत्र-बजारमा-बेञ्चमार्क-सूचकाङ्कको-पुनर्संरचना-सम्बन्धी-कार्यपत्र-२०८३-परामर्शको-लागि-सार्बजनिक-गरिएको-सम्बन्धमा।"
+    },
+    {
+      "id": "2026-10-15-announcement_new-market-new-sourced-market-announcement",
+      "kind": "announcement_new",
+      "severity": "info",
+      "title": "New sourced market announcement",
+      "message": "स्टक एक्सचेञ्ज सुधार प्रक्रिया अगाडि बढाउन बोर्डका उच्च पदाधिकारी तथा नेप्सेका सञ्चालक समितिबीच छलफल सम्पन्न।",
+      "marketAsOf": "2026-10-15",
+      "publishedAt": "2026-10-16",
+      "fetchedAt": "2026-10-18T14:05:58.198680+00:00",
+      "source": "Securities Board of Nepal (SEBON)",
+      "sourceUrl": "https://sebon.gov.np/news/स्टक-एक्सचेञ्ज-सुधार-प्रक्रिया-अगाडि-बढाउन-बोर्डका-उच्च-पदाधिकारी-तथा-नेप्सेका-सञ्चालक-समितिबीच-छलफल-सम्पन्न।"
+    },
+    {
+      "id": "2026-10-15-announcement_new-market-new-sourced-market-announcement",
+      "kind": "announcement_new",
+      "severity": "info",
+      "title": "New sourced market announcement",
       "message": "सामूहिक लगानी कोषलाई दीर्घकालीन पूँजी परिचालन गर्ने माध्यमको रुपमा विकास गर्ने उद्देश्य सहित तयार गरिएको सामूहिक लगानी कोष नीति, २०८३ को मस्यौदामा राय सुझाव माग गरिएको सम्बन्धमा।",
       "marketAsOf": "2026-10-15",
       "publishedAt": "2026-10-15",
-      "fetchedAt": "2026-10-15T15:12:16.839801+00:00",
+      "fetchedAt": "2026-10-18T14:05:58.198680+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/सामूहिक-लगानी-कोषलाई-दीर्घकालीन-पूँजी-परिचालन-गर्ने-माध्यमको-रुपमा-विकास-गर्ने-उद्देश्य-सहित-तयार-गरिएको-सामूहिक-लगानी-कोष-नीति-२०८३-को-मस्यौदामा-राय-सुझाव-माग-गरिएको-सम्बन्धमा।"
     },
@@ -49,7 +73,7 @@
       "message": "धितोपत्र बजारमा संस्थागत लगानीकर्ताको प्रवेशलाई विस्तार तथा व्यवस्थित गर्न संस्थागत लगानीकर्ता नीति, २०८३ सार्वजनिक।",
       "marketAsOf": "2026-10-15",
       "publishedAt": "2026-10-15",
-      "fetchedAt": "2026-10-15T15:12:16.839801+00:00",
+      "fetchedAt": "2026-10-18T14:05:58.198680+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/धितोपत्र-बजारमा-संस्थागत-लगानीकर्ताको-प्रवेशलाई-विस्तार-तथा-व्यवस्थित-गर्न-संस्थागत-लगानीकर्ता-नीति-२०८३-सार्वजनिक।"
     },

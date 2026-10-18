@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:12:16.641348+00:00",
+  "generatedAt": "2026-10-18T14:05:57.999301+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
@@ -280,7 +280,7 @@
     },
     {
       "marketAsOf": "2026-10-15",
-      "generatedAt": "2026-10-15T15:12:16.641348+00:00",
+      "generatedAt": "2026-10-18T14:05:57.999301+00:00",
       "ruleVersion": "support-pullback-v0.1.0",
       "candidateSymbols": [
         "RHGCL",
