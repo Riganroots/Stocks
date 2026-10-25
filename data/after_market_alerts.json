@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-22T15:28:24.460680+00:00",
+  "generatedAt": "2026-10-25T14:28:53.101901+00:00",
   "marketAsOf": "2026-10-16",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-10-15",
-  "dataAgeCalendarDays": 6,
+  "dataAgeCalendarDays": 9,
   "headline": "3 Daily Plan candidates · 4 new/change alerts · 3 warnings",
   "summary": {
     "total": 11,
@@ -21,9 +21,9 @@
       "kind": "data_stale",
       "severity": "danger",
       "title": "Market data may be stale",
-      "message": "Latest stored market session is 2026-10-16, 6 calendar days old. Weekend/holiday context should be checked before acting.",
+      "message": "Latest stored market session is 2026-10-16, 9 calendar days old. Weekend/holiday context should be checked before acting.",
       "marketAsOf": "2026-10-16",
-      "ageCalendarDays": 6
+      "ageCalendarDays": 9
     },
     {
       "id": "2026-10-16-candidate_removed-KAHL-kahl-no-longer-matches-daily-plan",
@@ -59,7 +59,7 @@
       "message": "धितोपत्र बजारमा बेञ्चमार्क सूचकाङ्कको पुनर्संरचना सम्बन्धी कार्यपत्र, २०८३ परामर्शको लागि सार्बजनिक गरिएको सम्बन्धमा।",
       "marketAsOf": "2026-10-16",
       "publishedAt": "2026-10-16",
-      "fetchedAt": "2026-10-22T15:28:21.479442+00:00",
+      "fetchedAt": "2026-10-25T14:28:51.034914+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/धितोपत्र-बजारमा-बेञ्चमार्क-सूचकाङ्कको-पुनर्संरचना-सम्बन्धी-कार्यपत्र-२०८३-परामर्शको-लागि-सार्बजनिक-गरिएको-सम्बन्धमा।"
     },
@@ -71,7 +71,7 @@
       "message": "स्टक एक्सचेञ्ज सुधार प्रक्रिया अगाडि बढाउन बोर्डका उच्च पदाधिकारी तथा नेप्सेका सञ्चालक समितिबीच छलफल सम्पन्न।",
       "marketAsOf": "2026-10-16",
       "publishedAt": "2026-10-16",
-      "fetchedAt": "2026-10-22T15:28:21.479442+00:00",
+      "fetchedAt": "2026-10-25T14:28:51.034914+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/स्टक-एक्सचेञ्ज-सुधार-प्रक्रिया-अगाडि-बढाउन-बोर्डका-उच्च-पदाधिकारी-तथा-नेप्सेका-सञ्चालक-समितिबीच-छलफल-सम्पन्न।"
     },
