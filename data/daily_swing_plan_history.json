@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T16:53:29.313465+00:00",
+  "generatedAt": "2026-11-02T20:28:10.350986+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
@@ -373,6 +373,45 @@
           "stop": 155.3,
           "target1": 180.93,
           "target2": 191.18
+        }
+      ]
+    },
+    {
+      "marketAsOf": "2026-11-02",
+      "generatedAt": "2026-11-02T20:28:10.350986+00:00",
+      "ruleVersion": "support-pullback-v0.1.0",
+      "candidateSymbols": [
+        "API",
+        "KAHL",
+        "CHCL"
+      ],
+      "candidates": [
+        {
+          "symbol": "API",
+          "close": 338.3,
+          "entryLow": 334.8,
+          "entryHigh": 340.05,
+          "stop": 329.25,
+          "target1": 349.69,
+          "target2": 357.86
+        },
+        {
+          "symbol": "KAHL",
+          "close": 424.0,
+          "entryLow": 414.93,
+          "entryHigh": 428.54,
+          "stop": 401.31,
+          "target1": 452.36,
+          "target2": 472.78
+        },
+        {
+          "symbol": "CHCL",
+          "close": 340.0,
+          "entryLow": 332.82,
+          "entryHigh": 341.97,
+          "stop": 317.71,
+          "target1": 366.92,
+          "target2": 386.6
         }
       ]
     }
