@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-02T20:28:13.199750+00:00",
+  "generatedAt": "2026-11-03T17:58:38.735384+00:00",
   "marketAsOf": "2026-11-02",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-10-16",
-  "dataAgeCalendarDays": 0,
+  "dataAgeCalendarDays": 1,
   "headline": "3 Daily Plan candidates · 5 new/change alerts · 2 warnings",
   "summary": {
     "total": 9,
@@ -51,7 +51,7 @@
       "message": "नेपालमा नवीनतम वित्तीय उपकरण विकास तथा सञ्चालन व्यवस्थापनका लागि आवश्यक कानूनी, प्राविधिक तथा संस्थागत पूर्वाधारको विकास सम्बन्धी कार्य अगाडि बढाउन समिति गठन सम्बन्धमा।",
       "marketAsOf": "2026-11-02",
       "publishedAt": "2026-10-30",
-      "fetchedAt": "2026-11-02T20:28:10.544168+00:00",
+      "fetchedAt": "2026-11-03T17:58:36.367971+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/नेपालमा-नवीनतम-वित्तीय-उपकरण-विकास-तथा-सञ्चालन-व्यवस्थापनका-लागि-आवश्यक-कानूनी-प्राविधिक-तथा-संस्थागत-पूर्वाधारको-विकास-सम्बन्धी-कार्य-अगाडि-बढाउन-समिति-गठन-सम्बन्धमा।"
     },
