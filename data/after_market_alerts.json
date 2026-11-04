@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-03T17:58:38.735384+00:00",
+  "generatedAt": "2026-11-04T18:09:48.216262+00:00",
   "marketAsOf": "2026-11-02",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-10-16",
-  "dataAgeCalendarDays": 1,
-  "headline": "3 Daily Plan candidates · 5 new/change alerts · 2 warnings",
+  "dataAgeCalendarDays": 2,
+  "headline": "3 Daily Plan candidates · 6 new/change alerts · 2 warnings",
   "summary": {
-    "total": 9,
-    "actionable": 8,
+    "total": 10,
+    "actionable": 9,
     "danger": 0,
     "warn": 2,
-    "info": 6,
+    "info": 7,
     "good": 0,
     "continuing": 1,
-    "changes": 5
+    "changes": 6
   },
   "alerts": [
     {
@@ -48,10 +48,22 @@
       "kind": "announcement_new",
       "severity": "info",
       "title": "New sourced market announcement",
+      "message": "नेपाल धितोपत्र बोर्ड सूचना प्रविधि नीति, 2083।",
+      "marketAsOf": "2026-11-02",
+      "publishedAt": "2026-11-04",
+      "fetchedAt": "2026-11-04T18:09:45.327379+00:00",
+      "source": "Securities Board of Nepal (SEBON)",
+      "sourceUrl": "https://sebon.gov.np/uploads/2026/11/04/tFjS3A8dzkkLGqL5g8aJUNEJsksFLgViVVyGz9rM.pdf"
+    },
+    {
+      "id": "2026-11-02-announcement_new-market-new-sourced-market-announcement",
+      "kind": "announcement_new",
+      "severity": "info",
+      "title": "New sourced market announcement",
       "message": "नेपालमा नवीनतम वित्तीय उपकरण विकास तथा सञ्चालन व्यवस्थापनका लागि आवश्यक कानूनी, प्राविधिक तथा संस्थागत पूर्वाधारको विकास सम्बन्धी कार्य अगाडि बढाउन समिति गठन सम्बन्धमा।",
       "marketAsOf": "2026-11-02",
       "publishedAt": "2026-10-30",
-      "fetchedAt": "2026-11-03T17:58:36.367971+00:00",
+      "fetchedAt": "2026-11-04T18:09:45.327379+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/नेपालमा-नवीनतम-वित्तीय-उपकरण-विकास-तथा-सञ्चालन-व्यवस्थापनका-लागि-आवश्यक-कानूनी-प्राविधिक-तथा-संस्थागत-पूर्वाधारको-विकास-सम्बन्धी-कार्य-अगाडि-बढाउन-समिति-गठन-सम्बन्धमा।"
     },
