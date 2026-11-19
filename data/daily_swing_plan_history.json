@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T18:57:21.701895+00:00",
+  "generatedAt": "2026-11-19T19:05:40.196472+00:00",
   "ruleVersion": "support-pullback-v0.1.0",
   "entries": [
     {
@@ -461,6 +461,95 @@
           "stop": 317.84,
           "target1": 363.92,
           "target2": 382.35
+        }
+      ]
+    },
+    {
+      "marketAsOf": "2026-11-19",
+      "generatedAt": "2026-11-19T19:05:40.196472+00:00",
+      "ruleVersion": "support-pullback-v0.1.0",
+      "candidateSymbols": [
+        "API",
+        "UPPER",
+        "SHIVM",
+        "KBL",
+        "CHCL",
+        "RHPL",
+        "SPDL",
+        "KAHL"
+      ],
+      "candidates": [
+        {
+          "symbol": "API",
+          "close": 331.8,
+          "entryLow": 329.0,
+          "entryHigh": 333.35,
+          "stop": 324.37,
+          "target1": 341.38,
+          "target2": 348.19
+        },
+        {
+          "symbol": "UPPER",
+          "close": 191.9,
+          "entryLow": 190.13,
+          "entryHigh": 192.78,
+          "stop": 187.47,
+          "target1": 197.43,
+          "target2": 201.41
+        },
+        {
+          "symbol": "SHIVM",
+          "close": 671.0,
+          "entryLow": 663.97,
+          "entryHigh": 674.52,
+          "stop": 651.48,
+          "target1": 695.88,
+          "target2": 713.64
+        },
+        {
+          "symbol": "KBL",
+          "close": 229.9,
+          "entryLow": 226.53,
+          "entryHigh": 231.59,
+          "stop": 221.46,
+          "target1": 240.45,
+          "target2": 248.04
+        },
+        {
+          "symbol": "CHCL",
+          "close": 333.0,
+          "entryLow": 328.17,
+          "entryHigh": 335.42,
+          "stop": 317.98,
+          "target1": 352.5,
+          "target2": 366.31
+        },
+        {
+          "symbol": "RHPL",
+          "close": 164.9,
+          "entryLow": 161.93,
+          "entryHigh": 166.39,
+          "stop": 155.51,
+          "target1": 177.12,
+          "target2": 185.77
+        },
+        {
+          "symbol": "SPDL",
+          "close": 351.0,
+          "entryLow": 345.05,
+          "entryHigh": 353.98,
+          "stop": 330.02,
+          "target1": 378.74,
+          "target2": 398.23
+        },
+        {
+          "symbol": "KAHL",
+          "close": 434.0,
+          "entryLow": 425.94,
+          "entryHigh": 438.03,
+          "stop": 406.97,
+          "target1": 469.51,
+          "target2": 494.52
         }
       ]
     }
