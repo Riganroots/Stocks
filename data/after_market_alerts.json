@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-19T19:05:43.194691+00:00",
+  "generatedAt": "2026-11-22T17:57:38.393977+00:00",
   "marketAsOf": "2026-11-19",
   "modelVersion": "after-market-alerts-v0.2.0",
   "previousMarketAsOf": "2026-11-06",
-  "dataAgeCalendarDays": 0,
+  "dataAgeCalendarDays": 3,
   "headline": "8 Daily Plan candidates · 6 new/change alerts · 0 warnings",
   "summary": {
     "total": 18,
@@ -24,7 +24,7 @@
       "message": "बोर्ड र टोरोन्टो सेन्टरका प्रतिनिधिबीच बोर्डको क्षमता अभिबृद्धि सम्बन्धमा अन्तरक्रिया कार्यक्रम सम्पन्न।",
       "marketAsOf": "2026-11-19",
       "publishedAt": "2026-11-18",
-      "fetchedAt": "2026-11-19T19:05:40.312459+00:00",
+      "fetchedAt": "2026-11-22T17:57:35.103797+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/बोर्ड-र-टोरोन्टो-सेन्टरका-प्रतिनिधिबीच-बोर्डको-क्षमता-अभिबृद्धि-सम्बन्धमा-अन्तरक्रिया-कार्यक्रम-सम्पन्न।"
     },
@@ -36,7 +36,7 @@
       "message": "वैकल्पिक लगानी कोष नियमावली, २०८३ को मस्यौदामा राय/सुझाव पेश गर्ने सम्बन्धमा।",
       "marketAsOf": "2026-11-19",
       "publishedAt": "2026-11-18",
-      "fetchedAt": "2026-11-19T19:05:40.312459+00:00",
+      "fetchedAt": "2026-11-22T17:57:35.103797+00:00",
       "source": "Securities Board of Nepal (SEBON)",
       "sourceUrl": "https://sebon.gov.np/news/वैकल्पिक-लगानी-कोष-नियमावली-2083-को-मस्यौदामा-राय-सुझाव-पेश-गर्ने-सम्बन्धमा।"
     },
