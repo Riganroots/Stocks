@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T22:09:42.811305+00:00",
+  "generatedAt": "2026-11-24T20:45:09.326164+00:00",
   "modelVersion": "v0.1.0",
   "scores": {
     "ADBL": {
@@ -17,11 +17,11 @@
       },
       "derived": {
         "roeProxy": 6.88,
-        "pe": 20.98,
-        "pb": 1.44
+        "pe": 21.29,
+        "pb": 1.47
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -34,8 +34,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 20.98,
-            "pb": 1.44
+            "pe": 21.29,
+            "pb": 1.47
           },
           "points": 19,
           "max": 25,
@@ -44,10 +44,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 60.13,
-            "sma20": 334.27,
-            "sma50": 316.42,
-            "close": 338.0
+            "rsi14": 64.78,
+            "sma20": 337.52,
+            "sma50": 318.81,
+            "close": 343.0
           },
           "points": 20,
           "max": 20,
@@ -56,7 +56,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 123624.4
+            "avgVolume20": 119094.4
           },
           "points": 10,
           "max": 10,
@@ -66,8 +66,8 @@
           "metric": "Risk",
           "value": {
             "eps": 16.11,
-            "pe": 20.98,
-            "pb": 1.44
+            "pe": 21.29,
+            "pb": 1.47
           },
           "points": 10,
           "max": 10,
@@ -83,18 +83,18 @@
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 31,
-        "valuation": 18,
-        "technical": 8,
+        "valuation": 20,
+        "technical": 6,
         "liquidity": 10,
         "risk": 10
       },
       "derived": {
         "roeProxy": 12.6,
-        "pe": 22.03,
-        "pb": 2.78
+        "pe": 21.45,
+        "pb": 2.7
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -107,29 +107,29 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 22.03,
-            "pb": 2.78
+            "pe": 21.45,
+            "pb": 2.7
           },
-          "points": 18,
+          "points": 20,
           "max": 25,
           "explanation": "Sector-relative P/E and P/B bands."
         },
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 41.9,
-            "sma20": 338.82,
-            "sma50": 335.5,
-            "close": 331.8
+            "rsi14": 32.47,
+            "sma20": 337.62,
+            "sma50": 335.3,
+            "close": 323.0
           },
-          "points": 8,
+          "points": 6,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 296038.4
+            "avgVolume20": 298922.1
           },
           "points": 10,
           "max": 10,
@@ -139,8 +139,8 @@
           "metric": "Risk",
           "value": {
             "eps": 15.06,
-            "pe": 22.03,
-            "pb": 2.78
+            "pe": 21.45,
+            "pb": 2.7
           },
           "points": 10,
           "max": 10,
@@ -163,11 +163,11 @@
       },
       "derived": {
         "roeProxy": 6.13,
-        "pe": 43.87,
-        "pb": 2.69
+        "pe": 43.41,
+        "pb": 2.66
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -180,8 +180,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 43.87,
-            "pb": 2.69
+            "pe": 43.41,
+            "pb": 2.66
           },
           "points": 12,
           "max": 25,
@@ -190,10 +190,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 37.46,
-            "sma20": 338.09,
-            "sma50": 357.07,
-            "close": 333.0
+            "rsi14": 34.73,
+            "sma20": 337.83,
+            "sma50": 348.16,
+            "close": 329.5
           },
           "points": 2,
           "max": 20,
@@ -202,7 +202,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 41653.85
+            "avgVolume20": 38058.0
           },
           "points": 6,
           "max": 10,
@@ -212,8 +212,8 @@
           "metric": "Risk",
           "value": {
             "eps": 7.59,
-            "pe": 43.87,
-            "pb": 2.69
+            "pe": 43.41,
+            "pb": 2.66
           },
           "points": 10,
           "max": 10,
@@ -225,22 +225,22 @@
       "symbol": "GBIME",
       "status": "scored",
       "label": "Watch",
-      "score": 78,
+      "score": 73,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 18,
-        "valuation": 22,
-        "technical": 18,
+        "valuation": 20,
+        "technical": 16,
         "liquidity": 10,
-        "risk": 10
+        "risk": 9
       },
       "derived": {
         "roeProxy": 8.73,
-        "pe": 17.09,
-        "pb": 1.49
+        "pe": 18.0,
+        "pb": 1.57
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -253,29 +253,29 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 17.09,
-            "pb": 1.49
+            "pe": 18.0,
+            "pb": 1.57
           },
-          "points": 22,
+          "points": 20,
           "max": 25,
           "explanation": "Sector-relative P/E and P/B bands."
         },
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 65.75,
-            "sma20": 259.24,
-            "sma50": 251.74,
-            "close": 268.5
+            "rsi14": 77.06,
+            "sma20": 263.75,
+            "sma50": 253.61,
+            "close": 282.8
           },
-          "points": 18,
+          "points": 16,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 386792.6
+            "avgVolume20": 468728.55
           },
           "points": 10,
           "max": 10,
@@ -285,10 +285,10 @@
           "metric": "Risk",
           "value": {
             "eps": 15.71,
-            "pe": 17.09,
-            "pb": 1.49
+            "pe": 18.0,
+            "pb": 1.57
           },
-          "points": 10,
+          "points": 9,
           "max": 10,
           "explanation": "Penalty bucket for loss-making, extreme valuation, low liquidity or extreme RSI."
         }
@@ -298,22 +298,22 @@
       "symbol": "HDL",
       "status": "scored",
       "label": "Watch",
-      "score": 75,
+      "score": 71,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 35,
         "valuation": 4,
-        "technical": 20,
+        "technical": 16,
         "liquidity": 8,
         "risk": 8
       },
       "derived": {
         "roeProxy": 23.13,
-        "pe": 40.2,
-        "pb": 9.3
+        "pe": 41.64,
+        "pb": 9.63
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -326,8 +326,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 40.2,
-            "pb": 9.3
+            "pe": 41.64,
+            "pb": 9.63
           },
           "points": 4,
           "max": 25,
@@ -336,19 +336,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 57.87,
-            "sma20": 1308.19,
-            "sma50": 1258.34,
-            "close": 1315.0
+            "rsi14": 70.16,
+            "sma20": 1314.29,
+            "sma50": 1268.17,
+            "close": 1362.0
           },
-          "points": 20,
+          "points": 16,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 68197.0
+            "avgVolume20": 65001.9
           },
           "points": 8,
           "max": 10,
@@ -358,8 +358,8 @@
           "metric": "Risk",
           "value": {
             "eps": 32.71,
-            "pe": 40.2,
-            "pb": 9.3
+            "pe": 41.64,
+            "pb": 9.63
           },
           "points": 8,
           "max": 10,
@@ -382,11 +382,11 @@
       },
       "derived": {
         "roeProxy": 3.68,
-        "pe": 115.73,
-        "pb": 4.26
+        "pe": 113.81,
+        "pb": 4.19
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -399,8 +399,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 115.73,
-            "pb": 4.26
+            "pe": 113.81,
+            "pb": 4.19
           },
           "points": 4,
           "max": 25,
@@ -409,10 +409,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 44.41,
-            "sma20": 434.59,
-            "sma50": 463.71,
-            "close": 434.0
+            "rsi14": 40.75,
+            "sma20": 431.19,
+            "sma50": 458.68,
+            "close": 426.8
           },
           "points": 4,
           "max": 20,
@@ -421,7 +421,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 21226.25
+            "avgVolume20": 20014.65
           },
           "points": 6,
           "max": 10,
@@ -431,8 +431,8 @@
           "metric": "Risk",
           "value": {
             "eps": 3.75,
-            "pe": 115.73,
-            "pb": 4.26
+            "pe": 113.81,
+            "pb": 4.19
           },
           "points": 8,
           "max": 10,
@@ -444,22 +444,22 @@
       "symbol": "KBL",
       "status": "scored",
       "label": "Research",
-      "score": 94,
+      "score": 100,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 35,
         "valuation": 25,
-        "technical": 14,
+        "technical": 20,
         "liquidity": 10,
         "risk": 10
       },
       "derived": {
         "roeProxy": 16.49,
-        "pe": 8.16,
-        "pb": 1.35
+        "pe": 8.42,
+        "pb": 1.39
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -472,8 +472,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 8.16,
-            "pb": 1.35
+            "pe": 8.42,
+            "pb": 1.39
           },
           "points": 25,
           "max": 25,
@@ -482,19 +482,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 48.37,
-            "sma20": 234.91,
-            "sma50": 225.51,
-            "close": 229.9
+            "rsi14": 59.3,
+            "sma20": 234.94,
+            "sma50": 226.75,
+            "close": 237.3
           },
-          "points": 14,
+          "points": 20,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 622743.55
+            "avgVolume20": 548603.4
           },
           "points": 10,
           "max": 10,
@@ -504,8 +504,8 @@
           "metric": "Risk",
           "value": {
             "eps": 28.17,
-            "pe": 8.16,
-            "pb": 1.35
+            "pe": 8.42,
+            "pb": 1.39
           },
           "points": 10,
           "max": 10,
@@ -528,11 +528,11 @@
       },
       "derived": {
         "roeProxy": 2.94,
-        "pe": 115.16,
-        "pb": 3.39
+        "pe": 116.22,
+        "pb": 3.42
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -545,8 +545,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 115.16,
-            "pb": 3.39
+            "pe": 116.22,
+            "pb": 3.42
           },
           "points": 6,
           "max": 25,
@@ -555,10 +555,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 58.1,
-            "sma20": 324.61,
-            "sma50": 300.35,
-            "close": 325.9
+            "rsi14": 60.75,
+            "sma20": 328.0,
+            "sma50": 303.91,
+            "close": 328.9
           },
           "points": 20,
           "max": 20,
@@ -567,7 +567,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 144378.5
+            "avgVolume20": 135762.65
           },
           "points": 10,
           "max": 10,
@@ -577,8 +577,8 @@
           "metric": "Risk",
           "value": {
             "eps": 2.83,
-            "pe": 115.16,
-            "pb": 3.39
+            "pe": 116.22,
+            "pb": 3.42
           },
           "points": 8,
           "max": 10,
@@ -601,11 +601,11 @@
       },
       "derived": {
         "roeProxy": 2.56,
-        "pe": 170.89,
-        "pb": 4.37
+        "pe": 170.25,
+        "pb": 4.35
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -618,8 +618,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 170.89,
-            "pb": 4.37
+            "pe": 170.25,
+            "pb": 4.35
           },
           "points": 4,
           "max": 25,
@@ -628,10 +628,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 58.04,
-            "sma20": 260.15,
-            "sma50": 256.91,
-            "close": 270.0
+            "rsi14": 56.49,
+            "sma20": 262.92,
+            "sma50": 257.71,
+            "close": 269.0
           },
           "points": 20,
           "max": 20,
@@ -640,7 +640,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 16723.15
+            "avgVolume20": 17018.15
           },
           "points": 4,
           "max": 10,
@@ -650,8 +650,8 @@
           "metric": "Risk",
           "value": {
             "eps": 1.58,
-            "pe": 170.89,
-            "pb": 4.37
+            "pe": 170.25,
+            "pb": 4.35
           },
           "points": 8,
           "max": 10,
@@ -663,22 +663,22 @@
       "symbol": "NABIL",
       "status": "scored",
       "label": "Watch",
-      "score": 74,
+      "score": 78,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 26,
         "valuation": 16,
-        "technical": 16,
+        "technical": 20,
         "liquidity": 6,
         "risk": 10
       },
       "derived": {
         "roeProxy": 11.24,
-        "pe": 20.4,
-        "pb": 2.29
+        "pe": 20.44,
+        "pb": 2.3
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -691,8 +691,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 20.4,
-            "pb": 2.29
+            "pe": 20.44,
+            "pb": 2.3
           },
           "points": 16,
           "max": 25,
@@ -701,19 +701,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 56.8,
-            "sma20": 546.42,
-            "sma50": 546.63,
-            "close": 551.0
+            "rsi14": 58.18,
+            "sma20": 548.4,
+            "sma50": 547.13,
+            "close": 552.0
           },
-          "points": 16,
+          "points": 20,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 47783.8
+            "avgVolume20": 49443.75
           },
           "points": 6,
           "max": 10,
@@ -723,8 +723,8 @@
           "metric": "Risk",
           "value": {
             "eps": 27.01,
-            "pe": 20.4,
-            "pb": 2.29
+            "pe": 20.44,
+            "pb": 2.3
           },
           "points": 10,
           "max": 10,
@@ -757,11 +757,11 @@
       },
       "derived": {
         "roeProxy": 2.89,
-        "pe": 199.73,
-        "pb": 5.77
+        "pe": 199.45,
+        "pb": 5.76
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -774,8 +774,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 199.73,
-            "pb": 5.77
+            "pe": 199.45,
+            "pb": 5.76
           },
           "points": 4,
           "max": 25,
@@ -784,10 +784,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 43.79,
-            "sma20": 737.44,
-            "sma50": 724.96,
-            "close": 727.0
+            "rsi14": 44.03,
+            "sma20": 737.28,
+            "sma50": 725.67,
+            "close": 726.0
           },
           "points": 14,
           "max": 20,
@@ -796,7 +796,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 17749.5
+            "avgVolume20": 18521.9
           },
           "points": 4,
           "max": 10,
@@ -806,8 +806,8 @@
           "metric": "Risk",
           "value": {
             "eps": 3.64,
-            "pe": 199.73,
-            "pb": 5.77
+            "pe": 199.45,
+            "pb": 5.76
           },
           "points": 8,
           "max": 10,
@@ -819,22 +819,22 @@
       "symbol": "NRIC",
       "status": "scored",
       "label": "Caution",
-      "score": 27,
+      "score": 21,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 0,
         "valuation": 0,
-        "technical": 20,
+        "technical": 14,
         "liquidity": 6,
         "risk": 1
       },
       "derived": {
         "roeProxy": -53.13,
         "pe": null,
-        "pb": 7.68
+        "pb": 7.56
       },
       "fundamentalPeriod": "FY 082-083 Q3",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -848,7 +848,7 @@
           "metric": "Valuation",
           "value": {
             "pe": null,
-            "pb": 7.68
+            "pb": 7.56
           },
           "points": 0,
           "max": 25,
@@ -857,19 +857,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 50.99,
-            "sma20": 824.4,
-            "sma50": 822.65,
-            "close": 839.0
+            "rsi14": 48.3,
+            "sma20": 828.59,
+            "sma50": 818.5,
+            "close": 826.0
           },
-          "points": 20,
+          "points": 14,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 31252.55
+            "avgVolume20": 30750.4
           },
           "points": 6,
           "max": 10,
@@ -880,7 +880,7 @@
           "value": {
             "eps": -58.02,
             "pe": null,
-            "pb": 7.68
+            "pb": 7.56
           },
           "points": 1,
           "max": 10,
@@ -904,10 +904,10 @@
       "derived": {
         "roeProxy": -6.42,
         "pe": null,
-        "pb": 7.5
+        "pb": 6.94
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -921,7 +921,7 @@
           "metric": "Valuation",
           "value": {
             "pe": null,
-            "pb": 7.5
+            "pb": 6.94
           },
           "points": 4,
           "max": 25,
@@ -930,10 +930,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 21.58,
-            "sma20": 798.96,
-            "sma50": 844.4,
-            "close": 735.0
+            "rsi14": 14.71,
+            "sma20": 781.46,
+            "sma50": 833.44,
+            "close": 680.0
           },
           "points": 0,
           "max": 20,
@@ -942,7 +942,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 2523.0
+            "avgVolume20": 2649.85
           },
           "points": 2,
           "max": 10,
@@ -953,7 +953,7 @@
           "value": {
             "eps": -6.29,
             "pe": null,
-            "pb": 7.5
+            "pb": 6.94
           },
           "points": 0,
           "max": 10,
@@ -987,10 +987,10 @@
       "derived": {
         "roeProxy": -2.31,
         "pe": null,
-        "pb": 2.76
+        "pb": 2.73
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1004,7 +1004,7 @@
           "metric": "Valuation",
           "value": {
             "pe": null,
-            "pb": 2.76
+            "pb": 2.73
           },
           "points": 9,
           "max": 25,
@@ -1013,10 +1013,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 46.91,
-            "sma20": 261.11,
-            "sma50": 259.11,
-            "close": 258.0
+            "rsi14": 44.15,
+            "sma20": 259.87,
+            "sma50": 258.91,
+            "close": 255.2
           },
           "points": 8,
           "max": 20,
@@ -1025,7 +1025,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 17739.85
+            "avgVolume20": 15742.3
           },
           "points": 4,
           "max": 10,
@@ -1036,7 +1036,7 @@
           "value": {
             "eps": -2.16,
             "pe": null,
-            "pb": 2.76
+            "pb": 2.73
           },
           "points": 3,
           "max": 10,
@@ -1060,10 +1060,10 @@
       "derived": {
         "roeProxy": -31.53,
         "pe": null,
-        "pb": 2.46
+        "pb": 2.45
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1077,7 +1077,7 @@
           "metric": "Valuation",
           "value": {
             "pe": null,
-            "pb": 2.46
+            "pb": 2.45
           },
           "points": 11,
           "max": 25,
@@ -1086,10 +1086,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 39.87,
-            "sma20": 166.56,
-            "sma50": 173.85,
-            "close": 164.9
+            "rsi14": 39.57,
+            "sma20": 166.77,
+            "sma50": 169.03,
+            "close": 164.4
           },
           "points": 2,
           "max": 20,
@@ -1098,7 +1098,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 75028.7
+            "avgVolume20": 71150.15
           },
           "points": 8,
           "max": 10,
@@ -1109,7 +1109,7 @@
           "value": {
             "eps": -21.13,
             "pe": null,
-            "pb": 2.46
+            "pb": 2.45
           },
           "points": 3,
           "max": 10,
@@ -1132,11 +1132,11 @@
       },
       "derived": {
         "roeProxy": 1.01,
-        "pe": 809.91,
-        "pb": 8.16
+        "pe": 802.75,
+        "pb": 8.08
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1149,8 +1149,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 809.91,
-            "pb": 8.16
+            "pe": 802.75,
+            "pb": 8.08
           },
           "points": 4,
           "max": 25,
@@ -1159,10 +1159,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 37.13,
-            "sma20": 910.51,
-            "sma50": 954.6,
-            "close": 882.8
+            "rsi14": 38.26,
+            "sma20": 904.82,
+            "sma50": 946.84,
+            "close": 875.0
           },
           "points": 2,
           "max": 20,
@@ -1171,7 +1171,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 10046.6
+            "avgVolume20": 9557.45
           },
           "points": 4,
           "max": 10,
@@ -1181,8 +1181,8 @@
           "metric": "Risk",
           "value": {
             "eps": 1.09,
-            "pe": 809.91,
-            "pb": 8.16
+            "pe": 802.75,
+            "pb": 8.08
           },
           "points": 6,
           "max": 10,
@@ -1199,17 +1199,17 @@
       "components": {
         "fundamental": 31,
         "valuation": 10,
-        "technical": 20,
-        "liquidity": 4,
+        "technical": 18,
+        "liquidity": 6,
         "risk": 10
       },
       "derived": {
         "roeProxy": 12.57,
-        "pe": 23.87,
-        "pb": 3.0
+        "pe": 24.06,
+        "pb": 3.02
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1222,8 +1222,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 23.87,
-            "pb": 3.0
+            "pe": 24.06,
+            "pb": 3.02
           },
           "points": 10,
           "max": 25,
@@ -1232,21 +1232,21 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 61.06,
-            "sma20": 674.67,
-            "sma50": 661.75,
-            "close": 677.5
+            "rsi14": 66.97,
+            "sma20": 676.4,
+            "sma50": 663.55,
+            "close": 682.9
           },
-          "points": 20,
+          "points": 18,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 19180.45
+            "avgVolume20": 20648.8
           },
-          "points": 4,
+          "points": 6,
           "max": 10,
           "explanation": "20-session average trading volume."
         },
@@ -1254,8 +1254,8 @@
           "metric": "Risk",
           "value": {
             "eps": 28.38,
-            "pe": 23.87,
-            "pb": 3.0
+            "pe": 24.06,
+            "pb": 3.02
           },
           "points": 10,
           "max": 10,
@@ -1278,11 +1278,11 @@
       },
       "derived": {
         "roeProxy": 7.43,
-        "pe": 47.83,
-        "pb": 3.55
+        "pe": 47.56,
+        "pb": 3.54
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1295,8 +1295,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 47.83,
-            "pb": 3.55
+            "pe": 47.56,
+            "pb": 3.54
           },
           "points": 12,
           "max": 25,
@@ -1305,10 +1305,10 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 43.68,
-            "sma20": 684.48,
-            "sma50": 674.75,
-            "close": 671.0
+            "rsi14": 42.21,
+            "sma20": 682.17,
+            "sma50": 677.09,
+            "close": 667.3
           },
           "points": 8,
           "max": 20,
@@ -1317,7 +1317,7 @@
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 168167.85
+            "avgVolume20": 164128.35
           },
           "points": 10,
           "max": 10,
@@ -1327,8 +1327,8 @@
           "metric": "Risk",
           "value": {
             "eps": 14.03,
-            "pe": 47.83,
-            "pb": 3.55
+            "pe": 47.56,
+            "pb": 3.54
           },
           "points": 10,
           "max": 10,
@@ -1339,23 +1339,23 @@
     "SPDL": {
       "symbol": "SPDL",
       "status": "scored",
-      "label": "Caution",
-      "score": 52,
+      "label": "Neutral",
+      "score": 64,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 18,
         "valuation": 10,
-        "technical": 8,
+        "technical": 20,
         "liquidity": 6,
         "risk": 10
       },
       "derived": {
         "roeProxy": 5.54,
-        "pe": 58.02,
-        "pb": 3.21
+        "pe": 59.83,
+        "pb": 3.32
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1368,8 +1368,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 58.02,
-            "pb": 3.21
+            "pe": 59.83,
+            "pb": 3.32
           },
           "points": 10,
           "max": 25,
@@ -1378,19 +1378,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 47.26,
-            "sma20": 354.6,
-            "sma50": 353.19,
-            "close": 351.0
+            "rsi14": 56.35,
+            "sma20": 355.83,
+            "sma50": 353.0,
+            "close": 362.0
           },
-          "points": 8,
+          "points": 20,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 45239.05
+            "avgVolume20": 43823.25
           },
           "points": 6,
           "max": 10,
@@ -1400,8 +1400,8 @@
           "metric": "Risk",
           "value": {
             "eps": 6.05,
-            "pe": 58.02,
-            "pb": 3.21
+            "pe": 59.83,
+            "pb": 3.32
           },
           "points": 10,
           "max": 10,
@@ -1413,22 +1413,22 @@
       "symbol": "UPPER",
       "status": "scored",
       "label": "Neutral",
-      "score": 64,
+      "score": 58,
       "modelVersion": "v0.1.0",
       "components": {
         "fundamental": 25,
         "valuation": 7,
-        "technical": 14,
+        "technical": 8,
         "liquidity": 8,
         "risk": 10
       },
       "derived": {
         "roeProxy": 9.82,
-        "pe": 43.91,
-        "pb": 4.31
+        "pe": 43.59,
+        "pb": 4.28
       },
       "fundamentalPeriod": "FY 082-083 Q4",
-      "technicalAsOf": "2026-11-19",
+      "technicalAsOf": "2026-11-24",
       "missing": [],
       "evidence": [
         {
@@ -1441,8 +1441,8 @@
         {
           "metric": "Valuation",
           "value": {
-            "pe": 43.91,
-            "pb": 4.31
+            "pe": 43.59,
+            "pb": 4.28
           },
           "points": 7,
           "max": 25,
@@ -1451,19 +1451,19 @@
         {
           "metric": "Technical",
           "value": {
-            "rsi14": 47.84,
-            "sma20": 193.03,
-            "sma50": 190.91,
-            "close": 191.9
+            "rsi14": 45.12,
+            "sma20": 192.82,
+            "sma50": 190.93,
+            "close": 190.5
           },
-          "points": 14,
+          "points": 8,
           "max": 20,
           "explanation": "Trend position plus RSI range."
         },
         {
           "metric": "Liquidity",
           "value": {
-            "avgVolume20": 78064.25
+            "avgVolume20": 78466.45
           },
           "points": 8,
           "max": 10,
@@ -1473,8 +1473,8 @@
           "metric": "Risk",
           "value": {
             "eps": 4.37,
-            "pe": 43.91,
-            "pb": 4.31
+            "pe": 43.59,
+            "pb": 4.28
           },
           "points": 10,
           "max": 10,
