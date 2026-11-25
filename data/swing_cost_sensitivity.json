@@ -7,81 +7,81 @@
       "slippageBpsPerSide": 0,
       "allScanner": {
         "trades": 281,
-        "netWinRatePct": 43.42,
-        "netAvgR": -0.05,
-        "netProfitFactorR": 0.864
+        "netWinRatePct": 45.2,
+        "netAvgR": -0.047,
+        "netProfitFactorR": 0.871
       },
       "dailyGateAll": {
-        "trades": 99,
-        "netWinRatePct": 55.56,
-        "netAvgR": 0.113,
-        "netProfitFactorR": 1.332
+        "trades": 95,
+        "netWinRatePct": 55.79,
+        "netAvgR": 0.119,
+        "netProfitFactorR": 1.359
       },
       "dailyGateDevelopment": {
-        "trades": 68,
-        "netWinRatePct": 54.41,
-        "netAvgR": 0.109,
-        "netProfitFactorR": 1.325
+        "trades": 63,
+        "netWinRatePct": 53.97,
+        "netAvgR": 0.106,
+        "netProfitFactorR": 1.32
       },
       "dailyGateLaterPeriod": {
-        "trades": 31,
-        "netWinRatePct": 58.06,
-        "netAvgR": 0.12,
-        "netProfitFactorR": 1.347
+        "trades": 32,
+        "netWinRatePct": 59.38,
+        "netAvgR": 0.144,
+        "netProfitFactorR": 1.435
       }
     },
     {
       "slippageBpsPerSide": 10,
       "allScanner": {
         "trades": 281,
-        "netWinRatePct": 41.28,
-        "netAvgR": -0.093,
-        "netProfitFactorR": 0.762
+        "netWinRatePct": 43.42,
+        "netAvgR": -0.089,
+        "netProfitFactorR": 0.769
       },
       "dailyGateAll": {
-        "trades": 99,
-        "netWinRatePct": 54.55,
-        "netAvgR": 0.058,
-        "netProfitFactorR": 1.158
+        "trades": 95,
+        "netWinRatePct": 55.79,
+        "netAvgR": 0.065,
+        "netProfitFactorR": 1.183
       },
       "dailyGateDevelopment": {
-        "trades": 68,
-        "netWinRatePct": 52.94,
-        "netAvgR": 0.053,
-        "netProfitFactorR": 1.145
+        "trades": 63,
+        "netWinRatePct": 53.97,
+        "netAvgR": 0.051,
+        "netProfitFactorR": 1.144
       },
       "dailyGateLaterPeriod": {
-        "trades": 31,
-        "netWinRatePct": 58.06,
-        "netAvgR": 0.068,
-        "netProfitFactorR": 1.186
+        "trades": 32,
+        "netWinRatePct": 59.38,
+        "netAvgR": 0.092,
+        "netProfitFactorR": 1.262
       }
     },
     {
       "slippageBpsPerSide": 25,
       "allScanner": {
         "trades": 281,
-        "netWinRatePct": 39.86,
-        "netAvgR": -0.158,
-        "netProfitFactorR": 0.632
+        "netWinRatePct": 41.28,
+        "netAvgR": -0.153,
+        "netProfitFactorR": 0.637
       },
       "dailyGateAll": {
-        "trades": 99,
-        "netWinRatePct": 54.55,
-        "netAvgR": -0.025,
-        "netProfitFactorR": 0.938
+        "trades": 95,
+        "netWinRatePct": 55.79,
+        "netAvgR": -0.015,
+        "netProfitFactorR": 0.961
       },
       "dailyGateDevelopment": {
-        "trades": 68,
-        "netWinRatePct": 52.94,
-        "netAvgR": -0.032,
-        "netProfitFactorR": 0.921
+        "trades": 63,
+        "netWinRatePct": 53.97,
+        "netAvgR": -0.03,
+        "netProfitFactorR": 0.924
       },
       "dailyGateLaterPeriod": {
-        "trades": 31,
-        "netWinRatePct": 58.06,
-        "netAvgR": -0.009,
-        "netProfitFactorR": 0.978
+        "trades": 32,
+        "netWinRatePct": 59.38,
+        "netAvgR": 0.014,
+        "netProfitFactorR": 1.038
       }
     }
   ]
