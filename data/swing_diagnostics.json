@@ -3,118 +3,118 @@
   "sourceBacktestModel": "swing-backtest-v0.2.0",
   "sourceScannerModel": "swing-v0.1.0",
   "overall": {
-    "trades": 281,
-    "wins": 145,
-    "losses": 136,
-    "winRatePct": 51.6,
-    "avgR": 0.168,
-    "medianR": 0.046,
-    "profitFactorR": 1.613,
-    "netWins": 127,
-    "netLosses": 154,
-    "netWinRatePct": 45.2,
-    "netAvgR": -0.047,
-    "netMedianR": -0.117,
-    "netProfitFactorR": 0.871,
-    "target1Hits": 86,
-    "stopHits": 48,
-    "timeExits": 147
+    "trades": 282,
+    "wins": 143,
+    "losses": 137,
+    "winRatePct": 50.71,
+    "avgR": 0.177,
+    "medianR": 0.025,
+    "profitFactorR": 1.641,
+    "netWins": 124,
+    "netLosses": 157,
+    "netWinRatePct": 43.97,
+    "netAvgR": -0.04,
+    "netMedianR": -0.132,
+    "netProfitFactorR": 0.891,
+    "target1Hits": 87,
+    "stopHits": 50,
+    "timeExits": 145
   },
   "byScoreBucket": {
     "50-64": {
-      "trades": 148,
-      "wins": 86,
-      "losses": 62,
-      "winRatePct": 58.11,
-      "avgR": 0.259,
-      "medianR": 0.224,
-      "profitFactorR": 2.0,
-      "netWins": 76,
-      "netLosses": 72,
-      "netWinRatePct": 51.35,
-      "netAvgR": 0.03,
-      "netMedianR": 0.043,
-      "netProfitFactorR": 1.086,
-      "target1Hits": 55,
-      "stopHits": 26,
-      "timeExits": 67
+      "trades": 146,
+      "wins": 83,
+      "losses": 63,
+      "winRatePct": 56.85,
+      "avgR": 0.258,
+      "medianR": 0.16,
+      "profitFactorR": 1.981,
+      "netWins": 73,
+      "netLosses": 73,
+      "netWinRatePct": 50.0,
+      "netAvgR": 0.029,
+      "netMedianR": 0.003,
+      "netProfitFactorR": 1.084,
+      "target1Hits": 53,
+      "stopHits": 27,
+      "timeExits": 66
     },
     "65-79": {
-      "trades": 91,
-      "wins": 34,
-      "losses": 57,
-      "winRatePct": 37.36,
-      "avgR": 0.01,
-      "medianR": -0.185,
-      "profitFactorR": 1.034,
-      "netWins": 29,
-      "netLosses": 62,
-      "netWinRatePct": 31.87,
-      "netAvgR": -0.18,
+      "trades": 89,
+      "wins": 35,
+      "losses": 54,
+      "winRatePct": 39.33,
+      "avgR": 0.042,
+      "medianR": -0.168,
+      "profitFactorR": 1.139,
+      "netWins": 31,
+      "netLosses": 58,
+      "netWinRatePct": 34.83,
+      "netAvgR": -0.156,
       "netMedianR": -0.324,
-      "netProfitFactorR": 0.566,
-      "target1Hits": 19,
-      "stopHits": 16,
-      "timeExits": 56
+      "netProfitFactorR": 0.614,
+      "target1Hits": 20,
+      "stopHits": 15,
+      "timeExits": 54
     },
     "80-100": {
-      "trades": 42,
+      "trades": 47,
       "wins": 25,
-      "losses": 17,
-      "winRatePct": 59.52,
-      "avgR": 0.186,
-      "medianR": 0.176,
-      "profitFactorR": 1.757,
-      "netWins": 22,
-      "netLosses": 20,
-      "netWinRatePct": 52.38,
-      "netAvgR": -0.029,
-      "netMedianR": 0.049,
-      "netProfitFactorR": 0.912,
-      "target1Hits": 12,
-      "stopHits": 6,
-      "timeExits": 24
+      "losses": 20,
+      "winRatePct": 53.19,
+      "avgR": 0.183,
+      "medianR": 0.055,
+      "profitFactorR": 1.675,
+      "netWins": 20,
+      "netLosses": 26,
+      "netWinRatePct": 42.55,
+      "netAvgR": -0.038,
+      "netMedianR": -0.057,
+      "netProfitFactorR": 0.897,
+      "target1Hits": 14,
+      "stopHits": 8,
+      "timeExits": 25
     }
   },
   "dimensions": {
     "trend": {
       "10": {
-        "trades": 89,
-        "winRatePct": 50.56,
-        "avgR": 0.124,
-        "profitFactorR": 1.436
-      },
-      "20": {
-        "trades": 67,
-        "winRatePct": 43.28,
-        "avgR": 0.031,
-        "profitFactorR": 1.103
-      },
-      "0": {
-        "trades": 57,
-        "winRatePct": 66.67,
-        "avgR": 0.447,
-        "profitFactorR": 2.781
+        "trades": 90,
+        "winRatePct": 50.0,
+        "avgR": 0.143,
+        "profitFactorR": 1.504
       },
       "30": {
-        "trades": 68,
-        "winRatePct": 48.53,
-        "avgR": 0.125,
-        "profitFactorR": 1.494
+        "trades": 72,
+        "winRatePct": 44.44,
+        "avgR": 0.128,
+        "profitFactorR": 1.488
+      },
+      "20": {
+        "trades": 66,
+        "winRatePct": 46.97,
+        "avgR": 0.079,
+        "profitFactorR": 1.269
+      },
+      "0": {
+        "trades": 54,
+        "winRatePct": 64.81,
+        "avgR": 0.421,
+        "profitFactorR": 2.593
       }
     },
     "momentum": {
       "12": {
-        "trades": 77,
-        "winRatePct": 62.34,
-        "avgR": 0.391,
-        "profitFactorR": 2.997
+        "trades": 78,
+        "winRatePct": 60.26,
+        "avgR": 0.4,
+        "profitFactorR": 3.057
       },
       "20": {
         "trades": 192,
-        "winRatePct": 46.35,
-        "avgR": 0.059,
-        "profitFactorR": 1.196
+        "winRatePct": 45.83,
+        "avgR": 0.069,
+        "profitFactorR": 1.223
       },
       "6": {
         "trades": 6,
@@ -132,27 +132,27 @@
     "liquidity": {
       "12": {
         "trades": 80,
-        "winRatePct": 56.25,
-        "avgR": 0.221,
-        "profitFactorR": 1.828
+        "winRatePct": 55.0,
+        "avgR": 0.211,
+        "profitFactorR": 1.767
       },
       "16": {
         "trades": 67,
-        "winRatePct": 52.24,
-        "avgR": 0.118,
-        "profitFactorR": 1.44
+        "winRatePct": 53.73,
+        "avgR": 0.153,
+        "profitFactorR": 1.58
       },
       "8": {
-        "trades": 43,
-        "winRatePct": 44.19,
-        "avgR": -0.039,
-        "profitFactorR": 0.897
+        "trades": 44,
+        "winRatePct": 40.91,
+        "avgR": -0.062,
+        "profitFactorR": 0.844
       },
       "20": {
         "trades": 89,
-        "winRatePct": 51.69,
-        "avgR": 0.265,
-        "profitFactorR": 2.128
+        "winRatePct": 50.56,
+        "avgR": 0.291,
+        "profitFactorR": 2.27
       },
       "0-4": {
         "trades": 2,
@@ -163,54 +163,54 @@
     },
     "participation": {
       "2": {
-        "trades": 96,
-        "winRatePct": 55.21,
-        "avgR": 0.271,
-        "profitFactorR": 2.238
+        "trades": 95,
+        "winRatePct": 56.84,
+        "avgR": 0.347,
+        "profitFactorR": 2.719
       },
       "8": {
-        "trades": 58,
-        "winRatePct": 48.28,
-        "avgR": 0.099,
-        "profitFactorR": 1.296
+        "trades": 60,
+        "winRatePct": 41.67,
+        "avgR": 0.016,
+        "profitFactorR": 1.045
       },
       "5": {
-        "trades": 71,
-        "winRatePct": 46.48,
-        "avgR": 0.077,
-        "profitFactorR": 1.248
+        "trades": 70,
+        "winRatePct": 47.14,
+        "avgR": 0.101,
+        "profitFactorR": 1.316
       },
       "10": {
-        "trades": 56,
-        "winRatePct": 55.36,
-        "avgR": 0.176,
-        "profitFactorR": 1.685
+        "trades": 57,
+        "winRatePct": 54.39,
+        "avgR": 0.158,
+        "profitFactorR": 1.585
       }
     },
     "location": {
       "20": {
-        "trades": 78,
-        "winRatePct": 60.26,
-        "avgR": 0.287,
-        "profitFactorR": 1.885
-      },
-      "8": {
-        "trades": 69,
-        "winRatePct": 47.83,
-        "avgR": 0.083,
-        "profitFactorR": 1.297
-      },
-      "15": {
-        "trades": 95,
-        "winRatePct": 52.63,
-        "avgR": 0.189,
-        "profitFactorR": 1.779
+        "trades": 77,
+        "winRatePct": 59.74,
+        "avgR": 0.321,
+        "profitFactorR": 1.999
       },
       "3": {
-        "trades": 35,
-        "winRatePct": 37.14,
-        "avgR": 0.017,
-        "profitFactorR": 1.078
+        "trades": 37,
+        "winRatePct": 37.84,
+        "avgR": 0.037,
+        "profitFactorR": 1.166
+      },
+      "15": {
+        "trades": 99,
+        "winRatePct": 51.52,
+        "avgR": 0.211,
+        "profitFactorR": 1.858
+      },
+      "8": {
+        "trades": 65,
+        "winRatePct": 46.15,
+        "avgR": 0.04,
+        "profitFactorR": 1.133
       },
       "0": {
         "trades": 4,
@@ -221,28 +221,28 @@
     },
     "rsi14": {
       "40-49": {
-        "trades": 103,
-        "winRatePct": 52.43,
-        "avgR": 0.217,
-        "profitFactorR": 1.832
+        "trades": 102,
+        "winRatePct": 50.98,
+        "avgR": 0.22,
+        "profitFactorR": 1.844
       },
       "50-59": {
-        "trades": 100,
-        "winRatePct": 42.0,
-        "avgR": -0.058,
-        "profitFactorR": 0.828
+        "trades": 102,
+        "winRatePct": 44.12,
+        "avgR": 0.005,
+        "profitFactorR": 1.014
       },
       "60-69": {
-        "trades": 37,
-        "winRatePct": 56.76,
-        "avgR": 0.252,
-        "profitFactorR": 2.272
+        "trades": 38,
+        "winRatePct": 50.0,
+        "avgR": 0.18,
+        "profitFactorR": 1.761
       },
       "30-39": {
-        "trades": 31,
-        "winRatePct": 67.74,
-        "avgR": 0.48,
-        "profitFactorR": 2.789
+        "trades": 30,
+        "winRatePct": 66.67,
+        "avgR": 0.462,
+        "profitFactorR": 2.666
       },
       ">=70": {
         "trades": 8,
@@ -258,101 +258,101 @@
       }
     },
     "volumeRatio": {
-      "<0.7": {
-        "trades": 95,
-        "winRatePct": 54.74,
-        "avgR": 0.265,
-        "profitFactorR": 2.196
-      },
-      "1.0-1.49": {
-        "trades": 60,
-        "winRatePct": 48.33,
-        "avgR": 0.108,
-        "profitFactorR": 1.327
-      },
       "0.7-0.99": {
         "trades": 70,
         "winRatePct": 47.14,
-        "avgR": 0.08,
-        "profitFactorR": 1.259
+        "avgR": 0.102,
+        "profitFactorR": 1.327
+      },
+      "<0.7": {
+        "trades": 93,
+        "winRatePct": 56.99,
+        "avgR": 0.345,
+        "profitFactorR": 2.677
+      },
+      "1.0-1.49": {
+        "trades": 62,
+        "winRatePct": 41.94,
+        "avgR": 0.028,
+        "profitFactorR": 1.08
       },
       ">=1.5": {
-        "trades": 56,
-        "winRatePct": 55.36,
-        "avgR": 0.176,
-        "profitFactorR": 1.685
+        "trades": 57,
+        "winRatePct": 54.39,
+        "avgR": 0.158,
+        "profitFactorR": 1.585
       }
     },
     "supportDistancePct": {
       "<=3": {
-        "trades": 81,
-        "winRatePct": 59.26,
-        "avgR": 0.272,
-        "profitFactorR": 1.836
-      },
-      "6-10": {
-        "trades": 70,
-        "winRatePct": 48.57,
-        "avgR": 0.068,
-        "profitFactorR": 1.249
-      },
-      "3-6": {
-        "trades": 97,
-        "winRatePct": 54.64,
-        "avgR": 0.221,
-        "profitFactorR": 1.956
+        "trades": 80,
+        "winRatePct": 57.5,
+        "avgR": 0.283,
+        "profitFactorR": 1.845
       },
       ">10": {
-        "trades": 33,
-        "winRatePct": 30.3,
-        "avgR": -0.037,
-        "profitFactorR": 0.865
+        "trades": 35,
+        "winRatePct": 31.43,
+        "avgR": -0.013,
+        "profitFactorR": 0.951
+      },
+      "3-6": {
+        "trades": 101,
+        "winRatePct": 54.46,
+        "avgR": 0.259,
+        "profitFactorR": 2.147
+      },
+      "6-10": {
+        "trades": 66,
+        "winRatePct": 46.97,
+        "avgR": 0.024,
+        "profitFactorR": 1.082
       }
     },
     "resistanceHeadroomPct": {
       "5-10": {
-        "trades": 127,
-        "winRatePct": 46.46,
-        "avgR": 0.088,
-        "profitFactorR": 1.305
+        "trades": 124,
+        "winRatePct": 45.97,
+        "avgR": 0.075,
+        "profitFactorR": 1.25
       },
       "2-5": {
-        "trades": 95,
-        "winRatePct": 54.74,
-        "avgR": 0.189,
-        "profitFactorR": 1.714
+        "trades": 101,
+        "winRatePct": 53.47,
+        "avgR": 0.233,
+        "profitFactorR": 1.939
       },
       "<2": {
         "trades": 19,
-        "winRatePct": 63.16,
-        "avgR": 0.233,
-        "profitFactorR": 2.116
+        "winRatePct": 57.89,
+        "avgR": 0.143,
+        "profitFactorR": 1.545
       },
       ">=10": {
-        "trades": 40,
-        "winRatePct": 55.0,
-        "avgR": 0.336,
-        "profitFactorR": 2.237
+        "trades": 38,
+        "winRatePct": 55.26,
+        "avgR": 0.378,
+        "profitFactorR": 2.359
       }
     },
     "atrPct14": {
       "2-3": {
-        "trades": 115,
-        "winRatePct": 50.43,
-        "avgR": 0.095,
-        "profitFactorR": 1.302
+        "trades": 114,
+        "winRatePct": 50.0,
+        "avgR": 0.133,
+        "profitFactorR": 1.443
       },
       "3-5": {
         "trades": 105,
         "winRatePct": 49.52,
-        "avgR": 0.21,
-        "profitFactorR": 1.885
+        "avgR": 0.218,
+        "profitFactorR": 1.863
       },
       "<2": {
-        "trades": 43,
-        "winRatePct": 65.12,
-        "avgR": 0.291,
-        "profitFactorR": 2.261
+        "trades": 45,
+        "winRatePct": 60.0,
+        "avgR": 0.228,
+        "profitFactorR": 1.903
       },
       ">=5": {
         "trades": 18,
@@ -365,16 +365,16 @@
   "riskFlags": {
     "below_sma50": {
       "flagged": {
-        "trades": 146,
-        "winRatePct": 56.85,
-        "avgR": 0.25,
-        "profitFactorR": 1.921
+        "trades": 144,
+        "winRatePct": 55.56,
+        "avgR": 0.247,
+        "profitFactorR": 1.895
       },
       "notFlagged": {
-        "trades": 135,
-        "winRatePct": 45.93,
-        "avgR": 0.078,
-        "profitFactorR": 1.283
+        "trades": 138,
+        "winRatePct": 45.65,
+        "avgR": 0.104,
+        "profitFactorR": 1.377
       }
     },
     "high_volatility": {
@@ -385,10 +385,10 @@
         "profitFactorR": 1.274
       },
       "notFlagged": {
-        "trades": 263,
-        "winRatePct": 52.47,
-        "avgR": 0.173,
-        "profitFactorR": 1.64
+        "trades": 264,
+        "winRatePct": 51.52,
+        "avgR": 0.183,
+        "profitFactorR": 1.67
       }
     },
     "low_liquidity": {
@@ -399,24 +399,24 @@
         "profitFactorR": 0.0
       },
       "notFlagged": {
-        "trades": 279,
-        "winRatePct": 51.97,
-        "avgR": 0.17,
-        "profitFactorR": 1.621
+        "trades": 280,
+        "winRatePct": 51.07,
+        "avgR": 0.18,
+        "profitFactorR": 1.649
       }
     },
     "near_resistance": {
       "flagged": {
         "trades": 19,
-        "winRatePct": 63.16,
-        "avgR": 0.233,
-        "profitFactorR": 2.116
+        "winRatePct": 57.89,
+        "avgR": 0.143,
+        "profitFactorR": 1.545
       },
       "notFlagged": {
-        "trades": 262,
-        "winRatePct": 50.76,
-        "avgR": 0.163,
-        "profitFactorR": 1.585
+        "trades": 263,
+        "winRatePct": 50.19,
+        "avgR": 0.18,
+        "profitFactorR": 1.647
       }
     },
     "rsi_overbought": {
@@ -427,10 +427,10 @@
         "profitFactorR": 7.619
       },
       "notFlagged": {
-        "trades": 273,
-        "winRatePct": 51.28,
-        "avgR": 0.162,
-        "profitFactorR": 1.577
+        "trades": 274,
+        "winRatePct": 50.36,
+        "avgR": 0.172,
+        "profitFactorR": 1.606
       }
     },
     "rsi_oversold": {
@@ -441,10 +441,10 @@
         "profitFactorR": null
       },
       "notFlagged": {
-        "trades": 279,
-        "winRatePct": 51.25,
-        "avgR": 0.157,
-        "profitFactorR": 1.569
+        "trades": 280,
+        "winRatePct": 50.36,
+        "avgR": 0.166,
+        "profitFactorR": 1.598
       }
     },
     "weak_20d_return": {
@@ -452,13 +452,13 @@
         "trades": 10,
         "winRatePct": 70.0,
         "avgR": 0.757,
-        "profitFactorR": 4.164
+        "profitFactorR": 4.165
       },
       "notFlagged": {
-        "trades": 271,
-        "winRatePct": 50.92,
-        "avgR": 0.146,
-        "profitFactorR": 1.531
+        "trades": 272,
+        "winRatePct": 50.0,
+        "avgR": 0.156,
+        "profitFactorR": 1.561
       }
     }
   }

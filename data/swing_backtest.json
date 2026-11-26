@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25",
+  "generatedAt": "2026-11-26",
   "modelVersion": "swing-backtest-v0.2.0",
   "scannerModelVersion": "swing-v0.1.0",
   "assumptions": {
@@ -19,112 +19,112 @@
     "dpChargeStatus": "provisional until confirmed from user's Naasa contract note"
   },
   "overall": {
-    "trades": 281,
-    "wins": 145,
-    "losses": 136,
-    "winRatePct": 51.6,
-    "avgR": 0.168,
-    "medianR": 0.046,
-    "profitFactorR": 1.613,
-    "netWins": 127,
-    "netLosses": 154,
-    "netWinRatePct": 45.2,
-    "netAvgR": -0.047,
-    "netMedianR": -0.117,
-    "netProfitFactorR": 0.871,
-    "target1Hits": 86,
-    "stopHits": 48,
-    "timeExits": 147
+    "trades": 282,
+    "wins": 143,
+    "losses": 137,
+    "winRatePct": 50.71,
+    "avgR": 0.177,
+    "medianR": 0.025,
+    "profitFactorR": 1.641,
+    "netWins": 124,
+    "netLosses": 157,
+    "netWinRatePct": 43.97,
+    "netAvgR": -0.04,
+    "netMedianR": -0.132,
+    "netProfitFactorR": 0.891,
+    "target1Hits": 87,
+    "stopHits": 50,
+    "timeExits": 145
   },
   "byScoreBucket": {
     "50-64": {
-      "trades": 148,
-      "wins": 86,
-      "losses": 62,
-      "winRatePct": 58.11,
-      "avgR": 0.259,
-      "medianR": 0.224,
-      "profitFactorR": 2.0,
-      "netWins": 76,
-      "netLosses": 72,
-      "netWinRatePct": 51.35,
-      "netAvgR": 0.03,
-      "netMedianR": 0.043,
-      "netProfitFactorR": 1.086,
-      "target1Hits": 55,
-      "stopHits": 26,
-      "timeExits": 67
+      "trades": 146,
+      "wins": 83,
+      "losses": 63,
+      "winRatePct": 56.85,
+      "avgR": 0.258,
+      "medianR": 0.16,
+      "profitFactorR": 1.981,
+      "netWins": 73,
+      "netLosses": 73,
+      "netWinRatePct": 50.0,
+      "netAvgR": 0.029,
+      "netMedianR": 0.003,
+      "netProfitFactorR": 1.084,
+      "target1Hits": 53,
+      "stopHits": 27,
+      "timeExits": 66
     },
     "65-79": {
-      "trades": 91,
-      "wins": 34,
-      "losses": 57,
-      "winRatePct": 37.36,
-      "avgR": 0.01,
-      "medianR": -0.185,
-      "profitFactorR": 1.034,
-      "netWins": 29,
-      "netLosses": 62,
-      "netWinRatePct": 31.87,
-      "netAvgR": -0.18,
+      "trades": 89,
+      "wins": 35,
+      "losses": 54,
+      "winRatePct": 39.33,
+      "avgR": 0.042,
+      "medianR": -0.168,
+      "profitFactorR": 1.139,
+      "netWins": 31,
+      "netLosses": 58,
+      "netWinRatePct": 34.83,
+      "netAvgR": -0.156,
       "netMedianR": -0.324,
-      "netProfitFactorR": 0.566,
-      "target1Hits": 19,
-      "stopHits": 16,
-      "timeExits": 56
+      "netProfitFactorR": 0.614,
+      "target1Hits": 20,
+      "stopHits": 15,
+      "timeExits": 54
     },
     "80-100": {
-      "trades": 42,
+      "trades": 47,
       "wins": 25,
-      "losses": 17,
-      "winRatePct": 59.52,
-      "avgR": 0.186,
-      "medianR": 0.176,
-      "profitFactorR": 1.757,
-      "netWins": 22,
-      "netLosses": 20,
-      "netWinRatePct": 52.38,
-      "netAvgR": -0.029,
-      "netMedianR": 0.049,
-      "netProfitFactorR": 0.912,
-      "target1Hits": 12,
-      "stopHits": 6,
-      "timeExits": 24
+      "losses": 20,
+      "winRatePct": 53.19,
+      "avgR": 0.183,
+      "medianR": 0.055,
+      "profitFactorR": 1.675,
+      "netWins": 20,
+      "netLosses": 26,
+      "netWinRatePct": 42.55,
+      "netAvgR": -0.038,
+      "netMedianR": -0.057,
+      "netProfitFactorR": 0.897,
+      "target1Hits": 14,
+      "stopHits": 8,
+      "timeExits": 25
     }
   },
   "bySymbol": {
     "ADBL": {
       "trades": 17,
-      "wins": 9,
-      "losses": 8,
-      "winRatePct": 52.94,
-      "avgR": 0.198,
-      "medianR": 0.046,
-      "profitFactorR": 1.788,
+      "wins": 10,
+      "losses": 7,
+      "winRatePct": 58.82,
+      "avgR": 0.359,
+      "medianR": 0.106,
+      "profitFactorR": 2.675,
       "netWins": 8,
-      "netLosses": 9,
+      "netLosses": 8,
       "netWinRatePct": 47.06,
-      "netAvgR": -0.015,
-      "netMedianR": -0.133,
-      "netProfitFactorR": 0.958,
-      "target1Hits": 5,
+      "netAvgR": 0.131,
+      "netMedianR": 0.0,
+      "netProfitFactorR": 1.436,
+      "target1Hits": 6,
       "stopHits": 3,
-      "timeExits": 9
+      "timeExits": 8
     },
     "API": {
       "trades": 16,
       "wins": 8,
       "losses": 8,
       "winRatePct": 50.0,
-      "avgR": 0.182,
+      "avgR": 0.179,
       "medianR": -0.049,
-      "profitFactorR": 1.621,
+      "profitFactorR": 1.608,
       "netWins": 6,
       "netLosses": 10,
       "netWinRatePct": 37.5,
-      "netAvgR": -0.055,
+      "netAvgR": -0.058,
       "netMedianR": -0.144,
-      "netProfitFactorR": 0.864,
+      "netProfitFactorR": 0.856,
       "target1Hits": 5,
       "stopHits": 3,
       "timeExits": 8
@@ -152,15 +152,15 @@
       "wins": 13,
       "losses": 8,
       "winRatePct": 61.9,
-      "avgR": 0.512,
+      "avgR": 0.514,
       "medianR": 0.637,
-      "profitFactorR": 3.432,
+      "profitFactorR": 3.464,
       "netWins": 13,
       "netLosses": 8,
       "netWinRatePct": 61.9,
-      "netAvgR": 0.265,
+      "netAvgR": 0.269,
       "netMedianR": 0.297,
-      "netProfitFactorR": 1.914,
+      "netProfitFactorR": 1.935,
       "target1Hits": 10,
       "stopHits": 3,
       "timeExits": 8
@@ -170,15 +170,15 @@
       "wins": 8,
       "losses": 7,
       "winRatePct": 53.33,
-      "avgR": 0.008,
+      "avgR": 0.011,
       "medianR": 0.097,
-      "profitFactorR": 1.028,
+      "profitFactorR": 1.039,
       "netWins": 4,
       "netLosses": 11,
       "netWinRatePct": 26.67,
-      "netAvgR": -0.252,
+      "netAvgR": -0.248,
       "netMedianR": -0.067,
-      "netProfitFactorR": 0.397,
+      "netProfitFactorR": 0.401,
       "target1Hits": 4,
       "stopHits": 3,
       "timeExits": 8
@@ -188,14 +188,14 @@
       "wins": 0,
       "losses": 2,
       "winRatePct": 0.0,
-      "avgR": -0.66,
-      "medianR": -0.66,
+      "avgR": -0.686,
+      "medianR": -0.686,
       "profitFactorR": 0.0,
       "netWins": 0,
       "netLosses": 2,
       "netWinRatePct": 0.0,
-      "netAvgR": -0.774,
-      "netMedianR": -0.774,
+      "netAvgR": -0.799,
+      "netMedianR": -0.799,
       "netProfitFactorR": 0.0,
       "target1Hits": 0,
       "stopHits": 1,
@@ -203,18 +203,18 @@
     },
     "KBL": {
       "trades": 17,
-      "wins": 9,
+      "wins": 8,
       "losses": 8,
-      "winRatePct": 52.94,
-      "avgR": 0.216,
-      "medianR": 0.142,
-      "profitFactorR": 2.091,
-      "netWins": 9,
-      "netLosses": 8,
-      "netWinRatePct": 52.94,
-      "netAvgR": 0.026,
-      "netMedianR": 0.042,
-      "netProfitFactorR": 1.096,
+      "winRatePct": 47.06,
+      "avgR": 0.205,
+      "medianR": 0.0,
+      "profitFactorR": 2.139,
+      "netWins": 8,
+      "netLosses": 9,
+      "netWinRatePct": 47.06,
+      "netAvgR": 0.017,
+      "netMedianR": -0.168,
+      "netProfitFactorR": 1.066,
       "target1Hits": 6,
       "stopHits": 1,
       "timeExits": 10
@@ -224,35 +224,35 @@
       "wins": 7,
       "losses": 7,
       "winRatePct": 50.0,
-      "avgR": 0.147,
-      "medianR": 0.145,
-      "profitFactorR": 1.442,
+      "avgR": 0.149,
+      "medianR": 0.167,
+      "profitFactorR": 1.449,
       "netWins": 7,
       "netLosses": 7,
       "netWinRatePct": 50.0,
-      "netAvgR": -0.052,
-      "netMedianR": -0.006,
-      "netProfitFactorR": 0.876,
+      "netAvgR": -0.05,
+      "netMedianR": 0.014,
+      "netProfitFactorR": 0.882,
       "target1Hits": 5,
       "stopHits": 3,
       "timeExits": 6
     },
     "MKHC": {
       "trades": 11,
-      "wins": 5,
-      "losses": 6,
-      "winRatePct": 45.45,
-      "avgR": 0.046,
-      "medianR": -0.087,
-      "profitFactorR": 1.141,
-      "netWins": 4,
-      "netLosses": 7,
-      "netWinRatePct": 36.36,
-      "netAvgR": -0.108,
-      "netMedianR": -0.221,
-      "netProfitFactorR": 0.733,
-      "target1Hits": 4,
-      "stopHits": 2,
+      "wins": 4,
+      "losses": 7,
+      "winRatePct": 36.36,
+      "avgR": -0.138,
+      "medianR": -0.458,
+      "profitFactorR": 0.671,
+      "netWins": 3,
+      "netLosses": 8,
+      "netWinRatePct": 27.27,
+      "netAvgR": -0.289,
+      "netMedianR": -0.588,
+      "netProfitFactorR": 0.437,
+      "target1Hits": 3,
+      "stopHits": 3,
       "timeExits": 5
     },
     "NABIL": {
@@ -260,36 +260,36 @@
       "wins": 9,
       "losses": 6,
       "winRatePct": 60.0,
-      "avgR": 0.3,
+      "avgR": 0.298,
       "medianR": 0.228,
-      "profitFactorR": 2.643,
+      "profitFactorR": 2.619,
       "netWins": 8,
       "netLosses": 7,
       "netWinRatePct": 53.33,
-      "netAvgR": 0.026,
+      "netAvgR": 0.024,
       "netMedianR": 0.037,
-      "netProfitFactorR": 1.094,
+      "netProfitFactorR": 1.089,
       "target1Hits": 4,
       "stopHits": 2,
       "timeExits": 9
     },
     "NLIC": {
-      "trades": 14,
+      "trades": 15,
       "wins": 10,
-      "losses": 4,
-      "winRatePct": 71.43,
-      "avgR": 0.429,
-      "medianR": 0.665,
-      "profitFactorR": 3.832,
+      "losses": 5,
+      "winRatePct": 66.67,
+      "avgR": 0.388,
+      "medianR": 0.455,
+      "profitFactorR": 3.509,
       "netWins": 9,
-      "netLosses": 5,
-      "netWinRatePct": 64.29,
-      "netAvgR": 0.154,
-      "netMedianR": 0.409,
-      "netProfitFactorR": 1.685,
+      "netLosses": 6,
+      "netWinRatePct": 60.0,
+      "netAvgR": 0.106,
+      "netMedianR": 0.246,
+      "netProfitFactorR": 1.426,
       "target1Hits": 7,
       "stopHits": 1,
-      "timeExits": 6
+      "timeExits": 7
     },
     "NRIC": {
       "trades": 15,
@@ -304,7 +304,7 @@
       "netWinRatePct": 53.33,
       "netAvgR": 0.022,
       "netMedianR": 0.02,
-      "netProfitFactorR": 1.053,
+      "netProfitFactorR": 1.054,
       "target1Hits": 7,
       "stopHits": 4,
       "timeExits": 4
@@ -320,9 +320,9 @@
       "netWins": 1,
       "netLosses": 5,
       "netWinRatePct": 16.67,
-      "netAvgR": -0.395,
+      "netAvgR": -0.396,
       "netMedianR": -0.354,
-      "netProfitFactorR": 0.253,
+      "netProfitFactorR": 0.252,
       "target1Hits": 1,
       "stopHits": 2,
       "timeExits": 3
@@ -332,33 +332,33 @@
       "wins": 6,
       "losses": 8,
       "winRatePct": 42.86,
-      "avgR": 0.194,
+      "avgR": 0.253,
       "medianR": -0.152,
-      "profitFactorR": 1.775,
+      "profitFactorR": 2.013,
       "netWins": 5,
       "netLosses": 9,
       "netWinRatePct": 35.71,
-      "netAvgR": 0.029,
+      "netAvgR": 0.084,
       "netMedianR": -0.248,
-      "netProfitFactorR": 1.091,
-      "target1Hits": 2,
+      "netProfitFactorR": 1.264,
+      "target1Hits": 3,
       "stopHits": 1,
-      "timeExits": 11
+      "timeExits": 10
     },
     "RHPL": {
       "trades": 11,
       "wins": 5,
       "losses": 6,
       "winRatePct": 45.45,
-      "avgR": 0.1,
+      "avgR": 0.174,
       "medianR": -0.197,
-      "profitFactorR": 1.277,
+      "profitFactorR": 1.484,
       "netWins": 5,
       "netLosses": 6,
       "netWinRatePct": 45.45,
-      "netAvgR": -0.091,
+      "netAvgR": -0.026,
       "netMedianR": -0.345,
-      "netProfitFactorR": 0.794,
+      "netProfitFactorR": 0.94,
       "target1Hits": 4,
       "stopHits": 2,
       "timeExits": 5
@@ -383,36 +383,36 @@
     },
     "SCB": {
       "trades": 20,
-      "wins": 11,
-      "losses": 9,
-      "winRatePct": 55.0,
-      "avgR": 0.008,
-      "medianR": 0.077,
-      "profitFactorR": 1.027,
-      "netWins": 8,
-      "netLosses": 12,
-      "netWinRatePct": 40.0,
-      "netAvgR": -0.252,
-      "netMedianR": -0.108,
-      "netProfitFactorR": 0.42,
+      "wins": 10,
+      "losses": 10,
+      "winRatePct": 50.0,
+      "avgR": -0.091,
+      "medianR": 0.014,
+      "profitFactorR": 0.741,
+      "netWins": 6,
+      "netLosses": 14,
+      "netWinRatePct": 30.0,
+      "netAvgR": -0.349,
+      "netMedianR": -0.198,
+      "netProfitFactorR": 0.312,
       "target1Hits": 3,
-      "stopHits": 5,
-      "timeExits": 12
+      "stopHits": 6,
+      "timeExits": 11
     },
     "SHIVM": {
       "trades": 16,
       "wins": 7,
-      "losses": 9,
+      "losses": 8,
       "winRatePct": 43.75,
-      "avgR": -0.014,
-      "medianR": -0.189,
-      "profitFactorR": 0.954,
+      "avgR": 0.105,
+      "medianR": -0.066,
+      "profitFactorR": 1.354,
       "netWins": 6,
       "netLosses": 10,
       "netWinRatePct": 37.5,
-      "netAvgR": -0.216,
-      "netMedianR": -0.345,
-      "netProfitFactorR": 0.482,
+      "netAvgR": -0.115,
+      "netMedianR": -0.243,
+      "netProfitFactorR": 0.715,
       "target1Hits": 3,
       "stopHits": 3,
       "timeExits": 10
@@ -422,15 +422,15 @@
       "wins": 8,
       "losses": 6,
       "winRatePct": 57.14,
-      "avgR": 0.37,
+      "avgR": 0.425,
       "medianR": 0.275,
-      "profitFactorR": 4.015,
+      "profitFactorR": 4.217,
       "netWins": 8,
       "netLosses": 6,
       "netWinRatePct": 57.14,
-      "netAvgR": 0.193,
+      "netAvgR": 0.237,
       "netMedianR": 0.115,
-      "netProfitFactorR": 2.115,
+      "netProfitFactorR": 2.304,
       "target1Hits": 3,
       "stopHits": 0,
       "timeExits": 11
@@ -440,15 +440,15 @@
       "wins": 11,
       "losses": 7,
       "winRatePct": 61.11,
-      "avgR": 0.201,
-      "medianR": 0.096,
-      "profitFactorR": 1.968,
-      "netWins": 8,
-      "netLosses": 10,
-      "netWinRatePct": 44.44,
-      "netAvgR": -0.01,
-      "netMedianR": -0.115,
-      "netProfitFactorR": 0.966,
+      "avgR": 0.212,
+      "medianR": 0.142,
+      "profitFactorR": 2.021,
+      "netWins": 9,
+      "netLosses": 9,
+      "netWinRatePct": 50.0,
+      "netAvgR": 0.001,
+      "netMedianR": -0.048,
+      "netProfitFactorR": 1.003,
       "target1Hits": 5,
       "stopHits": 2,
       "timeExits": 11
@@ -457,9 +457,9 @@
   "trades": [
     {
       "symbol": "ADBL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
       "setupScore": 56,
       "scoreBucket": "50-64",
       "components": {
@@ -473,160 +473,211 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.52363443426922,
-        "volumeRatio": 0.52,
+        "rsi14": 41.8773952738303,
+        "volumeRatio": 0.7,
         "supportDistancePct": 2.57,
         "resistanceHeadroomPct": 5.74,
-        "atrPct14": 2.4544614784904084,
-        "avgVolume20": 36509.7
+        "atrPct14": 2.4183818880791113,
+        "avgVolume20": 35574.45
       },
-      "entry": 297.82,
-      "stop": 286.58,
+      "entry": 294.79,
+      "stop": 286.61,
       "target1": 307.85,
-      "exitPrice": 293.0,
-      "rMultiple": -0.429,
-      "netRMultiple": -0.651,
+      "exitPrice": 294.6,
+      "rMultiple": -0.023,
+      "netRMultiple": -0.318,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 88,
-        "plannedRiskNpr": 989.12
+        "quantity": 122,
+        "plannedRiskNpr": 997.96
       },
       "costs": {
-        "quantity": 88,
-        "buyTurnover": 26208.16,
-        "sellTurnover": 25784.0,
-        "buyBrokerage": 94.35,
-        "sellBrokerage": 92.82,
-        "buyRegulatoryFee": 3.93,
-        "sellRegulatoryFee": 3.87,
+        "quantity": 122,
+        "buyTurnover": 35964.38,
+        "sellTurnover": 35941.2,
+        "buyBrokerage": 129.47,
+        "sellBrokerage": 129.39,
+        "buyRegulatoryFee": 5.39,
+        "sellRegulatoryFee": 5.39,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 26306.44,
-        "netProceeds": 25662.31,
-        "netProfit": -644.13,
+        "buyTotal": 36099.25,
+        "netProceeds": 35781.42,
+        "netProfit": -317.83,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "ADBL",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
-      "exitDate": "2026-03-01",
-      "setupScore": 62,
-      "scoreBucket": "50-64",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
+      "exitDate": "2026-03-03",
+      "setupScore": 84,
+      "scoreBucket": "80-100",
       "components": {
-        "trend": 10,
-        "momentum": 12,
+        "trend": 30,
+        "momentum": 20,
         "liquidity": 12,
-        "participation": 8,
+        "participation": 2,
         "location": 20
       },
-      "riskFlags": [
-        "below_sma50"
-      ],
+      "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 44.08253281710991,
-        "volumeRatio": 1.06,
-        "supportDistancePct": 1.22,
-        "resistanceHeadroomPct": 5.91,
-        "atrPct14": 2.0821247143855373,
-        "avgVolume20": 34228.95
+        "rsi14": 51.35080466070768,
+        "volumeRatio": 0.69,
+        "supportDistancePct": 2.35,
+        "resistanceHeadroomPct": 4.7,
+        "atrPct14": 2.108358880232822,
+        "avgVolume20": 31941.4
       },
-      "entry": 296.13,
-      "stop": 286.93,
-      "target1": 304.18,
-      "exitPrice": 304.18,
-      "rMultiple": 0.875,
-      "netRMultiple": 0.56,
+      "entry": 295.0,
+      "stop": 288.94,
+      "target1": 307.39,
+      "exitPrice": 307.39,
+      "rMultiple": 2.045,
+      "netRMultiple": 1.537,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 108,
-        "plannedRiskNpr": 993.6
+        "quantity": 165,
+        "plannedRiskNpr": 999.9
       },
       "costs": {
-        "quantity": 108,
-        "buyTurnover": 31982.04,
-        "sellTurnover": 32851.44,
-        "buyBrokerage": 115.14,
-        "sellBrokerage": 118.27,
-        "buyRegulatoryFee": 4.8,
-        "sellRegulatoryFee": 4.93,
+        "quantity": 165,
+        "buyTurnover": 48675.0,
+        "sellTurnover": 50719.35,
+        "buyBrokerage": 175.23,
+        "sellBrokerage": 167.37,
+        "buyRegulatoryFee": 7.3,
+        "sellRegulatoryFee": 7.61,
         "dpCharge": 25.0,
-        "capitalGainsTax": 45.1,
-        "taxableGain": 601.27,
-        "buyTotal": 32101.97,
-        "netProceeds": 32658.15,
-        "netProfit": 556.18,
-        "holdingDays": 3
+        "capitalGainsTax": 124.64,
+        "taxableGain": 1661.84,
+        "buyTotal": 48857.53,
+        "netProceeds": 50394.73,
+        "netProfit": 1537.2,
+        "holdingDays": 2
       },
       "exitReason": "target1"
     },
     {
       "symbol": "ADBL",
-      "signalDate": "2026-03-30",
-      "fillDate": "2026-03-31",
-      "exitDate": "2026-04-08",
-      "setupScore": 72,
+      "signalDate": "2026-03-26",
+      "fillDate": "2026-03-30",
+      "exitDate": "2026-04-07",
+      "setupScore": 69,
       "scoreBucket": "65-79",
       "components": {
-        "trend": 20,
-        "momentum": 20,
+        "trend": 30,
+        "momentum": 12,
         "liquidity": 16,
         "participation": 8,
-        "location": 8
+        "location": 3
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.182003486647474,
-        "volumeRatio": 1.06,
-        "supportDistancePct": 7.91,
-        "resistanceHeadroomPct": 7.59,
-        "atrPct14": 3.1858105815608795,
-        "avgVolume20": 85431.4
+        "rsi14": 67.33141662841334,
+        "volumeRatio": 1.1,
+        "supportDistancePct": 12.64,
+        "resistanceHeadroomPct": 2.07,
+        "atrPct14": 2.9248363414218104,
+        "avgVolume20": 77798.4
       },
-      "entry": 316.0,
-      "stop": 288.48,
-      "target1": 354.13,
-      "exitPrice": 310.9,
-      "rMultiple": -0.185,
-      "netRMultiple": -0.296,
+      "entry": 318.0,
+      "stop": 288.56,
+      "target1": 353.24,
+      "exitPrice": 308.0,
+      "rMultiple": -0.34,
+      "netRMultiple": -0.445,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 36,
-        "plannedRiskNpr": 990.72
+        "quantity": 33,
+        "plannedRiskNpr": 971.52
       },
       "costs": {
-        "quantity": 36,
-        "buyTurnover": 11376.0,
-        "sellTurnover": 11192.4,
-        "buyBrokerage": 40.95,
-        "sellBrokerage": 40.29,
-        "buyRegulatoryFee": 1.71,
-        "sellRegulatoryFee": 1.68,
+        "quantity": 33,
+        "buyTurnover": 10494.0,
+        "sellTurnover": 10164.0,
+        "buyBrokerage": 37.78,
+        "sellBrokerage": 36.59,
+        "buyRegulatoryFee": 1.57,
+        "sellRegulatoryFee": 1.52,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 11418.66,
-        "netProceeds": 11125.43,
-        "netProfit": -293.23,
+        "buyTotal": 10533.35,
+        "netProceeds": 10100.89,
+        "netProfit": -432.47,
         "holdingDays": 8
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "ADBL",
-      "signalDate": "2026-04-09",
-      "fillDate": "2026-04-10",
-      "exitDate": "2026-04-23",
-      "setupScore": 76,
+      "signalDate": "2026-04-08",
+      "fillDate": "2026-04-09",
+      "exitDate": "2026-04-15",
+      "setupScore": 79,
       "scoreBucket": "65-79",
       "components": {
         "trend": 20,
+        "momentum": 20,
+        "liquidity": 16,
+        "participation": 8,
+        "location": 15
+      },
+      "riskFlags": [],
+      "signalMetrics": {
+        "rsi14": 48.24972224709403,
+        "volumeRatio": 1.03,
+        "supportDistancePct": 3.12,
+        "resistanceHeadroomPct": 9.36,
+        "atrPct14": 3.187780617100376,
+        "avgVolume20": 89677.45
+      },
+      "entry": 312.0,
+      "stop": 298.51,
+      "target1": 326.39,
+      "exitPrice": 326.39,
+      "rMultiple": 1.067,
+      "netRMultiple": 0.799,
+      "referencePosition": {
+        "capital": 100000.0,
+        "riskPct": 1.0,
+        "quantity": 74,
+        "plannedRiskNpr": 998.26
+      },
+      "costs": {
+        "quantity": 74,
+        "buyTurnover": 23088.0,
+        "sellTurnover": 24152.86,
+        "buyBrokerage": 83.12,
+        "sellBrokerage": 86.95,
+        "buyRegulatoryFee": 3.46,
+        "sellRegulatoryFee": 3.62,
+        "dpCharge": 25.0,
+        "capitalGainsTax": 64.7,
+        "taxableGain": 862.71,
+        "buyTotal": 23174.58,
+        "netProceeds": 23972.58,
+        "netProfit": 798.0,
+        "holdingDays": 6
+      },
+      "exitReason": "target1"
+    },
+    {
+      "symbol": "ADBL",
+      "signalDate": "2026-04-16",
+      "fillDate": "2026-04-17",
+      "exitDate": "2026-04-27",
+      "setupScore": 86,
+      "scoreBucket": "80-100",
+      "components": {
+        "trend": 30,
         "momentum": 20,
         "liquidity": 16,
         "participation": 5,
@@ -634,93 +685,40 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.45474297468411,
-        "volumeRatio": 0.84,
-        "supportDistancePct": 5.16,
-        "resistanceHeadroomPct": 7.05,
-        "atrPct14": 3.0794934080115506,
-        "avgVolume20": 90606.45
+        "rsi14": 54.17205220324909,
+        "volumeRatio": 0.77,
+        "supportDistancePct": 5.4,
+        "resistanceHeadroomPct": 6.78,
+        "atrPct14": 3.0793002442922197,
+        "avgVolume20": 75255.15
       },
-      "entry": 320.05,
+      "entry": 318.95,
       "stop": 298.75,
-      "target1": 342.81,
-      "exitPrice": 312.0,
-      "rMultiple": -0.378,
-      "netRMultiple": -0.515,
-      "referencePosition": {
-        "capital": 100000.0,
-        "riskPct": 1.0,
-        "quantity": 46,
-        "plannedRiskNpr": 979.8
-      },
-      "costs": {
-        "quantity": 46,
-        "buyTurnover": 14722.3,
-        "sellTurnover": 14352.0,
-        "buyBrokerage": 53.0,
-        "sellBrokerage": 51.67,
-        "buyRegulatoryFee": 2.21,
-        "sellRegulatoryFee": 2.15,
-        "dpCharge": 25.0,
-        "capitalGainsTax": 0.0,
-        "taxableGain": 0,
-        "buyTotal": 14777.51,
-        "netProceeds": 14273.18,
-        "netProfit": -504.33,
-        "holdingDays": 13
-      },
-      "exitReason": "time_exit"
-    },
-    {
-      "symbol": "ADBL",
-      "signalDate": "2026-04-24",
-      "fillDate": "2026-04-27",
-      "exitDate": "2026-04-27",
-      "setupScore": 73,
-      "scoreBucket": "65-79",
-      "components": {
-        "trend": 20,
-        "momentum": 20,
-        "liquidity": 16,
-        "participation": 2,
-        "location": 15
-      },
-      "riskFlags": [],
-      "signalMetrics": {
-        "rsi14": 47.805280551178214,
-        "volumeRatio": 0.29,
-        "supportDistancePct": 3.77,
-        "resistanceHeadroomPct": 4.76,
-        "atrPct14": 2.984845994647024,
-        "avgVolume20": 59769.85
-      },
-      "entry": 308.33,
-      "stop": 298.86,
-      "target1": 331.28,
-      "exitPrice": 298.86,
+      "target1": 338.83,
+      "exitPrice": 298.75,
       "rMultiple": -1.0,
-      "netRMultiple": -1.266,
+      "netRMultiple": -1.14,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 105,
-        "plannedRiskNpr": 994.35
+        "quantity": 49,
+        "plannedRiskNpr": 989.8
       },
       "costs": {
-        "quantity": 105,
-        "buyTurnover": 32374.65,
-        "sellTurnover": 31380.3,
-        "buyBrokerage": 116.55,
-        "sellBrokerage": 112.97,
-        "buyRegulatoryFee": 4.86,
-        "sellRegulatoryFee": 4.71,
+        "quantity": 49,
+        "buyTurnover": 15628.55,
+        "sellTurnover": 14638.75,
+        "buyBrokerage": 56.26,
+        "sellBrokerage": 52.7,
+        "buyRegulatoryFee": 2.34,
+        "sellRegulatoryFee": 2.2,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 32496.05,
-        "netProceeds": 31237.62,
-        "netProfit": -1258.43,
-        "holdingDays": 0
+        "buyTotal": 15687.16,
+        "netProceeds": 14558.85,
+        "netProfit": -1128.3,
+        "holdingDays": 10
       },
       "exitReason": "stop"
     },
@@ -742,11 +740,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.475223611102486,
+        "rsi14": 46.46633803775466,
         "volumeRatio": 0.18,
         "supportDistancePct": 4.62,
         "resistanceHeadroomPct": 5.16,
-        "atrPct14": 3.180502261045863,
+        "atrPct14": 3.1806240703214814,
         "avgVolume20": 56061.35
       },
       "entry": 310.0,
@@ -797,11 +795,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.17136743635203,
+        "rsi14": 48.16653730424585,
         "volumeRatio": 1.28,
         "supportDistancePct": 4.13,
         "resistanceHeadroomPct": 3.8,
-        "atrPct14": 2.322910282158861,
+        "atrPct14": 2.322960597274763,
         "avgVolume20": 21550.85
       },
       "entry": 307.1,
@@ -850,11 +848,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.16247465937573,
+        "rsi14": 57.160052062384835,
         "volumeRatio": 2.16,
         "supportDistancePct": 5.42,
         "resistanceHeadroomPct": 4.25,
-        "atrPct14": 2.2237133727231853,
+        "atrPct14": 2.223735134874787,
         "avgVolume20": 22087.25
       },
       "entry": 312.4,
@@ -905,11 +903,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.214806559178726,
+        "rsi14": 43.21322107330811,
         "volumeRatio": 0.71,
         "supportDistancePct": 4.19,
         "resistanceHeadroomPct": 6.74,
-        "atrPct14": 2.7113865541059203,
+        "atrPct14": 2.7114008377480228,
         "avgVolume20": 24738.75
       },
       "entry": 308.0,
@@ -960,11 +958,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.4275609426838,
+        "rsi14": 42.42624720849417,
         "volumeRatio": 0.36,
         "supportDistancePct": 5.18,
         "resistanceHeadroomPct": 7.09,
-        "atrPct14": 3.144993684899068,
+        "atrPct14": 3.145003577688319,
         "avgVolume20": 23881.5
       },
       "entry": 307.2,
@@ -1015,11 +1013,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 49.23949605224453,
+        "rsi14": 49.239031321736135,
         "volumeRatio": 1.38,
         "supportDistancePct": 5.84,
         "resistanceHeadroomPct": 5.32,
-        "atrPct14": 2.8779868801793786,
+        "atrPct14": 2.877990667443874,
         "avgVolume20": 18143.95
       },
       "entry": 307.0,
@@ -1070,11 +1068,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 69.88939244055699,
+        "rsi14": 69.8892035536928,
         "volumeRatio": 3.76,
         "supportDistancePct": 9.44,
         "resistanceHeadroomPct": 0.34,
-        "atrPct14": 2.7709690555381066,
+        "atrPct14": 2.770970674327375,
         "avgVolume20": 20931.7
       },
       "entry": 304.0,
@@ -1125,11 +1123,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 36.99582705353819,
+        "rsi14": 36.99577450186514,
         "volumeRatio": 0.61,
         "supportDistancePct": 2.95,
         "resistanceHeadroomPct": 7.87,
-        "atrPct14": 3.33734240513282,
+        "atrPct14": 3.3373430510013327,
         "avgVolume20": 66801.4
       },
       "entry": 302.0,
@@ -1180,11 +1178,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.38145392203076,
+        "rsi14": 45.38143796597369,
         "volumeRatio": 0.47,
         "supportDistancePct": 3.33,
         "resistanceHeadroomPct": 3.93,
-        "atrPct14": 2.374235948366828,
+        "atrPct14": 2.374236086865096,
         "avgVolume20": 32558.35
       },
       "entry": 300.0,
@@ -1235,11 +1233,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 52.48774398552778,
+        "rsi14": 52.48773806122512,
         "volumeRatio": 2.11,
         "supportDistancePct": 5.69,
         "resistanceHeadroomPct": 3.09,
-        "atrPct14": 2.13878695074719,
+        "atrPct14": 2.138787010545506,
         "avgVolume20": 39627.95
       },
       "entry": 305.5,
@@ -1288,11 +1286,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 65.7964110844442,
+        "rsi14": 65.79641020949933,
         "volumeRatio": 1.08,
         "supportDistancePct": 10.79,
         "resistanceHeadroomPct": 4.41,
-        "atrPct14": 2.697352564695777,
+        "atrPct14": 2.6973525779253618,
         "avgVolume20": 123208.65
       },
       "entry": 325.0,
@@ -1329,7 +1327,7 @@
       "symbol": "ADBL",
       "signalDate": "2026-11-13",
       "fillDate": "2026-11-17",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 80,
       "scoreBucket": "80-100",
       "components": {
@@ -1341,19 +1339,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.07805326171287,
+        "rsi14": 58.07805255130468,
         "volumeRatio": 0.19,
         "supportDistancePct": 8.63,
         "resistanceHeadroomPct": 7.46,
-        "atrPct14": 3.4065112363080887,
+        "atrPct14": 3.406511246290641,
         "avgVolume20": 126000.75
       },
       "entry": 334.66,
       "stop": 303.25,
       "target1": 369.65,
-      "exitPrice": 342.0,
-      "rMultiple": 0.234,
-      "netRMultiple": 0.118,
+      "exitPrice": 338.0,
+      "rMultiple": 0.106,
+      "netRMultiple": 0.0,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -1363,24 +1361,24 @@
       "costs": {
         "quantity": 31,
         "buyTurnover": 10374.46,
-        "sellTurnover": 10602.0,
+        "sellTurnover": 10478.0,
         "buyBrokerage": 37.35,
-        "sellBrokerage": 38.17,
+        "sellBrokerage": 37.72,
         "buyRegulatoryFee": 1.56,
-        "sellRegulatoryFee": 1.59,
+        "sellRegulatoryFee": 1.57,
         "dpCharge": 25.0,
-        "capitalGainsTax": 9.29,
-        "taxableGain": 123.88,
+        "capitalGainsTax": 0.03,
+        "taxableGain": 0.34,
         "buyTotal": 10413.36,
-        "netProceeds": 10527.95,
-        "netProfit": 114.59,
-        "holdingDays": 8
+        "netProceeds": 10413.68,
+        "netProfit": 0.32,
+        "holdingDays": 9
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "API",
-      "signalDate": "2026-02-05",
+      "signalDate": "2026-02-08",
       "fillDate": "2026-02-09",
       "exitDate": "2026-02-25",
       "setupScore": 88,
@@ -1394,39 +1392,39 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 60.68964162052036,
-        "volumeRatio": 2.22,
-        "supportDistancePct": 6.93,
-        "resistanceHeadroomPct": 3.0,
-        "atrPct14": 2.6691419493970363,
-        "avgVolume20": 241579.7
+        "rsi14": 58.80674493241805,
+        "volumeRatio": 2.25,
+        "supportDistancePct": 6.59,
+        "resistanceHeadroomPct": 3.38,
+        "atrPct14": 2.7611679471644166,
+        "avgVolume20": 260683.85
       },
-      "entry": 298.19,
-      "stop": 279.98,
-      "target1": 316.92,
+      "entry": 299.17,
+      "stop": 279.92,
+      "target1": 319.2,
       "exitPrice": 302.0,
-      "rMultiple": 0.209,
-      "netRMultiple": 0.056,
+      "rMultiple": 0.147,
+      "netRMultiple": 0.004,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 54,
-        "plannedRiskNpr": 983.34
+        "quantity": 51,
+        "plannedRiskNpr": 981.75
       },
       "costs": {
-        "quantity": 54,
-        "buyTurnover": 16102.26,
-        "sellTurnover": 16308.0,
-        "buyBrokerage": 57.97,
-        "sellBrokerage": 58.71,
-        "buyRegulatoryFee": 2.42,
-        "sellRegulatoryFee": 2.45,
+        "quantity": 51,
+        "buyTurnover": 15257.67,
+        "sellTurnover": 15402.0,
+        "buyBrokerage": 54.93,
+        "sellBrokerage": 55.45,
+        "buyRegulatoryFee": 2.29,
+        "sellRegulatoryFee": 2.31,
         "dpCharge": 25.0,
-        "capitalGainsTax": 4.44,
-        "taxableGain": 59.2,
-        "buyTotal": 16162.64,
-        "netProceeds": 16217.4,
-        "netProfit": 54.76,
+        "capitalGainsTax": 0.33,
+        "taxableGain": 4.36,
+        "buyTotal": 15314.89,
+        "netProceeds": 15318.92,
+        "netProfit": 4.03,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
@@ -1447,11 +1445,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 69.32930997626161,
+        "rsi14": 69.3126398225742,
         "volumeRatio": 1.14,
         "supportDistancePct": 13.99,
         "resistanceHeadroomPct": 2.76,
-        "atrPct14": 3.6249589145386985,
+        "atrPct14": 3.625291812314993,
         "avgVolume20": 1005356.15
       },
       "entry": 349.31,
@@ -1500,11 +1498,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 55.85423321644959,
+        "rsi14": 55.84795795850269,
         "volumeRatio": 0.61,
         "supportDistancePct": 7.69,
         "resistanceHeadroomPct": 4.84,
-        "atrPct14": 3.926616960322924,
+        "atrPct14": 3.926767266414382,
         "avgVolume20": 930406.7
       },
       "entry": 351.0,
@@ -1553,11 +1551,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 46.113099511332656,
+        "rsi14": 46.10911311010922,
         "volumeRatio": 0.62,
         "supportDistancePct": 4.45,
         "resistanceHeadroomPct": 5.34,
-        "atrPct14": 3.383333178430268,
+        "atrPct14": 3.383402031671808,
         "avgVolume20": 498119.05
       },
       "entry": 336.1,
@@ -1608,11 +1606,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 53.245357869571556,
+        "rsi14": 53.24356471957627,
         "volumeRatio": 0.41,
         "supportDistancePct": 5.18,
         "resistanceHeadroomPct": 6.57,
-        "atrPct14": 3.4227070944421913,
+        "atrPct14": 3.422739461220629,
         "avgVolume20": 253567.45
       },
       "entry": 343.8,
@@ -1661,11 +1659,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 47.721545429574256,
+        "rsi14": 47.720826327177036,
         "volumeRatio": 0.89,
         "supportDistancePct": 5.26,
         "resistanceHeadroomPct": 5.29,
-        "atrPct14": 2.7224522502325725,
+        "atrPct14": 2.722462771204281,
         "avgVolume20": 297645.65
       },
       "entry": 348.0,
@@ -1716,11 +1714,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.587261559581925,
+        "rsi14": 40.586785919807745,
         "volumeRatio": 0.3,
         "supportDistancePct": 0.44,
         "resistanceHeadroomPct": 7.17,
-        "atrPct14": 2.265356152311418,
+        "atrPct14": 2.265360897056361,
         "avgVolume20": 255961.05
       },
       "entry": 340.1,
@@ -1771,11 +1769,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 33.977699526104814,
+        "rsi14": 33.97728584526868,
         "volumeRatio": 0.91,
         "supportDistancePct": 1.46,
         "resistanceHeadroomPct": 8.93,
-        "atrPct14": 2.2237383944336617,
+        "atrPct14": 2.2237422555265702,
         "avgVolume20": 219176.8
       },
       "entry": 337.87,
@@ -1826,11 +1824,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 31.037331855128144,
+        "rsi14": 31.036979921716963,
         "volumeRatio": 1.09,
         "supportDistancePct": 0.45,
         "resistanceHeadroomPct": 8.57,
-        "atrPct14": 2.717090087302762,
+        "atrPct14": 2.717093451554714,
         "avgVolume20": 190157.0
       },
       "entry": 333.0,
@@ -1881,11 +1879,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 32.8703287312607,
+        "rsi14": 32.87019417895341,
         "volumeRatio": 0.73,
         "supportDistancePct": 1.79,
         "resistanceHeadroomPct": 10.56,
-        "atrPct14": 2.2952498369799654,
+        "atrPct14": 2.2952512566490264,
         "avgVolume20": 167966.75
       },
       "entry": 325.1,
@@ -1934,11 +1932,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.284170890041935,
+        "rsi14": 58.28411832009578,
         "volumeRatio": 1.15,
         "supportDistancePct": 11.34,
         "resistanceHeadroomPct": 2.03,
-        "atrPct14": 3.0516343520473557,
+        "atrPct14": 3.051635147497082,
         "avgVolume20": 201622.85
       },
       "entry": 336.94,
@@ -1989,11 +1987,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.20790612469202,
+        "rsi14": 46.20787598390514,
         "volumeRatio": 1.39,
         "supportDistancePct": 8.13,
         "resistanceHeadroomPct": 5.72,
-        "atrPct14": 2.4144079264356617,
+        "atrPct14": 2.4144082651369865,
         "avgVolume20": 170786.6
       },
       "entry": 334.0,
@@ -2044,11 +2042,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.568957829105784,
+        "rsi14": 40.56894187088694,
         "volumeRatio": 1.34,
         "supportDistancePct": 0.76,
         "resistanceHeadroomPct": 3.82,
-        "atrPct14": 2.2060290606940374,
+        "atrPct14": 2.2060292126480445,
         "avgVolume20": 124622.05
       },
       "entry": 325.0,
@@ -2097,11 +2095,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.18548439705546,
+        "rsi14": 57.18548101425048,
         "volumeRatio": 1.04,
         "supportDistancePct": 5.58,
         "resistanceHeadroomPct": 4.75,
-        "atrPct14": 2.2483512049721046,
+        "atrPct14": 2.248351253287067,
         "avgVolume20": 219949.0
       },
       "entry": 334.59,
@@ -2150,11 +2148,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.25235709625408,
+        "rsi14": 51.252355258788874,
         "volumeRatio": 0.5,
         "supportDistancePct": 3.28,
         "resistanceHeadroomPct": 5.75,
-        "atrPct14": 1.9492408263786822,
+        "atrPct14": 1.9492408479645924,
         "avgVolume20": 275161.85
       },
       "entry": 337.0,
@@ -2203,11 +2201,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 66.73257346570453,
+        "rsi14": 66.7325726240143,
         "volumeRatio": 1.9,
         "supportDistancePct": 5.63,
         "resistanceHeadroomPct": 4.15,
-        "atrPct14": 2.0445605939910285,
+        "atrPct14": 2.0445606046236353,
         "avgVolume20": 290183.95
       },
       "entry": 341.12,
@@ -2258,11 +2256,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 52.7872497334366,
+        "rsi14": 52.43148281186495,
         "volumeRatio": 1.54,
         "supportDistancePct": 3.56,
         "resistanceHeadroomPct": 2.73,
-        "atrPct14": 2.0327204135439376,
+        "atrPct14": 2.0322092953396,
         "avgVolume20": 40650.1
       },
       "entry": 476.33,
@@ -2313,11 +2311,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.79454083204303,
+        "rsi14": 46.56106936294288,
         "volumeRatio": 0.82,
         "supportDistancePct": 2.54,
         "resistanceHeadroomPct": 4.06,
-        "atrPct14": 2.1919514666810214,
+        "atrPct14": 2.1916413671626414,
         "avgVolume20": 35971.25
       },
       "entry": 468.0,
@@ -2366,11 +2364,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 63.73495873859672,
+        "rsi14": 63.692391030750905,
         "volumeRatio": 0.91,
         "supportDistancePct": 10.66,
         "resistanceHeadroomPct": 2.84,
-        "atrPct14": 2.451056513285793,
+        "atrPct14": 2.450969657997842,
         "avgVolume20": 62203.2
       },
       "entry": 499.03,
@@ -2419,11 +2417,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 44.701343887229804,
+        "rsi14": 44.68029425029386,
         "volumeRatio": 0.32,
         "supportDistancePct": 2.65,
         "resistanceHeadroomPct": 7.16,
-        "atrPct14": 3.206022043732127,
+        "atrPct14": 3.2059816593358583,
         "avgVolume20": 70559.65
       },
       "entry": 488.5,
@@ -2474,11 +2472,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.270287479662194,
+        "rsi14": 43.25751557840602,
         "volumeRatio": 0.79,
         "supportDistancePct": 2.47,
         "resistanceHeadroomPct": 4.89,
-        "atrPct14": 2.927039786778839,
+        "atrPct14": 2.927021881246467,
         "avgVolume20": 41982.55
       },
       "entry": 483.0,
@@ -2529,11 +2527,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.86371330576485,
+        "rsi14": 48.8590783966412,
         "volumeRatio": 0.98,
         "supportDistancePct": 6.19,
         "resistanceHeadroomPct": 3.56,
-        "atrPct14": 2.2407393974233,
+        "atrPct14": 2.2407342646968145,
         "avgVolume20": 26794.75
       },
       "entry": 480.0,
@@ -2582,11 +2580,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 65.87179749235177,
+        "rsi14": 65.87045415020245,
         "volumeRatio": 0.79,
         "supportDistancePct": 9.94,
         "resistanceHeadroomPct": 2.06,
-        "atrPct14": 2.247900351162455,
+        "atrPct14": 2.247898170503054,
         "avgVolume20": 38137.6
       },
       "entry": 486.41,
@@ -2635,11 +2633,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.27647093151533,
+        "rsi14": 49.27561670176918,
         "volumeRatio": 0.73,
         "supportDistancePct": 1.44,
         "resistanceHeadroomPct": 5.22,
-        "atrPct14": 2.1225267464945956,
+        "atrPct14": 2.1225258886369622,
         "avgVolume20": 35699.9
       },
       "entry": 481.0,
@@ -2690,11 +2688,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.98992809014379,
+        "rsi14": 47.9894504254952,
         "volumeRatio": 0.71,
         "supportDistancePct": 1.87,
         "resistanceHeadroomPct": 5.65,
-        "atrPct14": 1.8121871556042601,
+        "atrPct14": 1.8121866011014107,
         "avgVolume20": 20392.0
       },
       "entry": 481.0,
@@ -2743,11 +2741,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.84531632909609,
+        "rsi14": 58.84514552561882,
         "volumeRatio": 0.96,
         "supportDistancePct": 3.41,
         "resistanceHeadroomPct": 2.67,
-        "atrPct14": 1.8945111894324282,
+        "atrPct14": 1.894510964369639,
         "avgVolume20": 17254.1
       },
       "entry": 482.08,
@@ -2798,11 +2796,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 66.49417889384907,
+        "rsi14": 66.4940536347402,
         "volumeRatio": 2.96,
         "supportDistancePct": 5.14,
         "resistanceHeadroomPct": 0.83,
-        "atrPct14": 2.1396261016236937,
+        "atrPct14": 2.1396259110472657,
         "avgVolume20": 22698.7
       },
       "entry": 483.61,
@@ -2853,11 +2851,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 64.20160460004831,
+        "rsi14": 64.20151678376928,
         "volumeRatio": 1.56,
         "supportDistancePct": 5.45,
         "resistanceHeadroomPct": 0.5,
-        "atrPct14": 1.7781207883705987,
+        "atrPct14": 1.778120690869827,
         "avgVolume20": 36508.2
       },
       "entry": 490.65,
@@ -2908,11 +2906,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.618202601510646,
+        "rsi14": 37.618144913852895,
         "volumeRatio": 0.27,
         "supportDistancePct": 1.04,
         "resistanceHeadroomPct": 4.38,
-        "atrPct14": 1.8190426115373834,
+        "atrPct14": 1.81904256992243,
         "avgVolume20": 29521.35
       },
       "entry": 480.0,
@@ -2963,11 +2961,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 39.172040573623015,
+        "rsi14": 39.17200252646298,
         "volumeRatio": 0.69,
         "supportDistancePct": 0.84,
         "resistanceHeadroomPct": 4.6,
-        "atrPct14": 2.024914869266162,
+        "atrPct14": 2.024914835877196,
         "avgVolume20": 27103.05
       },
       "entry": 480.42,
@@ -3018,11 +3016,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.9804322126253,
+        "rsi14": 40.98043126025809,
         "volumeRatio": 1.0,
         "supportDistancePct": 5.76,
         "resistanceHeadroomPct": 5.47,
-        "atrPct14": 3.165509780766101,
+        "atrPct14": 3.165509778344154,
         "avgVolume20": 53615.75
       },
       "entry": 341.97,
@@ -3057,9 +3055,9 @@
     },
     {
       "symbol": "GBIME",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
       "setupScore": 67,
       "scoreBucket": "65-79",
       "components": {
@@ -3073,95 +3071,93 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.095257974067515,
-        "volumeRatio": 0.79,
-        "supportDistancePct": 1.69,
-        "resistanceHeadroomPct": 5.59,
-        "atrPct14": 2.05086070918165,
-        "avgVolume20": 125540.3
+        "rsi14": 44.74370568696541,
+        "volumeRatio": 0.73,
+        "supportDistancePct": 1.82,
+        "resistanceHeadroomPct": 5.45,
+        "atrPct14": 1.989788222759444,
+        "avgVolume20": 127431.4
       },
-      "entry": 226.1,
-      "stop": 219.62,
-      "target1": 232.62,
-      "exitPrice": 224.0,
-      "rMultiple": -0.324,
-      "netRMultiple": -0.61,
+      "entry": 226.82,
+      "stop": 220.09,
+      "target1": 232.72,
+      "exitPrice": 224.9,
+      "rMultiple": -0.285,
+      "netRMultiple": -0.562,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 154,
-        "plannedRiskNpr": 997.92
+        "quantity": 148,
+        "plannedRiskNpr": 996.04
       },
       "costs": {
-        "quantity": 154,
-        "buyTurnover": 34819.4,
-        "sellTurnover": 34496.0,
-        "buyBrokerage": 125.35,
-        "sellBrokerage": 124.19,
-        "buyRegulatoryFee": 5.22,
-        "sellRegulatoryFee": 5.17,
+        "quantity": 148,
+        "buyTurnover": 33569.36,
+        "sellTurnover": 33285.2,
+        "buyBrokerage": 120.85,
+        "sellBrokerage": 119.83,
+        "buyRegulatoryFee": 5.04,
+        "sellRegulatoryFee": 4.99,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 34949.97,
-        "netProceeds": 34341.64,
-        "netProfit": -608.33,
+        "buyTotal": 33695.25,
+        "netProceeds": 33135.38,
+        "netProfit": -559.86,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "GBIME",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
-      "exitDate": "2026-03-03",
-      "setupScore": 58,
-      "scoreBucket": "50-64",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
+      "exitDate": "2026-03-09",
+      "setupScore": 81,
+      "scoreBucket": "80-100",
       "components": {
-        "trend": 0,
+        "trend": 20,
         "momentum": 20,
         "liquidity": 16,
-        "participation": 2,
+        "participation": 5,
         "location": 20
       },
-      "riskFlags": [
-        "below_sma50"
-      ],
+      "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 48.328030818127296,
-        "volumeRatio": 0.45,
-        "supportDistancePct": 1.96,
-        "resistanceHeadroomPct": 5.82,
-        "atrPct14": 1.741609438065339,
-        "avgVolume20": 98022.5
+        "rsi14": 53.50419413642611,
+        "volumeRatio": 0.82,
+        "supportDistancePct": 2.73,
+        "resistanceHeadroomPct": 3.62,
+        "atrPct14": 1.744104874916046,
+        "avgVolume20": 92131.45
       },
-      "entry": 225.88,
-      "stop": 219.52,
-      "target1": 231.74,
-      "exitPrice": 231.74,
-      "rMultiple": 0.921,
-      "netRMultiple": 0.58,
+      "entry": 226.82,
+      "stop": 219.51,
+      "target1": 233.59,
+      "exitPrice": 233.59,
+      "rMultiple": 0.926,
+      "netRMultiple": 0.615,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 157,
-        "plannedRiskNpr": 998.52
+        "quantity": 136,
+        "plannedRiskNpr": 994.16
       },
       "costs": {
-        "quantity": 157,
-        "buyTurnover": 35463.16,
-        "sellTurnover": 36383.18,
-        "buyBrokerage": 127.67,
-        "sellBrokerage": 130.98,
-        "buyRegulatoryFee": 5.32,
-        "sellRegulatoryFee": 5.46,
+        "quantity": 136,
+        "buyTurnover": 30847.52,
+        "sellTurnover": 31768.24,
+        "buyBrokerage": 111.05,
+        "sellBrokerage": 114.37,
+        "buyRegulatoryFee": 4.63,
+        "sellRegulatoryFee": 4.77,
         "dpCharge": 25.0,
-        "capitalGainsTax": 46.92,
-        "taxableGain": 625.6,
-        "buyTotal": 35596.15,
-        "netProceeds": 36174.82,
-        "netProfit": 578.68,
-        "holdingDays": 5
+        "capitalGainsTax": 49.57,
+        "taxableGain": 660.91,
+        "buyTotal": 30963.2,
+        "netProceeds": 31574.54,
+        "netProfit": 611.34,
+        "holdingDays": 8
       },
       "exitReason": "target1"
     },
@@ -3181,11 +3177,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.439240304629756,
+        "rsi14": 54.42676964553456,
         "volumeRatio": 1.19,
         "supportDistancePct": 10.16,
         "resistanceHeadroomPct": 5.97,
-        "atrPct14": 3.026212192550616,
+        "atrPct14": 3.0265001040279174,
         "avgVolume20": 237949.9
       },
       "entry": 245.0,
@@ -3234,11 +3230,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.02036536108288,
+        "rsi14": 49.014325293937226,
         "volumeRatio": 0.47,
         "supportDistancePct": 5.2,
         "resistanceHeadroomPct": 9.35,
-        "atrPct14": 3.4103310219584038,
+        "atrPct14": 3.4104624992324544,
         "avgVolume20": 274133.5
       },
       "entry": 240.0,
@@ -3289,11 +3285,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 41.69161623299099,
+        "rsi14": 41.68717769555313,
         "volumeRatio": 0.32,
         "supportDistancePct": 2.96,
         "resistanceHeadroomPct": 5.92,
-        "atrPct14": 2.903414874329574,
+        "atrPct14": 2.90347443391093,
         "avgVolume20": 148883.2
       },
       "entry": 232.0,
@@ -3344,11 +3340,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.41994156272409,
+        "rsi14": 42.417116679636074,
         "volumeRatio": 0.82,
         "supportDistancePct": 4.98,
         "resistanceHeadroomPct": 5.19,
-        "atrPct14": 2.8210387452536083,
+        "atrPct14": 2.821071951371895,
         "avgVolume20": 102556.95
       },
       "entry": 231.0,
@@ -3399,11 +3395,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.15933730354333,
+        "rsi14": 50.15802464267883,
         "volumeRatio": 0.69,
         "supportDistancePct": 6.68,
         "resistanceHeadroomPct": 2.47,
-        "atrPct14": 2.340363942126833,
+        "atrPct14": 2.340378375281182,
         "avgVolume20": 75337.1
       },
       "entry": 235.4,
@@ -3454,11 +3450,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 55.35506032480863,
+        "rsi14": 55.354217881665015,
         "volumeRatio": 2.68,
         "supportDistancePct": 3.43,
         "resistanceHeadroomPct": 1.26,
-        "atrPct14": 1.753067087417945,
+        "atrPct14": 1.7530733733423731,
         "avgVolume20": 77100.3
       },
       "entry": 235.4,
@@ -3509,11 +3505,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 56.322110352569695,
+        "rsi14": 56.321544480356465,
         "volumeRatio": 1.36,
         "supportDistancePct": 2.08,
         "resistanceHeadroomPct": 0.83,
-        "atrPct14": 1.466824777560235,
+        "atrPct14": 1.46682754784426,
         "avgVolume20": 102650.1
       },
       "entry": 237.84,
@@ -3562,11 +3558,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 42.091333965568666,
+        "rsi14": 42.09089098133665,
         "volumeRatio": 0.43,
         "supportDistancePct": 2.83,
         "resistanceHeadroomPct": 2.24,
-        "atrPct14": 1.7065952117517904,
+        "atrPct14": 1.7065976337170794,
         "avgVolume20": 104970.9
       },
       "entry": 237.0,
@@ -3618,11 +3614,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 71.45673590685875,
+        "rsi14": 71.4565708885516,
         "volumeRatio": 2.27,
         "supportDistancePct": 7.63,
         "resistanceHeadroomPct": 1.61,
-        "atrPct14": 2.224789096515269,
+        "atrPct14": 2.224790808217009,
         "avgVolume20": 146280.7
       },
       "entry": 241.84,
@@ -3671,11 +3667,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.3978822408333,
+        "rsi14": 58.397829680729274,
         "volumeRatio": 0.51,
         "supportDistancePct": 6.5,
         "resistanceHeadroomPct": 2.85,
-        "atrPct14": 2.3604972678925398,
+        "atrPct14": 2.3604980346549533,
         "avgVolume20": 193051.25
       },
       "entry": 243.1,
@@ -3724,11 +3720,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.98820364672026,
+        "rsi14": 61.988159528358935,
         "volumeRatio": 0.57,
         "supportDistancePct": 6.43,
         "resistanceHeadroomPct": 5.62,
-        "atrPct14": 3.0224038560736686,
+        "atrPct14": 3.0224044192674393,
         "avgVolume20": 184272.5
       },
       "entry": 238.81,
@@ -3779,11 +3775,11 @@
         "rsi_overbought"
       ],
       "signalMetrics": {
-        "rsi14": 73.10106079372547,
+        "rsi14": 73.10103075400772,
         "volumeRatio": 2.53,
         "supportDistancePct": 10.18,
         "resistanceHeadroomPct": 3.24,
-        "atrPct14": 3.5075970009798745,
+        "atrPct14": 3.507597433825635,
         "avgVolume20": 252782.8
       },
       "entry": 244.1,
@@ -3834,11 +3830,11 @@
         "rsi_overbought"
       ],
       "signalMetrics": {
-        "rsi14": 71.68766562605823,
+        "rsi14": 71.68764306707935,
         "volumeRatio": 2.47,
         "supportDistancePct": 10.37,
         "resistanceHeadroomPct": 2.14,
-        "atrPct14": 3.979430010701568,
+        "atrPct14": 3.9794303290712616,
         "avgVolume20": 298497.05
       },
       "entry": 251.83,
@@ -3887,11 +3883,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 46.39712169043564,
+        "rsi14": 46.39711119481477,
         "volumeRatio": 0.31,
         "supportDistancePct": 3.84,
         "resistanceHeadroomPct": 9.33,
-        "atrPct14": 3.64613550561088,
+        "atrPct14": 3.6461356343137767,
         "avgVolume20": 320489.45
       },
       "entry": 247.5,
@@ -3940,11 +3936,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.91380863694576,
+        "rsi14": 54.91380399585269,
         "volumeRatio": 0.8,
         "supportDistancePct": 4.95,
         "resistanceHeadroomPct": 4.83,
-        "atrPct14": 3.0712825420424483,
+        "atrPct14": 3.071282598341059,
         "avgVolume20": 158185.1
       },
       "entry": 250.11,
@@ -3993,11 +3989,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 65.05026822687087,
+        "rsi14": 65.05026519388682,
         "volumeRatio": 1.34,
         "supportDistancePct": 7.75,
         "resistanceHeadroomPct": 2.21,
-        "atrPct14": 2.7376898253925397,
+        "atrPct14": 2.737689863114033,
         "avgVolume20": 168288.25
       },
       "entry": 250.45,
@@ -4048,11 +4044,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 38.45462353441208,
+        "rsi14": 38.454622253911246,
         "volumeRatio": 0.76,
         "supportDistancePct": 4.13,
         "resistanceHeadroomPct": 9.87,
-        "atrPct14": 2.4577989060894123,
+        "atrPct14": 2.4577989204579245,
         "avgVolume20": 224305.6
       },
       "entry": 240.2,
@@ -4101,11 +4097,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.4025601956971,
+        "rsi14": 61.402559450701744,
         "volumeRatio": 1.68,
         "supportDistancePct": 9.16,
         "resistanceHeadroomPct": 3.4,
-        "atrPct14": 2.6260719058883657,
+        "atrPct14": 2.626071915286993,
         "avgVolume20": 246882.8
       },
       "entry": 249.02,
@@ -4154,11 +4150,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 64.71078208485628,
+        "rsi14": 64.71078181730508,
         "volumeRatio": 0.86,
         "supportDistancePct": 10.23,
         "resistanceHeadroomPct": 3.42,
-        "atrPct14": 2.3861003466546937,
+        "atrPct14": 2.3861003503339924,
         "avgVolume20": 357426.4
       },
       "entry": 252.34,
@@ -4193,68 +4189,68 @@
     },
     {
       "symbol": "HDL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
-      "setupScore": 58,
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
+      "setupScore": 61,
       "scoreBucket": "50-64",
       "components": {
         "trend": 0,
         "momentum": 20,
         "liquidity": 16,
-        "participation": 2,
+        "participation": 5,
         "location": 20
       },
       "riskFlags": [
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.78782269861228,
-        "volumeRatio": 0.63,
-        "supportDistancePct": 0.53,
-        "resistanceHeadroomPct": 5.7,
-        "atrPct14": 1.7955319230964966,
-        "avgVolume20": 79852.5
+        "rsi14": 47.17056832232728,
+        "volumeRatio": 0.87,
+        "supportDistancePct": 0.7,
+        "resistanceHeadroomPct": 3.24,
+        "atrPct14": 1.8190418707303622,
+        "avgVolume20": 76296.7
       },
-      "entry": 1146.12,
-      "stop": 1119.63,
-      "target1": 1171.95,
-      "exitPrice": 1135.4,
-      "rMultiple": -0.405,
-      "netRMultiple": -0.753,
+      "entry": 1148.2,
+      "stop": 1119.41,
+      "target1": 1174.89,
+      "exitPrice": 1138.0,
+      "rMultiple": -0.354,
+      "netRMultiple": -0.678,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 37,
-        "plannedRiskNpr": 980.13
+        "quantity": 34,
+        "plannedRiskNpr": 978.86
       },
       "costs": {
-        "quantity": 37,
-        "buyTurnover": 42406.44,
-        "sellTurnover": 42009.8,
-        "buyBrokerage": 152.66,
-        "sellBrokerage": 151.24,
-        "buyRegulatoryFee": 6.36,
-        "sellRegulatoryFee": 6.3,
+        "quantity": 34,
+        "buyTurnover": 39038.8,
+        "sellTurnover": 38692.0,
+        "buyBrokerage": 140.54,
+        "sellBrokerage": 139.29,
+        "buyRegulatoryFee": 5.86,
+        "sellRegulatoryFee": 5.8,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 42565.46,
-        "netProceeds": 41827.26,
-        "netProfit": -738.2,
+        "buyTotal": 39185.2,
+        "netProceeds": 38521.9,
+        "netProfit": -663.29,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "HDL",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
       "exitDate": "2026-03-03",
-      "setupScore": 58,
-      "scoreBucket": "50-64",
+      "setupScore": 68,
+      "scoreBucket": "65-79",
       "components": {
-        "trend": 0,
+        "trend": 10,
         "momentum": 20,
         "liquidity": 16,
         "participation": 2,
@@ -4264,40 +4260,40 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.18957988314876,
-        "volumeRatio": 0.45,
-        "supportDistancePct": 0.88,
-        "resistanceHeadroomPct": 3.69,
-        "atrPct14": 1.4661295203493896,
-        "avgVolume20": 59607.5
+        "rsi14": 49.41778523961725,
+        "volumeRatio": 0.54,
+        "supportDistancePct": 1.15,
+        "resistanceHeadroomPct": 3.31,
+        "atrPct14": 1.4229405183022756,
+        "avgVolume20": 55115.5
       },
-      "entry": 1142.17,
-      "stop": 1117.14,
-      "target1": 1164.07,
-      "exitPrice": 1164.07,
-      "rMultiple": 0.875,
-      "netRMultiple": 0.466,
+      "entry": 1145.16,
+      "stop": 1120.65,
+      "target1": 1166.51,
+      "exitPrice": 1166.51,
+      "rMultiple": 0.871,
+      "netRMultiple": 0.455,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 39,
-        "plannedRiskNpr": 976.17
+        "quantity": 40,
+        "plannedRiskNpr": 980.4
       },
       "costs": {
-        "quantity": 39,
-        "buyTurnover": 44544.63,
-        "sellTurnover": 45398.73,
-        "buyBrokerage": 160.36,
-        "sellBrokerage": 163.44,
-        "buyRegulatoryFee": 6.68,
-        "sellRegulatoryFee": 6.81,
+        "quantity": 40,
+        "buyTurnover": 45806.4,
+        "sellTurnover": 46660.4,
+        "buyBrokerage": 164.9,
+        "sellBrokerage": 167.98,
+        "buyRegulatoryFee": 6.87,
+        "sellRegulatoryFee": 7.0,
         "dpCharge": 25.0,
-        "capitalGainsTax": 36.89,
-        "taxableGain": 491.81,
-        "buyTotal": 44711.67,
-        "netProceeds": 45166.6,
-        "netProfit": 454.93,
-        "holdingDays": 5
+        "capitalGainsTax": 36.17,
+        "taxableGain": 482.25,
+        "buyTotal": 45978.17,
+        "netProceeds": 46424.25,
+        "netProfit": 446.08,
+        "holdingDays": 2
       },
       "exitReason": "target1"
     },
@@ -4317,11 +4313,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 59.967104203816604,
+        "rsi14": 59.92251095658314,
         "volumeRatio": 0.8,
         "supportDistancePct": 7.83,
         "resistanceHeadroomPct": 5.38,
-        "atrPct14": 2.1916505536111326,
+        "atrPct14": 2.1924003691435967,
         "avgVolume20": 80204.45
       },
       "entry": 1202.3,
@@ -4372,11 +4368,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.65092212569091,
+        "rsi14": 44.624947084662814,
         "volumeRatio": 0.63,
         "supportDistancePct": 2.75,
         "resistanceHeadroomPct": 8.75,
-        "atrPct14": 2.6344112536725883,
+        "atrPct14": 2.6347613658832376,
         "avgVolume20": 87157.9
       },
       "entry": 1169.65,
@@ -4427,11 +4423,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.422062184472736,
+        "rsi14": 42.405978402076826,
         "volumeRatio": 0.81,
         "supportDistancePct": 2.25,
         "resistanceHeadroomPct": 3.81,
-        "atrPct14": 2.1491252737043065,
+        "atrPct14": 2.149281022262344,
         "avgVolume20": 55095.95
       },
       "entry": 1162.21,
@@ -4482,11 +4478,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.85761736753567,
+        "rsi14": 46.846755415605564,
         "volumeRatio": 0.61,
         "supportDistancePct": 1.73,
         "resistanceHeadroomPct": 4.45,
-        "atrPct14": 1.736470874556435,
+        "atrPct14": 1.7365398617324193,
         "avgVolume20": 33916.9
       },
       "entry": 1160.0,
@@ -4535,11 +4531,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.82877541202125,
+        "rsi14": 49.82608031492938,
         "volumeRatio": 1.28,
         "supportDistancePct": 1.46,
         "resistanceHeadroomPct": 6.09,
-        "atrPct14": 1.875150373518954,
+        "atrPct14": 1.8751671042701996,
         "avgVolume20": 23020.9
       },
       "entry": 1170.46,
@@ -4590,11 +4586,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.04466908269179,
+        "rsi14": 47.042077954797826,
         "volumeRatio": 0.67,
         "supportDistancePct": 1.13,
         "resistanceHeadroomPct": 6.45,
-        "atrPct14": 2.0802273235367914,
+        "atrPct14": 2.0802417979969667,
         "avgVolume20": 23016.95
       },
       "entry": 1165.0,
@@ -4645,11 +4641,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.083433249324784,
+        "rsi14": 40.0811262253091,
         "volumeRatio": 0.68,
         "supportDistancePct": 4.68,
         "resistanceHeadroomPct": 7.34,
-        "atrPct14": 2.509150390898289,
+        "atrPct14": 2.5091612418873326,
         "avgVolume20": 21950.85
       },
       "entry": 1155.0,
@@ -4700,11 +4696,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 49.84671415484734,
+        "rsi14": 49.84577047134917,
         "volumeRatio": 1.06,
         "supportDistancePct": 4.8,
         "resistanceHeadroomPct": 7.2,
-        "atrPct14": 1.468731432087706,
+        "atrPct14": 1.4687355673501403,
         "avgVolume20": 18971.75
       },
       "entry": 1153.7,
@@ -4753,11 +4749,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.70475667051355,
+        "rsi14": 54.70458281222948,
         "volumeRatio": 0.97,
         "supportDistancePct": 2.66,
         "resistanceHeadroomPct": 2.83,
-        "atrPct14": 1.4351014459320401,
+        "atrPct14": 1.4351027913697083,
         "avgVolume20": 24140.55
       },
       "entry": 1160.28,
@@ -4806,11 +4802,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.907530946283195,
+        "rsi14": 50.90737519997543,
         "volumeRatio": 0.72,
         "supportDistancePct": 3.05,
         "resistanceHeadroomPct": 3.26,
-        "atrPct14": 1.6731421771854338,
+        "atrPct14": 1.673143181607794,
         "avgVolume20": 24433.5
       },
       "entry": 1165.07,
@@ -4859,11 +4855,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 52.46835345277177,
+        "rsi14": 52.46825820616648,
         "volumeRatio": 0.54,
         "supportDistancePct": 3.95,
         "resistanceHeadroomPct": 2.83,
-        "atrPct14": 1.8357019293832786,
+        "atrPct14": 1.835702406119353,
         "avgVolume20": 20566.7
       },
       "entry": 1155.3,
@@ -4914,11 +4910,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.11363319743997,
+        "rsi14": 40.11358469894513,
         "volumeRatio": 1.02,
         "supportDistancePct": 3.2,
         "resistanceHeadroomPct": 2.42,
-        "atrPct14": 1.574358472061114,
+        "atrPct14": 1.5743586846848239,
         "avgVolume20": 18249.9
       },
       "entry": 1160.0,
@@ -4969,11 +4965,11 @@
         "rsi_overbought"
       ],
       "signalMetrics": {
-        "rsi14": 71.39061713521637,
+        "rsi14": 71.3906158643941,
         "volumeRatio": 0.64,
         "supportDistancePct": 6.53,
         "resistanceHeadroomPct": 2.4,
-        "atrPct14": 2.299664677758912,
+        "atrPct14": 2.299664692612646,
         "avgVolume20": 105322.65
       },
       "entry": 1310.02,
@@ -5066,7 +5062,7 @@
       "symbol": "KAHL",
       "signalDate": "2026-11-17",
       "fillDate": "2026-11-18",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 65,
       "scoreBucket": "65-79",
       "components": {
@@ -5090,9 +5086,9 @@
       "entry": 436.0,
       "stop": 406.75,
       "target1": 474.96,
-      "exitPrice": 426.6,
-      "rMultiple": -0.321,
-      "netRMultiple": -0.457,
+      "exitPrice": 425.1,
+      "rMultiple": -0.373,
+      "netRMultiple": -0.508,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -5102,26 +5098,79 @@
       "costs": {
         "quantity": 34,
         "buyTurnover": 14824.0,
-        "sellTurnover": 14504.4,
+        "sellTurnover": 14453.4,
         "buyBrokerage": 53.37,
-        "sellBrokerage": 52.22,
+        "sellBrokerage": 52.03,
         "buyRegulatoryFee": 2.22,
-        "sellRegulatoryFee": 2.18,
+        "sellRegulatoryFee": 2.17,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
         "buyTotal": 14879.59,
-        "netProceeds": 14425.01,
-        "netProfit": -454.58,
-        "holdingDays": 7
+        "netProceeds": 14374.2,
+        "netProfit": -505.39,
+        "holdingDays": 8
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "KBL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
+      "setupScore": 93,
+      "scoreBucket": "80-100",
+      "components": {
+        "trend": 30,
+        "momentum": 20,
+        "liquidity": 20,
+        "participation": 8,
+        "location": 15
+      },
+      "riskFlags": [],
+      "signalMetrics": {
+        "rsi14": 51.824276558678235,
+        "volumeRatio": 1.05,
+        "supportDistancePct": 4.04,
+        "resistanceHeadroomPct": 6.79,
+        "atrPct14": 2.7445536921312117,
+        "avgVolume20": 215736.4
+      },
+      "entry": 184.0,
+      "stop": 176.73,
+      "target1": 196.9,
+      "exitPrice": 184.0,
+      "rMultiple": 0.0,
+      "netRMultiple": -0.215,
+      "referencePosition": {
+        "capital": 100000.0,
+        "riskPct": 1.0,
+        "quantity": 137,
+        "plannedRiskNpr": 995.99
+      },
+      "costs": {
+        "quantity": 137,
+        "buyTurnover": 25208.0,
+        "sellTurnover": 25208.0,
+        "buyBrokerage": 90.75,
+        "sellBrokerage": 90.75,
+        "buyRegulatoryFee": 3.78,
+        "sellRegulatoryFee": 3.78,
+        "dpCharge": 25.0,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
+        "buyTotal": 25302.53,
+        "netProceeds": 25088.47,
+        "netProfit": -214.06,
+        "holdingDays": 16
+      },
+      "exitReason": "time_exit"
+    },
+    {
+      "symbol": "KBL",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
+      "exitDate": "2026-03-03",
       "setupScore": 90,
       "scoreBucket": "80-100",
       "components": {
@@ -5133,19 +5182,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.837663290894284,
-        "volumeRatio": 0.8,
-        "supportDistancePct": 3.89,
-        "resistanceHeadroomPct": 6.97,
-        "atrPct14": 2.735971708695838,
-        "avgVolume20": 211479.35
+        "rsi14": 55.947591998414865,
+        "volumeRatio": 0.97,
+        "supportDistancePct": 4.6,
+        "resistanceHeadroomPct": 4.49,
+        "atrPct14": 2.431753489810024,
+        "avgVolume20": 198685.4
       },
-      "entry": 186.47,
-      "stop": 176.73,
-      "target1": 196.14,
-      "exitPrice": 183.5,
-      "rMultiple": -0.305,
-      "netRMultiple": -0.473,
+      "entry": 187.0,
+      "stop": 177.26,
+      "target1": 196.92,
+      "exitPrice": 196.92,
+      "rMultiple": 1.018,
+      "netRMultiple": 0.782,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -5154,72 +5203,19 @@
       },
       "costs": {
         "quantity": 102,
-        "buyTurnover": 19019.94,
-        "sellTurnover": 18717.0,
-        "buyBrokerage": 68.47,
-        "sellBrokerage": 67.38,
-        "buyRegulatoryFee": 2.85,
-        "sellRegulatoryFee": 2.81,
+        "buyTurnover": 19074.0,
+        "sellTurnover": 20085.84,
+        "buyBrokerage": 68.67,
+        "sellBrokerage": 72.31,
+        "buyRegulatoryFee": 2.86,
+        "sellRegulatoryFee": 3.01,
         "dpCharge": 25.0,
-        "capitalGainsTax": 0.0,
-        "taxableGain": 0,
-        "buyTotal": 19091.26,
-        "netProceeds": 18621.81,
-        "netProfit": -469.45,
-        "holdingDays": 16
-      },
-      "exitReason": "time_exit"
-    },
-    {
-      "symbol": "KBL",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
-      "exitDate": "2026-03-03",
-      "setupScore": 83,
-      "scoreBucket": "80-100",
-      "components": {
-        "trend": 20,
-        "momentum": 20,
-        "liquidity": 20,
-        "participation": 8,
-        "location": 15
-      },
-      "riskFlags": [],
-      "signalMetrics": {
-        "rsi14": 49.40968215376975,
-        "volumeRatio": 1.4,
-        "supportDistancePct": 3.04,
-        "resistanceHeadroomPct": 7.66,
-        "atrPct14": 2.510918900090162,
-        "avgVolume20": 208252.65
-      },
-      "entry": 184.0,
-      "stop": 177.24,
-      "target1": 192.69,
-      "exitPrice": 192.69,
-      "rMultiple": 1.286,
-      "netRMultiple": 0.973,
-      "referencePosition": {
-        "capital": 100000.0,
-        "riskPct": 1.0,
-        "quantity": 147,
-        "plannedRiskNpr": 993.72
-      },
-      "costs": {
-        "quantity": 147,
-        "buyTurnover": 27048.0,
-        "sellTurnover": 28325.43,
-        "buyBrokerage": 97.37,
-        "sellBrokerage": 101.97,
-        "buyRegulatoryFee": 4.06,
-        "sellRegulatoryFee": 4.25,
-        "dpCharge": 25.0,
-        "capitalGainsTax": 78.36,
-        "taxableGain": 1044.78,
-        "buyTotal": 27149.43,
-        "netProceeds": 28115.85,
-        "netProfit": 966.42,
-        "holdingDays": 5
+        "capitalGainsTax": 63.0,
+        "taxableGain": 839.99,
+        "buyTotal": 19145.53,
+        "netProceeds": 19922.52,
+        "netProfit": 776.99,
+        "holdingDays": 2
       },
       "exitReason": "target1"
     },
@@ -5239,11 +5235,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 62.276880281201876,
+        "rsi14": 62.25275696503567,
         "volumeRatio": 1.09,
         "supportDistancePct": 20.86,
         "resistanceHeadroomPct": 10.34,
-        "atrPct14": 4.007578287835621,
+        "atrPct14": 4.007594301622121,
         "avgVolume20": 1436340.65
       },
       "entry": 226.57,
@@ -5292,11 +5288,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.879508985581715,
+        "rsi14": 57.868757775038766,
         "volumeRatio": 0.45,
         "supportDistancePct": 10.31,
         "resistanceHeadroomPct": 10.92,
-        "atrPct14": 4.506651360779818,
+        "atrPct14": 4.506658484628686,
         "avgVolume20": 1490246.0
       },
       "entry": 233.4,
@@ -5345,11 +5341,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.007841930123945,
+        "rsi14": 50.0005231548064,
         "volumeRatio": 0.34,
         "supportDistancePct": 7.59,
         "resistanceHeadroomPct": 7.14,
-        "atrPct14": 4.553660728733,
+        "atrPct14": 4.553663977143954,
         "avgVolume20": 721827.05
       },
       "entry": 226.55,
@@ -5400,11 +5396,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.962147022187146,
+        "rsi14": 47.958213973965925,
         "volumeRatio": 0.3,
         "supportDistancePct": 3.87,
         "resistanceHeadroomPct": 9.34,
-        "atrPct14": 3.6347392520768267,
+        "atrPct14": 3.6347407191539434,
         "avgVolume20": 394134.6
       },
       "entry": 217.2,
@@ -5455,11 +5451,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.806765053628666,
+        "rsi14": 46.80468099980344,
         "volumeRatio": 1.27,
         "supportDistancePct": 3.94,
         "resistanceHeadroomPct": 5.05,
-        "atrPct14": 3.442995093171259,
+        "atrPct14": 3.4429957469028265,
         "avgVolume20": 227381.05
       },
       "entry": 219.3,
@@ -5510,11 +5506,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.81739191654132,
+        "rsi14": 37.81581694347931,
         "volumeRatio": 0.5,
         "supportDistancePct": 1.23,
         "resistanceHeadroomPct": 8.02,
-        "atrPct14": 2.6303417113027754,
+        "atrPct14": 2.6303420088038725,
         "avgVolume20": 192635.05
       },
       "entry": 211.4,
@@ -5565,11 +5561,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 35.390486406419996,
+        "rsi14": 35.38962131420176,
         "volumeRatio": 1.19,
         "supportDistancePct": 1.44,
         "resistanceHeadroomPct": 10.1,
-        "atrPct14": 2.6945508915568133,
+        "atrPct14": 2.6945510720531174,
         "avgVolume20": 177660.55
       },
       "entry": 209.4,
@@ -5620,11 +5616,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.34129869694076,
+        "rsi14": 44.34096639964131,
         "volumeRatio": 0.7,
         "supportDistancePct": 2.44,
         "resistanceHeadroomPct": 8.08,
-        "atrPct14": 3.3715464403249316,
+        "atrPct14": 3.3715465472020734,
         "avgVolume20": 157065.95
       },
       "entry": 210.86,
@@ -5673,11 +5669,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 60.43307372551153,
+        "rsi14": 60.43296309972176,
         "volumeRatio": 1.66,
         "supportDistancePct": 7.27,
         "resistanceHeadroomPct": 2.73,
-        "atrPct14": 3.1906482940802277,
+        "atrPct14": 3.1906483424940473,
         "avgVolume20": 163421.75
       },
       "entry": 212.0,
@@ -5726,11 +5722,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.260237652089174,
+        "rsi14": 57.260171758264114,
         "volumeRatio": 0.83,
         "supportDistancePct": 7.66,
         "resistanceHeadroomPct": 5.86,
-        "atrPct14": 3.907668930708631,
+        "atrPct14": 3.907668957227903,
         "avgVolume20": 276801.95
       },
       "entry": 219.49,
@@ -5779,11 +5775,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 48.245911789229126,
+        "rsi14": 48.2458718399717,
         "volumeRatio": 0.45,
         "supportDistancePct": 3.6,
         "resistanceHeadroomPct": 8.39,
-        "atrPct14": 3.7149284374658387,
+        "atrPct14": 3.7149284494836037,
         "avgVolume20": 335553.6
       },
       "entry": 218.81,
@@ -5834,11 +5830,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 39.31465730317163,
+        "rsi14": 39.314630586745466,
         "volumeRatio": 0.66,
         "supportDistancePct": 1.61,
         "resistanceHeadroomPct": 8.96,
-        "atrPct14": 3.0499378429874424,
+        "atrPct14": 3.0499378484521764,
         "avgVolume20": 193710.5
       },
       "entry": 212.61,
@@ -5887,11 +5883,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.89194812680641,
+        "rsi14": 58.891943155290974,
         "volumeRatio": 0.62,
         "supportDistancePct": 7.5,
         "resistanceHeadroomPct": 4.06,
-        "atrPct14": 3.0550844249073927,
+        "atrPct14": 3.055084426368419,
         "avgVolume20": 327418.4
       },
       "entry": 220.0,
@@ -5940,11 +5936,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 69.84698788826339,
+        "rsi14": 69.84698655257685,
         "volumeRatio": 1.0,
         "supportDistancePct": 8.33,
         "resistanceHeadroomPct": 2.5,
-        "atrPct14": 2.743427590609466,
+        "atrPct14": 2.743427591057933,
         "avgVolume20": 543229.2
       },
       "entry": 233.02,
@@ -5981,7 +5977,7 @@
       "symbol": "KBL",
       "signalDate": "2026-11-23",
       "fillDate": "2026-11-24",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 90,
       "scoreBucket": "80-100",
       "components": {
@@ -5993,19 +5989,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.62031255197795,
+        "rsi14": 56.62031203746215,
         "volumeRatio": 0.92,
         "supportDistancePct": 4.8,
         "resistanceHeadroomPct": 4.55,
-        "atrPct14": 2.9357811504869677,
+        "atrPct14": 2.9357811506615166,
         "avgVolume20": 572387.0
       },
       "entry": 235.3,
       "stop": 222.27,
       "target1": 252.23,
-      "exitPrice": 238.0,
-      "rMultiple": 0.207,
-      "netRMultiple": 0.042,
+      "exitPrice": 235.2,
+      "rMultiple": -0.008,
+      "netRMultiple": -0.168,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -6015,71 +6011,71 @@
       "costs": {
         "quantity": 76,
         "buyTurnover": 17882.8,
-        "sellTurnover": 18088.0,
+        "sellTurnover": 17875.2,
         "buyBrokerage": 64.38,
-        "sellBrokerage": 65.12,
+        "sellBrokerage": 64.35,
         "buyRegulatoryFee": 2.68,
-        "sellRegulatoryFee": 2.71,
+        "sellRegulatoryFee": 2.68,
         "dpCharge": 25.0,
-        "capitalGainsTax": 3.4,
-        "taxableGain": 45.31,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
         "buyTotal": 17949.86,
-        "netProceeds": 17991.77,
-        "netProfit": 41.91,
-        "holdingDays": 1
+        "netProceeds": 17783.17,
+        "netProfit": -166.69,
+        "holdingDays": 2
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "MBJC",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
       "exitDate": "2026-02-12",
-      "setupScore": 76,
-      "scoreBucket": "65-79",
+      "setupScore": 83,
+      "scoreBucket": "80-100",
       "components": {
         "trend": 30,
         "momentum": 20,
         "liquidity": 16,
         "participation": 2,
-        "location": 8
+        "location": 15
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 55.231976177656364,
-        "volumeRatio": 0.66,
-        "supportDistancePct": 6.02,
-        "resistanceHeadroomPct": 4.2,
-        "atrPct14": 2.842746602714177,
-        "avgVolume20": 63090.8
+        "rsi14": 51.21894787698754,
+        "volumeRatio": 0.61,
+        "supportDistancePct": 5.1,
+        "resistanceHeadroomPct": 5.21,
+        "atrPct14": 2.8908220418754826,
+        "avgVolume20": 63460.75
       },
       "entry": 290.0,
-      "stop": 271.23,
-      "target1": 310.7,
-      "exitPrice": 310.7,
-      "rMultiple": 1.103,
-      "netRMultiple": 0.886,
+      "stop": 271.22,
+      "target1": 310.53,
+      "exitPrice": 310.53,
+      "rMultiple": 1.093,
+      "netRMultiple": 0.877,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 53,
-        "plannedRiskNpr": 994.81
+        "plannedRiskNpr": 995.34
       },
       "costs": {
         "quantity": 53,
         "buyTurnover": 15370.0,
-        "sellTurnover": 16467.1,
+        "sellTurnover": 16458.09,
         "buyBrokerage": 55.33,
-        "sellBrokerage": 59.28,
+        "sellBrokerage": 59.25,
         "buyRegulatoryFee": 2.31,
         "sellRegulatoryFee": 2.47,
         "dpCharge": 25.0,
-        "capitalGainsTax": 71.45,
-        "taxableGain": 952.71,
+        "capitalGainsTax": 70.78,
+        "taxableGain": 943.73,
         "buyTotal": 15427.64,
-        "netProceeds": 16308.9,
-        "netProfit": 881.26,
-        "holdingDays": 4
+        "netProceeds": 16300.59,
+        "netProfit": 872.95,
+        "holdingDays": 3
       },
       "exitReason": "target1"
     },
@@ -6099,11 +6095,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 64.1416233458066,
+        "rsi14": 64.05530051507537,
         "volumeRatio": 2.23,
         "supportDistancePct": 9.08,
         "resistanceHeadroomPct": 8.4,
-        "atrPct14": 3.536057145319229,
+        "atrPct14": 3.537513892894226,
         "avgVolume20": 97142.15
       },
       "entry": 295.37,
@@ -6152,11 +6148,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.47260072316128,
+        "rsi14": 57.457318084577466,
         "volumeRatio": 0.97,
         "supportDistancePct": 11.67,
         "resistanceHeadroomPct": 4.76,
-        "atrPct14": 3.5171417984363456,
+        "atrPct14": 3.5174182908494016,
         "avgVolume20": 88944.1
       },
       "entry": 311.35,
@@ -6207,11 +6203,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 41.72798503507551,
+        "rsi14": 41.720912369540336,
         "volumeRatio": 0.6,
         "supportDistancePct": 4.12,
         "resistanceHeadroomPct": 14.91,
-        "atrPct14": 4.143148713920652,
+        "atrPct14": 4.14329325716702,
         "avgVolume20": 92560.45
       },
       "entry": 289.0,
@@ -6260,11 +6256,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.1927478958268,
+        "rsi14": 51.18852693566534,
         "volumeRatio": 0.51,
         "supportDistancePct": 8.25,
         "resistanceHeadroomPct": 5.79,
-        "atrPct14": 3.6800449327739586,
+        "atrPct14": 3.680115927576233,
         "avgVolume20": 55349.0
       },
       "entry": 295.0,
@@ -6315,11 +6311,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.178381042212614,
+        "rsi14": 47.17643364027028,
         "volumeRatio": 1.69,
         "supportDistancePct": 4.51,
         "resistanceHeadroomPct": 7.64,
-        "atrPct14": 2.8640245702611873,
+        "atrPct14": 2.8640490648841332,
         "avgVolume20": 38632.9
       },
       "entry": 290.0,
@@ -6371,11 +6367,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 51.32275776107316,
+        "rsi14": 51.321616429174234,
         "volumeRatio": 0.53,
         "supportDistancePct": 4.51,
         "resistanceHeadroomPct": 1.39,
-        "atrPct14": 2.4140729066746607,
+        "atrPct14": 2.414083746923248,
         "avgVolume20": 28642.25
       },
       "entry": 284.1,
@@ -6426,11 +6422,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.50253921682656,
+        "rsi14": 48.50179698062917,
         "volumeRatio": 0.52,
         "supportDistancePct": 3.39,
         "resistanceHeadroomPct": 4.16,
-        "atrPct14": 2.5816151102387423,
+        "atrPct14": 2.5816226436288012,
         "avgVolume20": 21818.9
       },
       "entry": 285.0,
@@ -6481,11 +6477,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 49.67980912098773,
+        "rsi14": 49.67972257279753,
         "volumeRatio": 0.88,
         "supportDistancePct": 5.05,
         "resistanceHeadroomPct": 5.02,
-        "atrPct14": 2.418968354882638,
+        "atrPct14": 2.4189691427451456,
         "avgVolume20": 12296.85
       },
       "entry": 275.0,
@@ -6536,11 +6532,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.0224792862095,
+        "rsi14": 40.02244809330894,
         "volumeRatio": 1.59,
         "supportDistancePct": 2.03,
         "resistanceHeadroomPct": 4.65,
-        "atrPct14": 2.5331724827932867,
+        "atrPct14": 2.533172713352969,
         "avgVolume20": 13878.7
       },
       "entry": 263.22,
@@ -6591,11 +6587,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.394488480562444,
+        "rsi14": 47.39446873916254,
         "volumeRatio": 3.35,
         "supportDistancePct": 5.42,
         "resistanceHeadroomPct": 3.59,
-        "atrPct14": 2.5792417856074934,
+        "atrPct14": 2.5792419126662613,
         "avgVolume20": 17349.3
       },
       "entry": 267.0,
@@ -6646,11 +6642,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.1233116787338,
+        "rsi14": 51.12330429380375,
         "volumeRatio": 1.54,
         "supportDistancePct": 6.68,
         "resistanceHeadroomPct": 2.85,
-        "atrPct14": 3.079655960005789,
+        "atrPct14": 3.079656035951296,
         "avgVolume20": 26421.4
       },
       "entry": 267.21,
@@ -6702,11 +6698,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 85.92690590753817,
+        "rsi14": 85.92690539551757,
         "volumeRatio": 1.61,
         "supportDistancePct": 14.78,
         "resistanceHeadroomPct": 0.91,
-        "atrPct14": 2.8385828492567646,
+        "atrPct14": 2.838582854827235,
         "avgVolume20": 111425.8
       },
       "entry": 308.8,
@@ -6743,7 +6739,7 @@
       "symbol": "MBJC",
       "signalDate": "2026-11-24",
       "fillDate": "2026-11-25",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 80,
       "scoreBucket": "80-100",
       "components": {
@@ -6755,19 +6751,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 60.75194510737693,
+        "rsi14": 60.75194490628121,
         "volumeRatio": 0.48,
         "supportDistancePct": 6.84,
         "resistanceHeadroomPct": 3.98,
-        "atrPct14": 2.805413647617399,
+        "atrPct14": 2.805413649807675,
         "avgVolume20": 135762.65
       },
       "entry": 327.0,
       "stop": 304.09,
       "target1": 362.1,
-      "exitPrice": 335.0,
-      "rMultiple": 0.349,
-      "netRMultiple": 0.199,
+      "exitPrice": 336.0,
+      "rMultiple": 0.393,
+      "netRMultiple": 0.24,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -6777,75 +6773,75 @@
       "costs": {
         "quantity": 43,
         "buyTurnover": 14061.0,
-        "sellTurnover": 14405.0,
+        "sellTurnover": 14448.0,
         "buyBrokerage": 50.62,
-        "sellBrokerage": 51.86,
+        "sellBrokerage": 52.01,
         "buyRegulatoryFee": 2.11,
-        "sellRegulatoryFee": 2.16,
+        "sellRegulatoryFee": 2.17,
         "dpCharge": 25.0,
-        "capitalGainsTax": 15.92,
-        "taxableGain": 212.25,
+        "capitalGainsTax": 19.13,
+        "taxableGain": 255.09,
         "buyTotal": 14113.73,
-        "netProceeds": 14310.06,
-        "netProfit": 196.33,
-        "holdingDays": 0
+        "netProceeds": 14349.69,
+        "netProfit": 235.96,
+        "holdingDays": 1
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "MKHC",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-08",
-      "setupScore": 54,
-      "scoreBucket": "50-64",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-09",
+      "setupScore": 67,
+      "scoreBucket": "65-79",
       "components": {
-        "trend": 0,
-        "momentum": 12,
+        "trend": 10,
+        "momentum": 20,
         "liquidity": 12,
         "participation": 10,
-        "location": 20
+        "location": 15
       },
       "riskFlags": [
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 39.2034755562846,
-        "volumeRatio": 1.91,
-        "supportDistancePct": 1.01,
-        "resistanceHeadroomPct": 13.68,
-        "atrPct14": 4.781912747410556,
-        "avgVolume20": 28176.65
+        "rsi14": 47.31254342099572,
+        "volumeRatio": 1.86,
+        "supportDistancePct": 5.09,
+        "resistanceHeadroomPct": 9.0,
+        "atrPct14": 4.882700538875752,
+        "avgVolume20": 30367.0
       },
-      "entry": 339.61,
-      "stop": 320.16,
-      "target1": 359.52,
-      "exitPrice": 359.52,
-      "rMultiple": 1.024,
-      "netRMultiple": 0.799,
+      "entry": 343.0,
+      "stop": 327.93,
+      "target1": 377.21,
+      "exitPrice": 327.93,
+      "rMultiple": -1.0,
+      "netRMultiple": -1.192,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 51,
-        "plannedRiskNpr": 991.95
+        "quantity": 66,
+        "plannedRiskNpr": 994.62
       },
       "costs": {
-        "quantity": 51,
-        "buyTurnover": 17320.11,
-        "sellTurnover": 18335.52,
-        "buyBrokerage": 62.35,
-        "sellBrokerage": 66.01,
-        "buyRegulatoryFee": 2.6,
-        "sellRegulatoryFee": 2.75,
+        "quantity": 66,
+        "buyTurnover": 22638.0,
+        "sellTurnover": 21643.38,
+        "buyBrokerage": 81.5,
+        "sellBrokerage": 77.92,
+        "buyRegulatoryFee": 3.4,
+        "sellRegulatoryFee": 3.25,
         "dpCharge": 25.0,
-        "capitalGainsTax": 64.25,
-        "taxableGain": 856.7,
-        "buyTotal": 17385.06,
-        "netProceeds": 18177.51,
-        "netProfit": 792.45,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
+        "buyTotal": 22722.89,
+        "netProceeds": 21537.22,
+        "netProfit": -1185.68,
         "holdingDays": 0
       },
-      "exitReason": "target1"
+      "exitReason": "stop"
     },
     {
       "symbol": "MKHC",
@@ -6866,16 +6862,16 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 39.419742045606135,
+        "rsi14": 39.26892829200245,
         "volumeRatio": 1.75,
         "supportDistancePct": 3.94,
         "resistanceHeadroomPct": 15.61,
-        "atrPct14": 5.6144175610854195,
+        "atrPct14": 5.611189500224191,
         "avgVolume20": 52566.0
       },
       "entry": 330.0,
-      "stop": 306.84,
-      "target1": 358.95,
+      "stop": 306.85,
+      "target1": 358.93,
       "exitPrice": 319.4,
       "rMultiple": -0.458,
       "netRMultiple": -0.588,
@@ -6883,7 +6879,7 @@
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 43,
-        "plannedRiskNpr": 995.88
+        "plannedRiskNpr": 995.45
       },
       "costs": {
         "quantity": 43,
@@ -6922,11 +6918,11 @@
         "weak_20d_return"
       ],
       "signalMetrics": {
-        "rsi14": 49.41130688404489,
+        "rsi14": 49.317894081945774,
         "volumeRatio": 0.58,
         "supportDistancePct": 6.7,
         "resistanceHeadroomPct": 14.56,
-        "atrPct14": 3.924931682457215,
+        "atrPct14": 3.9235159541899898,
         "avgVolume20": 60277.45
       },
       "entry": 335.72,
@@ -6977,11 +6973,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 61.525270350668826,
+        "rsi14": 61.495492456504024,
         "volumeRatio": 1.23,
         "supportDistancePct": 15.11,
         "resistanceHeadroomPct": 1.39,
-        "atrPct14": 3.7666239868721036,
+        "atrPct14": 3.766167574420156,
         "avgVolume20": 55450.35
       },
       "entry": 348.08,
@@ -7032,11 +7028,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.46789462707383,
+        "rsi14": 48.45797101811357,
         "volumeRatio": 0.85,
         "supportDistancePct": 6.96,
         "resistanceHeadroomPct": 9.99,
-        "atrPct14": 4.611519809675444,
+        "atrPct14": 4.611315745681586,
         "avgVolume20": 46484.0
       },
       "entry": 332.0,
@@ -7087,11 +7083,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.53376193215546,
+        "rsi14": 45.52982928438575,
         "volumeRatio": 1.04,
         "supportDistancePct": 3.66,
         "resistanceHeadroomPct": 10.25,
-        "atrPct14": 3.3026942081741852,
+        "atrPct14": 3.3026524536572635,
         "avgVolume20": 20770.0
       },
       "entry": 324.66,
@@ -7140,11 +7136,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 62.52038811457278,
+        "rsi14": 62.51860528710043,
         "volumeRatio": 2.14,
         "supportDistancePct": 7.95,
         "resistanceHeadroomPct": 2.64,
-        "atrPct14": 3.0191062393026886,
+        "atrPct14": 3.019088583075143,
         "avgVolume20": 18053.15
       },
       "entry": 323.64,
@@ -7195,11 +7191,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.98650811357802,
+        "rsi14": 51.98578334511,
         "volumeRatio": 1.15,
         "supportDistancePct": 7.1,
         "resistanceHeadroomPct": 7.26,
-        "atrPct14": 3.07483314009301,
+        "atrPct14": 3.074826602580516,
         "avgVolume20": 21715.6
       },
       "entry": 316.51,
@@ -7250,11 +7246,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.10216585165346,
+        "rsi14": 50.10206720420875,
         "volumeRatio": 1.31,
         "supportDistancePct": 8.76,
         "resistanceHeadroomPct": 5.51,
-        "atrPct14": 3.394211796777287,
+        "atrPct14": 3.3942105245893153,
         "avgVolume20": 9624.05
       },
       "entry": 300.1,
@@ -7305,11 +7301,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 52.8842559156023,
+        "rsi14": 52.884248646879634,
         "volumeRatio": 1.56,
         "supportDistancePct": 13.91,
         "resistanceHeadroomPct": 8.68,
-        "atrPct14": 3.9933167457662755,
+        "atrPct14": 3.9933166130070274,
         "avgVolume20": 39583.15
       },
       "entry": 264.81,
@@ -7360,11 +7356,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.84787135688066,
+        "rsi14": 48.84786965366099,
         "volumeRatio": 1.31,
         "supportDistancePct": 5.95,
         "resistanceHeadroomPct": 5.87,
-        "atrPct14": 3.2722354671771683,
+        "atrPct14": 3.2722354507423037,
         "avgVolume20": 6569.2
       },
       "entry": 255.0,
@@ -7399,7 +7395,7 @@
     },
     {
       "symbol": "NABIL",
-      "signalDate": "2026-02-05",
+      "signalDate": "2026-02-08",
       "fillDate": "2026-02-09",
       "exitDate": "2026-02-25",
       "setupScore": 79,
@@ -7415,39 +7411,39 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 55.550735167487446,
-        "volumeRatio": 1.46,
-        "supportDistancePct": 2.86,
-        "resistanceHeadroomPct": 1.74,
-        "atrPct14": 1.5820466309858598,
-        "avgVolume20": 67424.1
+        "rsi14": 53.52620625934491,
+        "volumeRatio": 1.1,
+        "supportDistancePct": 2.71,
+        "resistanceHeadroomPct": 1.91,
+        "atrPct14": 1.5292868586244892,
+        "avgVolume20": 68828.85
       },
-      "entry": 496.51,
-      "stop": 483.03,
-      "target1": 508.36,
+      "entry": 496.87,
+      "stop": 483.09,
+      "target1": 509.43,
       "exitPrice": 496.0,
-      "rMultiple": -0.038,
-      "netRMultiple": -0.339,
+      "rMultiple": -0.063,
+      "netRMultiple": -0.359,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 74,
-        "plannedRiskNpr": 997.52
+        "quantity": 72,
+        "plannedRiskNpr": 992.16
       },
       "costs": {
-        "quantity": 74,
-        "buyTurnover": 36741.74,
-        "sellTurnover": 36704.0,
-        "buyBrokerage": 132.27,
-        "sellBrokerage": 132.13,
-        "buyRegulatoryFee": 5.51,
-        "sellRegulatoryFee": 5.51,
+        "quantity": 72,
+        "buyTurnover": 35774.64,
+        "sellTurnover": 35712.0,
+        "buyBrokerage": 128.79,
+        "sellBrokerage": 128.56,
+        "buyRegulatoryFee": 5.37,
+        "sellRegulatoryFee": 5.36,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 36879.52,
-        "netProceeds": 36541.36,
-        "netProfit": -338.16,
+        "buyTotal": 35908.79,
+        "netProceeds": 35553.08,
+        "netProfit": -355.71,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
@@ -7468,24 +7464,24 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 53.962114256509416,
+        "rsi14": 53.6471401485156,
         "volumeRatio": 0.49,
         "supportDistancePct": 1.95,
         "resistanceHeadroomPct": 2.03,
-        "atrPct14": 1.256476713454603,
+        "atrPct14": 1.2573647026031118,
         "avgVolume20": 66336.6
       },
       "entry": 497.9,
-      "stop": 486.64,
+      "stop": 486.63,
       "target1": 510.27,
       "exitPrice": 510.27,
-      "rMultiple": 1.099,
+      "rMultiple": 1.098,
       "netRMultiple": 0.682,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 88,
-        "plannedRiskNpr": 990.88
+        "plannedRiskNpr": 991.76
       },
       "costs": {
         "quantity": 88,
@@ -7521,11 +7517,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 67.89026631288952,
+        "rsi14": 67.85820536133463,
         "volumeRatio": 0.7,
         "supportDistancePct": 9.19,
         "resistanceHeadroomPct": 2.21,
-        "atrPct14": 1.790201750366538,
+        "atrPct14": 1.7904505186567994,
         "avgVolume20": 83221.1
       },
       "entry": 527.16,
@@ -7574,11 +7570,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.849093754513056,
+        "rsi14": 51.83623286476516,
         "volumeRatio": 0.69,
         "supportDistancePct": 4.62,
         "resistanceHeadroomPct": 4.96,
-        "atrPct14": 2.232937838640453,
+        "atrPct14": 2.2330437755656596,
         "avgVolume20": 91900.1
       },
       "entry": 521.0,
@@ -7629,11 +7625,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.15143979891226,
+        "rsi14": 44.14273210949456,
         "volumeRatio": 0.53,
         "supportDistancePct": 3.88,
         "resistanceHeadroomPct": 5.77,
-        "atrPct14": 2.289778524103101,
+        "atrPct14": 2.2898257677907754,
         "avgVolume20": 62964.65
       },
       "entry": 520.0,
@@ -7682,11 +7678,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.213419312112954,
+        "rsi14": 54.20887554006935,
         "volumeRatio": 0.82,
         "supportDistancePct": 2.28,
         "resistanceHeadroomPct": 4.36,
-        "atrPct14": 1.861398095184217,
+        "atrPct14": 1.8614187254584549,
         "avgVolume20": 46374.35
       },
       "entry": 528.73,
@@ -7737,11 +7733,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 64.68917732099335,
+        "rsi14": 64.68708949981334,
         "volumeRatio": 0.9,
         "supportDistancePct": 3.82,
         "resistanceHeadroomPct": 1.4,
-        "atrPct14": 1.4795087290869091,
+        "atrPct14": 1.4795153967805847,
         "avgVolume20": 40421.6
       },
       "entry": 531.73,
@@ -7790,11 +7786,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.66214230898418,
+        "rsi14": 58.660452051270866,
         "volumeRatio": 0.95,
         "supportDistancePct": 2.79,
         "resistanceHeadroomPct": 5.23,
-        "atrPct14": 1.741510940332027,
+        "atrPct14": 1.7415167056360905,
         "avgVolume20": 41055.9
       },
       "entry": 533.71,
@@ -7843,11 +7839,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 48.67534841374218,
+        "rsi14": 48.67420585796022,
         "volumeRatio": 0.95,
         "supportDistancePct": 4.82,
         "resistanceHeadroomPct": 6.03,
-        "atrPct14": 1.71820303741826,
+        "atrPct14": 1.7182058058552565,
         "avgVolume20": 39551.55
       },
       "entry": 533.28,
@@ -7898,11 +7894,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.420753152168636,
+        "rsi14": 46.42053722410862,
         "volumeRatio": 0.76,
         "supportDistancePct": 3.92,
         "resistanceHeadroomPct": 3.65,
-        "atrPct14": 2.1616031817462633,
+        "atrPct14": 2.1616044185816556,
         "avgVolume20": 49848.7
       },
       "entry": 527.0,
@@ -7954,11 +7950,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 72.31846614748112,
+        "rsi14": 72.31840573675363,
         "volumeRatio": 1.96,
         "supportDistancePct": 8.57,
         "resistanceHeadroomPct": 1.43,
-        "atrPct14": 1.8250600519499633,
+        "atrPct14": 1.8250604341928136,
         "avgVolume20": 79205.95
       },
       "entry": 532.05,
@@ -8007,11 +8003,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 52.99677994684565,
+        "rsi14": 52.99674663355557,
         "volumeRatio": 0.32,
         "supportDistancePct": 3.96,
         "resistanceHeadroomPct": 3.27,
-        "atrPct14": 2.2160739637287223,
+        "atrPct14": 2.2160741122415004,
         "avgVolume20": 62467.2
       },
       "entry": 550.0,
@@ -8062,11 +8058,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 35.6907830755802,
+        "rsi14": 35.69076680024776,
         "volumeRatio": 1.0,
         "supportDistancePct": 1.31,
         "resistanceHeadroomPct": 6.13,
-        "atrPct14": 1.7498090203570134,
+        "atrPct14": 1.749809087899787,
         "avgVolume20": 43367.45
       },
       "entry": 535.0,
@@ -8118,11 +8114,11 @@
         "rsi_oversold"
       ],
       "signalMetrics": {
-        "rsi14": 29.791933556480387,
+        "rsi14": 29.791931215893996,
         "volumeRatio": 0.8,
         "supportDistancePct": 0.44,
         "resistanceHeadroomPct": 10.18,
-        "atrPct14": 1.7252610946350746,
+        "atrPct14": 1.7252611090947607,
         "avgVolume20": 67821.4
       },
       "entry": 528.0,
@@ -8173,11 +8169,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.97503866531444,
+        "rsi14": 46.975037006514626,
         "volumeRatio": 0.83,
         "supportDistancePct": 2.96,
         "resistanceHeadroomPct": 7.39,
-        "atrPct14": 1.3573798235944068,
+        "atrPct14": 1.3573798319837236,
         "avgVolume20": 66740.55
       },
       "entry": 541.0,
@@ -8228,39 +8224,39 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 36.51627444290694,
+        "rsi14": 35.38838024152463,
         "volumeRatio": 1.56,
         "supportDistancePct": 1.53,
         "resistanceHeadroomPct": 7.37,
-        "atrPct14": 2.3017808954205368,
+        "atrPct14": 2.2997388131238963,
         "avgVolume20": 40095.35
       },
-      "entry": 757.84,
-      "stop": 731.82,
-      "target1": 780.6,
-      "exitPrice": 780.6,
+      "entry": 757.83,
+      "stop": 731.84,
+      "target1": 780.58,
+      "exitPrice": 780.58,
       "rMultiple": 0.875,
       "netRMultiple": 0.581,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 38,
-        "plannedRiskNpr": 988.76
+        "plannedRiskNpr": 987.62
       },
       "costs": {
         "quantity": 38,
-        "buyTurnover": 28797.92,
-        "sellTurnover": 29662.8,
+        "buyTurnover": 28797.54,
+        "sellTurnover": 29662.04,
         "buyBrokerage": 103.67,
-        "sellBrokerage": 106.79,
+        "sellBrokerage": 106.78,
         "buyRegulatoryFee": 4.32,
         "sellRegulatoryFee": 4.45,
         "dpCharge": 25.0,
-        "capitalGainsTax": 46.55,
-        "taxableGain": 620.65,
-        "buyTotal": 28905.91,
-        "netProceeds": 29480.02,
-        "netProfit": 574.1,
+        "capitalGainsTax": 46.52,
+        "taxableGain": 620.28,
+        "buyTotal": 28905.53,
+        "netProceeds": 29479.29,
+        "netProfit": 573.76,
         "holdingDays": 15
       },
       "exitReason": "target1"
@@ -8281,11 +8277,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.87903300313002,
+        "rsi14": 51.77494015488274,
         "volumeRatio": 1.11,
         "supportDistancePct": 7.84,
         "resistanceHeadroomPct": 6.18,
-        "atrPct14": 2.58010001455371,
+        "atrPct14": 2.579822099587133,
         "avgVolume20": 63326.3
       },
       "entry": 801.0,
@@ -8336,11 +8332,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.981172665712464,
+        "rsi14": 46.932250755889555,
         "volumeRatio": 0.54,
         "supportDistancePct": 3.71,
         "resistanceHeadroomPct": 9.23,
-        "atrPct14": 2.705313061599403,
+        "atrPct14": 2.7051865374677275,
         "avgVolume20": 69708.9
       },
       "entry": 775.0,
@@ -8391,11 +8387,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.1816970219677,
+        "rsi14": 37.15636201685605,
         "volumeRatio": 1.05,
         "supportDistancePct": 0.79,
         "resistanceHeadroomPct": 6.6,
-        "atrPct14": 2.287382738002696,
+        "atrPct14": 2.2873531411938166,
         "avgVolume20": 20787.7
       },
       "entry": 765.35,
@@ -8446,11 +8442,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.43010042163891,
+        "rsi14": 50.41907207458078,
         "volumeRatio": 0.89,
         "supportDistancePct": 2.57,
         "resistanceHeadroomPct": 4.61,
-        "atrPct14": 2.041624306061353,
+        "atrPct14": 2.0416113575416786,
         "avgVolume20": 18669.25
       },
       "entry": 770.0,
@@ -8501,11 +8497,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.23383184759501,
+        "rsi14": 44.23052877392935,
         "volumeRatio": 1.12,
         "supportDistancePct": 0.71,
         "resistanceHeadroomPct": 5.9,
-        "atrPct14": 1.97838492253668,
+        "atrPct14": 1.978380277701024,
         "avgVolume20": 20393.1
       },
       "entry": 764.16,
@@ -8556,11 +8552,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.105050821053396,
+        "rsi14": 43.10178543889221,
         "volumeRatio": 1.12,
         "supportDistancePct": 1.19,
         "resistanceHeadroomPct": 6.1,
-        "atrPct14": 2.405083352312517,
+        "atrPct14": 2.4050796265374292,
         "avgVolume20": 21138.55
       },
       "entry": 763.56,
@@ -8611,11 +8607,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 35.16443883568371,
+        "rsi14": 35.161507573664224,
         "volumeRatio": 1.1,
         "supportDistancePct": 0.24,
         "resistanceHeadroomPct": 6.45,
-        "atrPct14": 2.6040922288135193,
+        "atrPct14": 2.604089209952659,
         "avgVolume20": 21651.8
       },
       "entry": 749.2,
@@ -8666,11 +8662,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.613118753772426,
+        "rsi14": 43.612164051664394,
         "volumeRatio": 2.11,
         "supportDistancePct": 1.2,
         "resistanceHeadroomPct": 7.12,
-        "atrPct14": 2.477501786093097,
+        "atrPct14": 2.4775008561960536,
         "avgVolume20": 20732.35
       },
       "entry": 748.51,
@@ -8719,11 +8715,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.29433421428236,
+        "rsi14": 57.29399846211998,
         "volumeRatio": 1.09,
         "supportDistancePct": 3.76,
         "resistanceHeadroomPct": 5.64,
-        "atrPct14": 3.036098866190602,
+        "atrPct14": 3.036098285002403,
         "avgVolume20": 19715.25
       },
       "entry": 757.23,
@@ -8774,11 +8770,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.74262962793328,
+        "rsi14": 37.742451165095396,
         "volumeRatio": 0.96,
         "supportDistancePct": 0.5,
         "resistanceHeadroomPct": 9.21,
-        "atrPct14": 2.1315354737439005,
+        "atrPct14": 2.1315352268167955,
         "avgVolume20": 19186.95
       },
       "entry": 738.0,
@@ -8827,11 +8823,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.98431997149731,
+        "rsi14": 61.98430436806291,
         "volumeRatio": 2.37,
         "supportDistancePct": 7.41,
         "resistanceHeadroomPct": 2.72,
-        "atrPct14": 2.0938899671887294,
+        "atrPct14": 2.0938899310863337,
         "avgVolume20": 21830.7
       },
       "entry": 706.3,
@@ -8882,11 +8878,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.008862654155315,
+        "rsi14": 50.00885554664748,
         "volumeRatio": 0.51,
         "supportDistancePct": 4.56,
         "resistanceHeadroomPct": 9.49,
-        "atrPct14": 2.314135954981085,
+        "atrPct14": 2.3141359419943717,
         "avgVolume20": 22043.0
       },
       "entry": 720.0,
@@ -8935,11 +8931,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 52.077119745274544,
+        "rsi14": 52.077116793805125,
         "volumeRatio": 1.61,
         "supportDistancePct": 6.16,
         "resistanceHeadroomPct": 2.81,
-        "atrPct14": 1.9255892057219215,
+        "atrPct14": 1.9255892000759487,
         "avgVolume20": 17473.05
       },
       "entry": 737.1,
@@ -8973,64 +8969,115 @@
       "exitReason": "time_exit"
     },
     {
-      "symbol": "NRIC",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
-      "setupScore": 64,
-      "scoreBucket": "50-64",
+      "symbol": "NLIC",
+      "signalDate": "2026-11-25",
+      "fillDate": "2026-11-26",
+      "exitDate": "2026-11-26",
+      "setupScore": 68,
+      "scoreBucket": "65-79",
       "components": {
-        "trend": 10,
+        "trend": 20,
+        "momentum": 12,
+        "liquidity": 8,
+        "participation": 8,
+        "location": 20
+      },
+      "riskFlags": [],
+      "signalMetrics": {
+        "rsi14": 44.577089792239796,
+        "volumeRatio": 1.36,
+        "supportDistancePct": 0.89,
+        "resistanceHeadroomPct": 4.29,
+        "atrPct14": 1.750323085753476,
+        "avgVolume20": 19175.8
+      },
+      "entry": 726.0,
+      "stop": 710.6,
+      "target1": 746.37,
+      "exitPrice": 723.0,
+      "rMultiple": -0.195,
+      "netRMultiple": -0.573,
+      "referencePosition": {
+        "capital": 100000.0,
+        "riskPct": 1.0,
+        "quantity": 64,
+        "plannedRiskNpr": 985.6
+      },
+      "costs": {
+        "quantity": 64,
+        "buyTurnover": 46464.0,
+        "sellTurnover": 46272.0,
+        "buyBrokerage": 167.27,
+        "sellBrokerage": 166.58,
+        "buyRegulatoryFee": 6.97,
+        "sellRegulatoryFee": 6.94,
+        "dpCharge": 25.0,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
+        "buyTotal": 46638.24,
+        "netProceeds": 46073.48,
+        "netProfit": -564.76,
+        "holdingDays": 0
+      },
+      "exitReason": "time_exit"
+    },
+    {
+      "symbol": "NRIC",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
+      "setupScore": 84,
+      "scoreBucket": "80-100",
+      "components": {
+        "trend": 30,
         "momentum": 20,
         "liquidity": 16,
         "participation": 10,
         "location": 8
       },
-      "riskFlags": [
-        "below_sma50"
-      ],
+      "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.47233510406765,
-        "volumeRatio": 2.37,
-        "supportDistancePct": 6.57,
-        "resistanceHeadroomPct": 4.9,
-        "atrPct14": 3.1500182994191612,
-        "avgVolume20": 71325.0
+        "rsi14": 58.417979705615416,
+        "volumeRatio": 2.57,
+        "supportDistancePct": 9.04,
+        "resistanceHeadroomPct": 2.13,
+        "atrPct14": 3.152303192148341,
+        "avgVolume20": 76208.2
       },
-      "entry": 1295.12,
-      "stop": 1190.48,
-      "target1": 1414.13,
-      "exitPrice": 1220.0,
-      "rMultiple": -0.718,
-      "netRMultiple": -0.835,
+      "entry": 1306.62,
+      "stop": 1190.2,
+      "target1": 1437.04,
+      "exitPrice": 1227.0,
+      "rMultiple": -0.684,
+      "netRMultiple": -0.792,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 9,
-        "plannedRiskNpr": 941.76
+        "quantity": 8,
+        "plannedRiskNpr": 931.36
       },
       "costs": {
-        "quantity": 9,
-        "buyTurnover": 11656.08,
-        "sellTurnover": 10980.0,
-        "buyBrokerage": 41.96,
-        "sellBrokerage": 39.53,
-        "buyRegulatoryFee": 1.75,
-        "sellRegulatoryFee": 1.65,
+        "quantity": 8,
+        "buyTurnover": 10452.96,
+        "sellTurnover": 9816.0,
+        "buyBrokerage": 37.63,
+        "sellBrokerage": 35.34,
+        "buyRegulatoryFee": 1.57,
+        "sellRegulatoryFee": 1.47,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 11699.79,
-        "netProceeds": 10913.82,
-        "netProfit": -785.97,
+        "buyTotal": 10492.16,
+        "netProceeds": 9754.19,
+        "netProfit": -737.97,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "NRIC",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
       "exitDate": "2026-03-09",
       "setupScore": 50,
       "scoreBucket": "50-64",
@@ -9045,40 +9092,40 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 39.512675206063406,
-        "volumeRatio": 0.2,
-        "supportDistancePct": 2.15,
-        "resistanceHeadroomPct": 9.86,
-        "atrPct14": 2.9548579811908517,
-        "avgVolume20": 68078.8
+        "rsi14": 38.370656351510206,
+        "volumeRatio": 0.33,
+        "supportDistancePct": 1.75,
+        "resistanceHeadroomPct": 9.74,
+        "atrPct14": 2.9369777544233924,
+        "avgVolume20": 66059.95
       },
-      "entry": 1236.06,
-      "stop": 1181.68,
-      "target1": 1283.65,
-      "exitPrice": 1283.65,
+      "entry": 1230.97,
+      "stop": 1177.14,
+      "target1": 1278.08,
+      "exitPrice": 1278.08,
       "rMultiple": 0.875,
-      "netRMultiple": 0.625,
+      "netRMultiple": 0.624,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 18,
-        "plannedRiskNpr": 978.84
+        "plannedRiskNpr": 968.94
       },
       "costs": {
         "quantity": 18,
-        "buyTurnover": 22249.08,
-        "sellTurnover": 23105.7,
-        "buyBrokerage": 80.1,
-        "sellBrokerage": 83.18,
-        "buyRegulatoryFee": 3.34,
-        "sellRegulatoryFee": 3.47,
+        "buyTurnover": 22157.46,
+        "sellTurnover": 23005.44,
+        "buyBrokerage": 79.77,
+        "sellBrokerage": 82.82,
+        "buyRegulatoryFee": 3.32,
+        "sellRegulatoryFee": 3.45,
         "dpCharge": 25.0,
-        "capitalGainsTax": 49.62,
-        "taxableGain": 661.54,
-        "buyTotal": 22332.51,
-        "netProceeds": 22944.44,
-        "netProfit": 611.92,
-        "holdingDays": 11
+        "capitalGainsTax": 49.02,
+        "taxableGain": 653.62,
+        "buyTotal": 22240.55,
+        "netProceeds": 22845.15,
+        "netProfit": 604.6,
+        "holdingDays": 8
       },
       "exitReason": "target1"
     },
@@ -9098,11 +9145,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.721135138315766,
+        "rsi14": 56.71794840720748,
         "volumeRatio": 1.6,
         "supportDistancePct": 7.58,
         "resistanceHeadroomPct": 4.08,
-        "atrPct14": 3.20098504651377,
+        "atrPct14": 3.2015114237643174,
         "avgVolume20": 63132.4
       },
       "entry": 1270.9,
@@ -9153,29 +9200,29 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.251440110563024,
+        "rsi14": 50.25204181716528,
         "volumeRatio": 1.03,
         "supportDistancePct": 4.92,
         "resistanceHeadroomPct": 6.64,
-        "atrPct14": 2.8377813973483508,
+        "atrPct14": 2.8380200817278123,
         "avgVolume20": 53645.9
       },
       "entry": 1268.0,
-      "stop": 1196.41,
+      "stop": 1196.4,
       "target1": 1342.73,
-      "exitPrice": 1196.41,
+      "exitPrice": 1196.4,
       "rMultiple": -1.0,
       "netRMultiple": -1.156,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 13,
-        "plannedRiskNpr": 930.67
+        "plannedRiskNpr": 930.8
       },
       "costs": {
         "quantity": 13,
         "buyTurnover": 16484.0,
-        "sellTurnover": 15553.33,
+        "sellTurnover": 15553.2,
         "buyBrokerage": 59.34,
         "sellBrokerage": 55.99,
         "buyRegulatoryFee": 2.47,
@@ -9184,8 +9231,8 @@
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
         "buyTotal": 16545.82,
-        "netProceeds": 15470.01,
-        "netProfit": -1075.81,
+        "netProceeds": 15469.88,
+        "netProfit": -1075.94,
         "holdingDays": 4
       },
       "exitReason": "stop"
@@ -9208,16 +9255,16 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 33.95429865743343,
+        "rsi14": 33.958619945201704,
         "volumeRatio": 2.13,
         "supportDistancePct": 2.8,
         "resistanceHeadroomPct": 14.67,
-        "atrPct14": 3.2501241459947696,
+        "atrPct14": 3.250314965254491,
         "avgVolume20": 64186.55
       },
       "entry": 1188.58,
       "stop": 1131.1,
-      "target1": 1238.87,
+      "target1": 1238.88,
       "exitPrice": 1131.1,
       "rMultiple": -1.0,
       "netRMultiple": -1.177,
@@ -9266,11 +9313,11 @@
         "weak_20d_return"
       ],
       "signalMetrics": {
-        "rsi14": 18.00712755418145,
+        "rsi14": 18.0108042237395,
         "volumeRatio": 1.91,
         "supportDistancePct": 0.42,
         "resistanceHeadroomPct": 35.33,
-        "atrPct14": 5.7876061881746645,
+        "atrPct14": 5.787766637257021,
         "avgVolume20": 106305.5
       },
       "entry": 963.9,
@@ -9321,11 +9368,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.63962040511239,
+        "rsi14": 40.63985228866024,
         "volumeRatio": 0.42,
         "supportDistancePct": 4.82,
         "resistanceHeadroomPct": 8.73,
-        "atrPct14": 3.521831586866498,
+        "atrPct14": 3.52184640009511,
         "avgVolume20": 33989.2
       },
       "entry": 912.69,
@@ -9374,11 +9421,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.73982228306551,
+        "rsi14": 49.739829785965505,
         "volumeRatio": 1.46,
         "supportDistancePct": 11.71,
         "resistanceHeadroomPct": 18.12,
-        "atrPct14": 4.934904677535445,
+        "atrPct14": 4.934908794694275,
         "avgVolume20": 78834.85
       },
       "entry": 990.0,
@@ -9430,11 +9477,11 @@
         "weak_20d_return"
       ],
       "signalMetrics": {
-        "rsi14": 34.87147292438537,
+        "rsi14": 34.871513364690486,
         "volumeRatio": 0.42,
         "supportDistancePct": 0.44,
         "resistanceHeadroomPct": 28.4,
-        "atrPct14": 4.269980828375945,
+        "atrPct14": 4.269982809063994,
         "avgVolume20": 59163.75
       },
       "entry": 920.0,
@@ -9485,11 +9532,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 40.199012385184616,
+        "rsi14": 40.19902870448464,
         "volumeRatio": 1.47,
         "supportDistancePct": 1.62,
         "resistanceHeadroomPct": 8.25,
-        "atrPct14": 3.7928369214100073,
+        "atrPct14": 3.792837792290059,
         "avgVolume20": 25158.3
       },
       "entry": 933.77,
@@ -9540,11 +9587,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 65.43910587266183,
+        "rsi14": 65.43909524718558,
         "volumeRatio": 2.91,
         "supportDistancePct": 10.61,
         "resistanceHeadroomPct": 1.77,
-        "atrPct14": 4.039966314480794,
+        "atrPct14": 4.039966902800729,
         "avgVolume20": 28470.05
       },
       "entry": 960.06,
@@ -9595,11 +9642,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.697312183985055,
+        "rsi14": 51.69731228865322,
         "volumeRatio": 1.33,
         "supportDistancePct": 6.19,
         "resistanceHeadroomPct": 6.8,
-        "atrPct14": 4.35347724572236,
+        "atrPct14": 4.353477587003384,
         "avgVolume20": 31442.55
       },
       "entry": 970.0,
@@ -9651,11 +9698,11 @@
         "weak_20d_return"
       ],
       "signalMetrics": {
-        "rsi14": 45.06399341747543,
+        "rsi14": 45.063993829677045,
         "volumeRatio": 1.68,
         "supportDistancePct": 7.64,
         "resistanceHeadroomPct": 10.12,
-        "atrPct14": 3.3151446628975982,
+        "atrPct14": 3.315144708598882,
         "avgVolume20": 22016.35
       },
       "entry": 851.5,
@@ -9707,11 +9754,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 59.20302536543782,
+        "rsi14": 59.20302528943349,
         "volumeRatio": 2.55,
         "supportDistancePct": 9.82,
         "resistanceHeadroomPct": 1.52,
-        "atrPct14": 3.1678860042978076,
+        "atrPct14": 3.1678860115519942,
         "avgVolume20": 15288.85
       },
       "entry": 806.36,
@@ -9748,7 +9795,7 @@
       "symbol": "NRIC",
       "signalDate": "2026-11-18",
       "fillDate": "2026-11-19",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 57,
       "scoreBucket": "50-64",
       "components": {
@@ -9760,19 +9807,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 53.900502659683504,
+        "rsi14": 53.90050265288168,
         "volumeRatio": 0.29,
         "supportDistancePct": 10.77,
         "resistanceHeadroomPct": 17.4,
-        "atrPct14": 4.372334709051979,
+        "atrPct14": 4.372334712698773,
         "avgVolume20": 31036.75
       },
       "entry": 835.19,
       "stop": 750.79,
       "target1": 922.21,
-      "exitPrice": 819.9,
-      "rMultiple": -0.181,
-      "netRMultiple": -0.282,
+      "exitPrice": 817.0,
+      "rMultiple": -0.216,
+      "netRMultiple": -0.316,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -9782,30 +9829,30 @@
       "costs": {
         "quantity": 11,
         "buyTurnover": 9187.09,
-        "sellTurnover": 9018.9,
+        "sellTurnover": 8987.0,
         "buyBrokerage": 33.07,
-        "sellBrokerage": 32.47,
+        "sellBrokerage": 32.35,
         "buyRegulatoryFee": 1.38,
         "sellRegulatoryFee": 1.35,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
         "buyTotal": 9221.54,
-        "netProceeds": 8960.08,
-        "netProfit": -261.46,
-        "holdingDays": 6
+        "netProceeds": 8928.3,
+        "netProfit": -293.24,
+        "holdingDays": 7
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "OMPL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
       "exitDate": "2026-02-23",
-      "setupScore": 72,
-      "scoreBucket": "65-79",
+      "setupScore": 62,
+      "scoreBucket": "50-64",
       "components": {
-        "trend": 30,
+        "trend": 20,
         "momentum": 20,
         "liquidity": 12,
         "participation": 2,
@@ -9813,40 +9860,40 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.526845058811396,
-        "volumeRatio": 0.66,
-        "supportDistancePct": 9.64,
-        "resistanceHeadroomPct": 11.92,
-        "atrPct14": 4.616241667756489,
-        "avgVolume20": 37458.15
+        "rsi14": 52.35975658851497,
+        "volumeRatio": 0.55,
+        "supportDistancePct": 8.47,
+        "resistanceHeadroomPct": 13.37,
+        "atrPct14": 4.6738256840982535,
+        "avgVolume20": 36339.55
       },
-      "entry": 1409.44,
-      "stop": 1256.05,
-      "target1": 1570.46,
-      "exitPrice": 1256.05,
+      "entry": 1390.0,
+      "stop": 1256.06,
+      "target1": 1570.61,
+      "exitPrice": 1256.06,
       "rMultiple": -1.0,
-      "netRMultiple": -1.092,
+      "netRMultiple": -1.101,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 6,
-        "plannedRiskNpr": 920.34
+        "quantity": 7,
+        "plannedRiskNpr": 937.58
       },
       "costs": {
-        "quantity": 6,
-        "buyTurnover": 8456.64,
-        "sellTurnover": 7536.3,
-        "buyBrokerage": 30.44,
-        "sellBrokerage": 27.13,
-        "buyRegulatoryFee": 1.27,
-        "sellRegulatoryFee": 1.13,
+        "quantity": 7,
+        "buyTurnover": 9730.0,
+        "sellTurnover": 8792.42,
+        "buyBrokerage": 35.03,
+        "sellBrokerage": 31.65,
+        "buyRegulatoryFee": 1.46,
+        "sellRegulatoryFee": 1.32,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 8488.35,
-        "netProceeds": 7483.04,
-        "netProfit": -1005.31,
-        "holdingDays": 15
+        "buyTotal": 9766.49,
+        "netProceeds": 8734.45,
+        "netProfit": -1032.04,
+        "holdingDays": 14
       },
       "exitReason": "stop"
     },
@@ -9868,39 +9915,39 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.91487721866717,
+        "rsi14": 42.926703191477635,
         "volumeRatio": 0.26,
         "supportDistancePct": 3.51,
         "resistanceHeadroomPct": 22.12,
-        "atrPct14": 4.220239623466092,
+        "atrPct14": 4.221857919334467,
         "avgVolume20": 30252.15
       },
       "entry": 1298.0,
-      "stop": 1222.33,
-      "target1": 1375.49,
-      "exitPrice": 1375.49,
+      "stop": 1222.3,
+      "target1": 1375.52,
+      "exitPrice": 1375.52,
       "rMultiple": 1.024,
       "netRMultiple": 0.801,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 13,
-        "plannedRiskNpr": 983.71
+        "plannedRiskNpr": 984.1
       },
       "costs": {
         "quantity": 13,
         "buyTurnover": 16874.0,
-        "sellTurnover": 17881.37,
+        "sellTurnover": 17881.76,
         "buyBrokerage": 60.75,
         "sellBrokerage": 64.37,
         "buyRegulatoryFee": 2.53,
         "sellRegulatoryFee": 2.68,
         "dpCharge": 25.0,
-        "capitalGainsTax": 63.9,
-        "taxableGain": 852.04,
+        "capitalGainsTax": 63.93,
+        "taxableGain": 852.43,
         "buyTotal": 16937.28,
-        "netProceeds": 17725.41,
-        "netProfit": 788.13,
+        "netProceeds": 17725.77,
+        "netProfit": 788.49,
         "holdingDays": 12
       },
       "exitReason": "target1"
@@ -9921,15 +9968,15 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 59.22200732088162,
+        "rsi14": 59.2084764601327,
         "volumeRatio": 1.69,
         "supportDistancePct": 10.94,
         "resistanceHeadroomPct": 4.79,
-        "atrPct14": 3.737376306633153,
+        "atrPct14": 3.7383338688645305,
         "avgVolume20": 14667.8
       },
       "entry": 1362.42,
-      "stop": 1232.04,
+      "stop": 1232.03,
       "target1": 1502.47,
       "exitPrice": 1343.0,
       "rMultiple": -0.149,
@@ -9938,7 +9985,7 @@
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 7,
-        "plannedRiskNpr": 912.66
+        "plannedRiskNpr": 912.73
       },
       "costs": {
         "quantity": 7,
@@ -9974,11 +10021,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 55.5109681980312,
+        "rsi14": 55.50595223509044,
         "volumeRatio": 1.06,
         "supportDistancePct": 8.89,
         "resistanceHeadroomPct": 6.1,
-        "atrPct14": 3.1875303109075617,
+        "atrPct14": 3.1879638230297282,
         "avgVolume20": 9534.5
       },
       "entry": 1342.11,
@@ -10030,11 +10077,11 @@
         "low_liquidity"
       ],
       "signalMetrics": {
-        "rsi14": 46.35166785803035,
+        "rsi14": 46.351774866987675,
         "volumeRatio": 0.46,
         "supportDistancePct": 5.65,
         "resistanceHeadroomPct": 5.18,
-        "atrPct14": 3.5352852301034834,
+        "atrPct14": 3.5353077955077286,
         "avgVolume20": 3908.15
       },
       "entry": 1168.9,
@@ -10086,11 +10133,11 @@
         "low_liquidity"
       ],
       "signalMetrics": {
-        "rsi14": 46.92951055166785,
+        "rsi14": 46.92951107003949,
         "volumeRatio": 1.1,
         "supportDistancePct": 5.47,
         "resistanceHeadroomPct": 6.87,
-        "atrPct14": 3.1073981662097916,
+        "atrPct14": 3.1073982885013134,
         "avgVolume20": 2324.3
       },
       "entry": 885.0,
@@ -10125,38 +10172,38 @@
     },
     {
       "symbol": "RHGCL",
-      "signalDate": "2026-02-05",
+      "signalDate": "2026-02-08",
       "fillDate": "2026-02-10",
       "exitDate": "2026-02-26",
-      "setupScore": 78,
-      "scoreBucket": "65-79",
+      "setupScore": 81,
+      "scoreBucket": "80-100",
       "components": {
         "trend": 30,
         "momentum": 20,
         "liquidity": 20,
-        "participation": 5,
+        "participation": 8,
         "location": 3
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 59.164149605756705,
-        "volumeRatio": 0.91,
-        "supportDistancePct": 16.22,
-        "resistanceHeadroomPct": 10.38,
-        "atrPct14": 4.678513431131986,
-        "avgVolume20": 174541.0
+        "rsi14": 62.77126565603268,
+        "volumeRatio": 1.36,
+        "supportDistancePct": 18.2,
+        "resistanceHeadroomPct": 7.76,
+        "atrPct14": 4.720726960188886,
+        "avgVolume20": 184733.75
       },
       "entry": 280.3,
-      "stop": 237.93,
-      "target1": 333.68,
+      "stop": 237.82,
+      "target1": 339.39,
       "exitPrice": 267.0,
-      "rMultiple": -0.314,
-      "netRMultiple": -0.388,
+      "rMultiple": -0.313,
+      "netRMultiple": -0.387,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 23,
-        "plannedRiskNpr": 974.51
+        "plannedRiskNpr": 977.04
       },
       "costs": {
         "quantity": 23,
@@ -10194,39 +10241,39 @@
         "weak_20d_return"
       ],
       "signalMetrics": {
-        "rsi14": 48.29614612028019,
+        "rsi14": 48.13046634493824,
         "volumeRatio": 0.26,
         "supportDistancePct": 4.4,
         "resistanceHeadroomPct": 16.45,
-        "atrPct14": 4.606571646462286,
+        "atrPct14": 4.604447898930148,
         "avgVolume20": 118012.65
       },
       "entry": 268.0,
-      "stop": 257.28,
-      "target1": 292.65,
-      "exitPrice": 292.65,
-      "rMultiple": 2.299,
-      "netRMultiple": 1.922,
+      "stop": 257.29,
+      "target1": 292.64,
+      "exitPrice": 292.64,
+      "rMultiple": 2.301,
+      "netRMultiple": 1.923,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 93,
-        "plannedRiskNpr": 996.96
+        "plannedRiskNpr": 996.03
       },
       "costs": {
         "quantity": 93,
         "buyTurnover": 24924.0,
-        "sellTurnover": 27216.45,
+        "sellTurnover": 27215.52,
         "buyBrokerage": 89.73,
         "sellBrokerage": 97.98,
         "buyRegulatoryFee": 3.74,
         "sellRegulatoryFee": 4.08,
         "dpCharge": 25.0,
-        "capitalGainsTax": 155.39,
-        "taxableGain": 2071.92,
+        "capitalGainsTax": 155.32,
+        "taxableGain": 2071.0,
         "buyTotal": 25017.47,
-        "netProceeds": 26933.99,
-        "netProfit": 1916.53,
+        "netProceeds": 26933.14,
+        "netProfit": 1915.67,
         "holdingDays": 6
       },
       "exitReason": "target1"
@@ -10249,11 +10296,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 62.03297774373943,
+        "rsi14": 61.993401327050215,
         "volumeRatio": 0.72,
         "supportDistancePct": 19.77,
         "resistanceHeadroomPct": 8.52,
-        "atrPct14": 5.113250349730371,
+        "atrPct14": 5.1126639264265,
         "avgVolume20": 155695.7
       },
       "entry": 309.69,
@@ -10304,11 +10351,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 49.0047476810281,
+        "rsi14": 48.989584812425406,
         "volumeRatio": 0.33,
         "supportDistancePct": 8.24,
         "resistanceHeadroomPct": 17.28,
-        "atrPct14": 5.991472930865038,
+        "atrPct14": 5.991212487925994,
         "avgVolume20": 164935.85
       },
       "entry": 305.51,
@@ -10360,11 +10407,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 46.9541318985261,
+        "rsi14": 46.94442654498653,
         "volumeRatio": 0.8,
         "supportDistancePct": 6.97,
         "resistanceHeadroomPct": 9.63,
-        "atrPct14": 5.256926883818454,
+        "atrPct14": 5.2568100314906,
         "avgVolume20": 69401.3
       },
       "entry": 289.1,
@@ -10415,11 +10462,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 53.1006907659219,
+        "rsi14": 53.0958291714606,
         "volumeRatio": 0.99,
         "supportDistancePct": 7.39,
         "resistanceHeadroomPct": 5.33,
-        "atrPct14": 4.8359771159083085,
+        "atrPct14": 4.835926258650916,
         "avgVolume20": 47130.5
       },
       "entry": 290.43,
@@ -10470,11 +10517,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 62.928049046643004,
+        "rsi14": 62.92611543506947,
         "volumeRatio": 4.47,
         "supportDistancePct": 11.63,
         "resistanceHeadroomPct": 0.67,
-        "atrPct14": 4.345995573556533,
+        "atrPct14": 4.345973926780874,
         "avgVolume20": 41177.6
       },
       "entry": 300.7,
@@ -10525,11 +10572,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.269104325694784,
+        "rsi14": 50.269000948646855,
         "volumeRatio": 2.06,
         "supportDistancePct": 11.11,
         "resistanceHeadroomPct": 7.41,
-        "atrPct14": 4.528761634266347,
+        "atrPct14": 4.528760335791825,
         "avgVolume20": 19852.3
       },
       "entry": 265.1,
@@ -10580,11 +10627,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 52.46660014398036,
+        "rsi14": 52.466549771540826,
         "volumeRatio": 1.46,
         "supportDistancePct": 6.34,
         "resistanceHeadroomPct": 6.34,
-        "atrPct14": 3.629411066284917,
+        "atrPct14": 3.6294106646612962,
         "avgVolume20": 17975.0
       },
       "entry": 262.7,
@@ -10633,11 +10680,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 55.70996724749812,
+        "rsi14": 55.709957899294146,
         "volumeRatio": 4.84,
         "supportDistancePct": 9.23,
         "resistanceHeadroomPct": 4.17,
-        "atrPct14": 4.053497555345147,
+        "atrPct14": 4.05349743896048,
         "avgVolume20": 16507.35
       },
       "entry": 250.0,
@@ -10686,11 +10733,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 55.23294909315198,
+        "rsi14": 55.23294396130599,
         "volumeRatio": 1.88,
         "supportDistancePct": 11.53,
         "resistanceHeadroomPct": 7.24,
-        "atrPct14": 4.241419009577982,
+        "atrPct14": 4.2414189420572495,
         "avgVolume20": 23909.5
       },
       "entry": 261.27,
@@ -10739,11 +10786,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.186121649685084,
+        "rsi14": 56.18611862218166,
         "volumeRatio": 2.06,
         "supportDistancePct": 9.32,
         "resistanceHeadroomPct": 8.01,
-        "atrPct14": 3.760973889665473,
+        "atrPct14": 3.7609738595703086,
         "avgVolume20": 30140.3
       },
       "entry": 263.0,
@@ -10792,11 +10839,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.671559086848646,
+        "rsi14": 51.671557606465036,
         "volumeRatio": 0.59,
         "supportDistancePct": 4.34,
         "resistanceHeadroomPct": 7.84,
-        "atrPct14": 3.424891284081429,
+        "atrPct14": 3.4248912706055767,
         "avgVolume20": 18577.8
       },
       "entry": 261.0,
@@ -10833,7 +10880,7 @@
       "symbol": "RHGCL",
       "signalDate": "2026-11-24",
       "fillDate": "2026-11-25",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 55,
       "scoreBucket": "50-64",
       "components": {
@@ -10847,19 +10894,19 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.14924484274088,
+        "rsi14": 44.14924395889212,
         "volumeRatio": 0.94,
         "supportDistancePct": 1.65,
         "resistanceHeadroomPct": 11.09,
-        "atrPct14": 3.1348117082386038,
+        "atrPct14": 3.134811702094838,
         "avgVolume20": 15742.3
       },
       "entry": 254.5,
       "stop": 245.2,
       "target1": 267.7,
-      "exitPrice": 260.0,
-      "rMultiple": 0.591,
-      "netRMultiple": 0.332,
+      "exitPrice": 267.7,
+      "rMultiple": 1.419,
+      "netRMultiple": 1.095,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -10869,71 +10916,71 @@
       "costs": {
         "quantity": 107,
         "buyTurnover": 27231.5,
-        "sellTurnover": 27820.0,
+        "sellTurnover": 28643.9,
         "buyBrokerage": 98.03,
-        "sellBrokerage": 100.15,
+        "sellBrokerage": 103.12,
         "buyRegulatoryFee": 4.08,
-        "sellRegulatoryFee": 4.17,
+        "sellRegulatoryFee": 4.3,
         "dpCharge": 25.0,
-        "capitalGainsTax": 26.78,
-        "taxableGain": 357.06,
+        "capitalGainsTax": 88.34,
+        "taxableGain": 1177.87,
         "buyTotal": 27333.62,
-        "netProceeds": 27663.9,
-        "netProfit": 330.28,
-        "holdingDays": 0
+        "netProceeds": 28423.15,
+        "netProfit": 1089.53,
+        "holdingDays": 1
       },
-      "exitReason": "time_exit"
+      "exitReason": "target1"
     },
     {
       "symbol": "RHPL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
       "exitDate": "2026-02-12",
-      "setupScore": 82,
-      "scoreBucket": "80-100",
+      "setupScore": 73,
+      "scoreBucket": "65-79",
       "components": {
-        "trend": 30,
+        "trend": 20,
         "momentum": 20,
         "liquidity": 16,
-        "participation": 8,
-        "location": 8
+        "participation": 2,
+        "location": 15
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.7713864797009,
-        "volumeRatio": 1.02,
-        "supportDistancePct": 6.21,
-        "resistanceHeadroomPct": 6.98,
-        "atrPct14": 3.657875308918025,
-        "avgVolume20": 62798.9
+        "rsi14": 51.18361779329549,
+        "volumeRatio": 0.68,
+        "supportDistancePct": 4.88,
+        "resistanceHeadroomPct": 8.51,
+        "atrPct14": 3.809816514807701,
+        "avgVolume20": 63273.35
       },
-      "entry": 284.81,
-      "stop": 264.69,
-      "target1": 303.92,
-      "exitPrice": 303.92,
-      "rMultiple": 0.95,
-      "netRMultiple": 0.754,
+      "entry": 278.2,
+      "stop": 264.62,
+      "target1": 302.22,
+      "exitPrice": 302.22,
+      "rMultiple": 1.769,
+      "netRMultiple": 1.465,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 49,
-        "plannedRiskNpr": 985.88
+        "quantity": 73,
+        "plannedRiskNpr": 991.34
       },
       "costs": {
-        "quantity": 49,
-        "buyTurnover": 13955.69,
-        "sellTurnover": 14892.08,
-        "buyBrokerage": 50.24,
-        "sellBrokerage": 53.61,
-        "buyRegulatoryFee": 2.09,
-        "sellRegulatoryFee": 2.23,
+        "quantity": 73,
+        "buyTurnover": 20308.6,
+        "sellTurnover": 22062.06,
+        "buyBrokerage": 73.11,
+        "sellBrokerage": 79.42,
+        "buyRegulatoryFee": 3.05,
+        "sellRegulatoryFee": 3.31,
         "dpCharge": 25.0,
-        "capitalGainsTax": 60.24,
-        "taxableGain": 803.21,
-        "buyTotal": 14008.02,
-        "netProceeds": 14750.99,
-        "netProfit": 742.97,
-        "holdingDays": 4
+        "capitalGainsTax": 117.72,
+        "taxableGain": 1569.57,
+        "buyTotal": 20384.76,
+        "netProceeds": 21836.61,
+        "netProfit": 1451.85,
+        "holdingDays": 3
       },
       "exitReason": "target1"
     },
@@ -10953,29 +11000,29 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 65.17354031230131,
+        "rsi14": 65.0681278264716,
         "volumeRatio": 2.66,
         "supportDistancePct": 11.38,
         "resistanceHeadroomPct": 5.57,
-        "atrPct14": 3.993842834257481,
+        "atrPct14": 3.9898639832223193,
         "avgVolume20": 104267.15
       },
-      "entry": 289.29,
-      "stop": 267.25,
-      "target1": 309.4,
-      "exitPrice": 309.4,
-      "rMultiple": 0.912,
-      "netRMultiple": 0.726,
+      "entry": 289.28,
+      "stop": 267.26,
+      "target1": 309.39,
+      "exitPrice": 309.39,
+      "rMultiple": 0.913,
+      "netRMultiple": 0.727,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 45,
-        "plannedRiskNpr": 991.8
+        "plannedRiskNpr": 990.9
       },
       "costs": {
         "quantity": 45,
-        "buyTurnover": 13018.05,
-        "sellTurnover": 13923.0,
+        "buyTurnover": 13017.6,
+        "sellTurnover": 13922.55,
         "buyBrokerage": 46.86,
         "sellBrokerage": 50.12,
         "buyRegulatoryFee": 1.95,
@@ -10983,9 +11030,9 @@
         "dpCharge": 25.0,
         "capitalGainsTax": 58.42,
         "taxableGain": 778.92,
-        "buyTotal": 13066.87,
-        "netProceeds": 13787.37,
-        "netProfit": 720.5,
+        "buyTotal": 13066.42,
+        "netProceeds": 13786.92,
+        "netProfit": 720.51,
         "holdingDays": 15
       },
       "exitReason": "target1"
@@ -11006,11 +11053,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 59.04968506143159,
+        "rsi14": 59.02868509019782,
         "volumeRatio": 0.51,
         "supportDistancePct": 11.84,
         "resistanceHeadroomPct": 3.44,
-        "atrPct14": 3.5685405859001365,
+        "atrPct14": 3.5677841218314104,
         "avgVolume20": 109355.9
       },
       "entry": 306.31,
@@ -11061,39 +11108,39 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.16524205602714,
+        "rsi14": 42.15551874471165,
         "volumeRatio": 0.51,
         "supportDistancePct": 4.88,
         "resistanceHeadroomPct": 14.04,
-        "atrPct14": 4.789682092399375,
+        "atrPct14": 4.789254049325016,
         "avgVolume20": 108868.65
       },
-      "entry": 278.17,
+      "entry": 278.18,
       "stop": 267.69,
       "target1": 306.7,
       "exitPrice": 292.5,
-      "rMultiple": 1.367,
-      "netRMultiple": 1.053,
+      "rMultiple": 1.365,
+      "netRMultiple": 1.051,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 95,
-        "plannedRiskNpr": 995.6
+        "plannedRiskNpr": 996.55
       },
       "costs": {
         "quantity": 95,
-        "buyTurnover": 26426.15,
+        "buyTurnover": 26427.1,
         "sellTurnover": 27787.5,
-        "buyBrokerage": 95.13,
+        "buyBrokerage": 95.14,
         "sellBrokerage": 100.03,
         "buyRegulatoryFee": 3.96,
         "sellRegulatoryFee": 4.17,
         "dpCharge": 25.0,
-        "capitalGainsTax": 84.98,
-        "taxableGain": 1133.05,
-        "buyTotal": 26525.25,
-        "netProceeds": 27573.32,
-        "netProfit": 1048.07,
+        "capitalGainsTax": 84.91,
+        "taxableGain": 1132.1,
+        "buyTotal": 26526.2,
+        "netProceeds": 27573.39,
+        "netProfit": 1047.19,
         "holdingDays": 11
       },
       "exitReason": "time_exit"
@@ -11116,11 +11163,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 53.327213815034796,
+        "rsi14": 53.32434880104785,
         "volumeRatio": 0.88,
         "supportDistancePct": 5.57,
         "resistanceHeadroomPct": 4.88,
-        "atrPct14": 2.8321187194845265,
+        "atrPct14": 2.8320520643892335,
         "avgVolume20": 20760.7
       },
       "entry": 286.45,
@@ -11171,11 +11218,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 53.29239767564327,
+        "rsi14": 53.29089772172393,
         "volumeRatio": 0.89,
         "supportDistancePct": 4.58,
         "resistanceHeadroomPct": 2.11,
-        "atrPct14": 2.562238802782042,
+        "atrPct14": 2.562208992547484,
         "avgVolume20": 14615.45
       },
       "entry": 281.01,
@@ -11226,11 +11273,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.99617412396331,
+        "rsi14": 47.99502408700012,
         "volumeRatio": 0.89,
         "supportDistancePct": 3.21,
         "resistanceHeadroomPct": 5.36,
-        "atrPct14": 2.9137387761847267,
+        "atrPct14": 2.9137145674745133,
         "avgVolume20": 14157.5
       },
       "entry": 280.0,
@@ -11281,11 +11328,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.72805395991885,
+        "rsi14": 50.72794133661095,
         "volumeRatio": 0.72,
         "supportDistancePct": 4.4,
         "resistanceHeadroomPct": 2.05,
-        "atrPct14": 2.4054447926827747,
+        "atrPct14": 2.4054425637871786,
         "avgVolume20": 11940.8
       },
       "entry": 263.0,
@@ -11336,11 +11383,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.31467644005701,
+        "rsi14": 51.314602197682824,
         "volumeRatio": 1.03,
         "supportDistancePct": 4.94,
         "resistanceHeadroomPct": 4.11,
-        "atrPct14": 2.567548796744478,
+        "atrPct14": 2.5675470222634758,
         "avgVolume20": 11272.6
       },
       "entry": 263.82,
@@ -11391,11 +11438,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.44904489736021,
+        "rsi14": 47.449008026727746,
         "volumeRatio": 2.07,
         "supportDistancePct": 6.0,
         "resistanceHeadroomPct": 6.15,
-        "atrPct14": 2.729073027209789,
+        "atrPct14": 2.7290723368001446,
         "avgVolume20": 11948.55
       },
       "entry": 256.45,
@@ -11446,11 +11493,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.97129418653277,
+        "rsi14": 43.971293091200984,
         "volumeRatio": 2.21,
         "supportDistancePct": 7.48,
         "resistanceHeadroomPct": 4.6,
-        "atrPct14": 3.793428921712357,
+        "atrPct14": 3.7934288892247108,
         "avgVolume20": 53156.7
       },
       "entry": 168.79,
@@ -12045,9 +12092,9 @@
     },
     {
       "symbol": "SCB",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
       "setupScore": 90,
       "scoreBucket": "80-100",
       "components": {
@@ -12059,39 +12106,39 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 57.55759317273777,
-        "volumeRatio": 1.07,
-        "supportDistancePct": 2.95,
-        "resistanceHeadroomPct": 9.24,
-        "atrPct14": 1.6015775107681942,
-        "avgVolume20": 25605.0
+        "rsi14": 54.661842133732456,
+        "volumeRatio": 1.13,
+        "supportDistancePct": 2.66,
+        "resistanceHeadroomPct": 9.56,
+        "atrPct14": 1.578283208702384,
+        "avgVolume20": 24253.3
       },
-      "entry": 638.25,
-      "stop": 618.44,
-      "target1": 657.07,
-      "exitPrice": 648.0,
-      "rMultiple": 0.492,
-      "netRMultiple": 0.207,
+      "entry": 638.33,
+      "stop": 618.48,
+      "target1": 657.41,
+      "exitPrice": 642.2,
+      "rMultiple": 0.195,
+      "netRMultiple": -0.072,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 50,
-        "plannedRiskNpr": 990.5
+        "plannedRiskNpr": 992.5
       },
       "costs": {
         "quantity": 50,
-        "buyTurnover": 31912.5,
-        "sellTurnover": 32400.0,
-        "buyBrokerage": 114.89,
-        "sellBrokerage": 116.64,
+        "buyTurnover": 31916.5,
+        "sellTurnover": 32110.0,
+        "buyBrokerage": 114.9,
+        "sellBrokerage": 115.6,
         "buyRegulatoryFee": 4.79,
-        "sellRegulatoryFee": 4.86,
+        "sellRegulatoryFee": 4.82,
         "dpCharge": 25.0,
-        "capitalGainsTax": 16.6,
-        "taxableGain": 221.33,
-        "buyTotal": 32032.17,
-        "netProceeds": 32236.9,
-        "netProfit": 204.73,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
+        "buyTotal": 32036.19,
+        "netProceeds": 31964.59,
+        "netProfit": -71.6,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
@@ -12112,15 +12159,15 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 53.63709815120393,
+        "rsi14": 53.59052009317444,
         "volumeRatio": 0.93,
         "supportDistancePct": 4.38,
         "resistanceHeadroomPct": 8.3,
-        "atrPct14": 2.4828263877297947,
+        "atrPct14": 2.4834685478555056,
         "avgVolume20": 22230.25
       },
       "entry": 656.85,
-      "stop": 625.12,
+      "stop": 625.11,
       "target1": 687.1,
       "exitPrice": 687.1,
       "rMultiple": 0.953,
@@ -12129,7 +12176,7 @@
         "capital": 100000.0,
         "riskPct": 1.0,
         "quantity": 31,
-        "plannedRiskNpr": 983.63
+        "plannedRiskNpr": 983.94
       },
       "costs": {
         "quantity": 31,
@@ -12165,11 +12212,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.34956544210835,
+        "rsi14": 61.313120300588,
         "volumeRatio": 0.66,
         "supportDistancePct": 6.34,
         "resistanceHeadroomPct": 5.26,
-        "atrPct14": 2.03634500559976,
+        "atrPct14": 2.0366899928880335,
         "avgVolume20": 22523.45
       },
       "entry": 669.7,
@@ -12220,11 +12267,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.59695730518104,
+        "rsi14": 44.58100684812853,
         "volumeRatio": 0.5,
         "supportDistancePct": 1.65,
         "resistanceHeadroomPct": 7.04,
-        "atrPct14": 2.1352978722717486,
+        "atrPct14": 2.1354573812887634,
         "avgVolume20": 22956.55
       },
       "entry": 651.46,
@@ -12275,11 +12322,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.648009635327796,
+        "rsi14": 47.63958709459254,
         "volumeRatio": 0.71,
         "supportDistancePct": 2.75,
         "resistanceHeadroomPct": 2.01,
-        "atrPct14": 1.8319641884214342,
+        "atrPct14": 1.8320293357254953,
         "avgVolume20": 16916.95
       },
       "entry": 645.71,
@@ -12330,11 +12377,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.61282971985036,
+        "rsi14": 46.60800433900763,
         "volumeRatio": 0.41,
         "supportDistancePct": 2.98,
         "resistanceHeadroomPct": 3.08,
-        "atrPct14": 1.700454061956866,
+        "atrPct14": 1.7004854383379902,
         "avgVolume20": 9923.75
       },
       "entry": 647.94,
@@ -12383,11 +12430,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.736092392283965,
+        "rsi14": 56.733329884615536,
         "volumeRatio": 3.16,
         "supportDistancePct": 4.21,
         "resistanceHeadroomPct": 4.06,
-        "atrPct14": 2.041197517343251,
+        "atrPct14": 2.0412146401183127,
         "avgVolume20": 7879.2
       },
       "entry": 649.8,
@@ -12436,11 +12483,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.64704027508459,
+        "rsi14": 50.64558920217607,
         "volumeRatio": 0.73,
         "supportDistancePct": 2.45,
         "resistanceHeadroomPct": 4.13,
-        "atrPct14": 2.0122533865862877,
+        "atrPct14": 2.012260970179777,
         "avgVolume20": 8699.65
       },
       "entry": 653.0,
@@ -12491,11 +12538,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.14716017023762,
+        "rsi14": 46.14633796906674,
         "volumeRatio": 1.61,
         "supportDistancePct": 5.25,
         "resistanceHeadroomPct": 2.43,
-        "atrPct14": 2.011471611103711,
+        "atrPct14": 2.0114755268492948,
         "avgVolume20": 7574.0
       },
       "entry": 652.36,
@@ -12546,11 +12593,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 48.86364838648996,
+        "rsi14": 48.86333773983163,
         "volumeRatio": 2.18,
         "supportDistancePct": 4.8,
         "resistanceHeadroomPct": 2.17,
-        "atrPct14": 1.7274319213396665,
+        "atrPct14": 1.7274335382180595,
         "avgVolume20": 9458.05
       },
       "entry": 642.0,
@@ -12601,11 +12648,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 57.65181114250121,
+        "rsi14": 57.651718851851406,
         "volumeRatio": 0.3,
         "supportDistancePct": 3.84,
         "resistanceHeadroomPct": 1.81,
-        "atrPct14": 1.799574197019967,
+        "atrPct14": 1.799574899423144,
         "avgVolume20": 11057.75
       },
       "entry": 641.09,
@@ -12654,11 +12701,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.603246504699676,
+        "rsi14": 50.6031686700379,
         "volumeRatio": 1.4,
         "supportDistancePct": 3.96,
         "resistanceHeadroomPct": 2.92,
-        "atrPct14": 2.1237865031893155,
+        "atrPct14": 2.1237871154382004,
         "avgVolume20": 11577.05
       },
       "entry": 641.25,
@@ -12707,11 +12754,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.17215253698311,
+        "rsi14": 54.17207883560385,
         "volumeRatio": 0.47,
         "supportDistancePct": 5.57,
         "resistanceHeadroomPct": 2.29,
-        "atrPct14": 2.3695814557905073,
+        "atrPct14": 2.369581980475116,
         "avgVolume20": 11686.45
       },
       "entry": 650.1,
@@ -12760,11 +12807,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.029244749592486,
+        "rsi14": 49.029209658780786,
         "volumeRatio": 0.48,
         "supportDistancePct": 4.85,
         "resistanceHeadroomPct": 3.08,
-        "atrPct14": 2.6308481548146907,
+        "atrPct14": 2.630848388803317,
         "avgVolume20": 9995.95
       },
       "entry": 650.0,
@@ -12815,11 +12862,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 43.52490281191769,
+        "rsi14": 43.524886356429576,
         "volumeRatio": 0.98,
         "supportDistancePct": 4.11,
         "resistanceHeadroomPct": 3.1,
-        "atrPct14": 2.052388813920646,
+        "atrPct14": 2.052388918276513,
         "avgVolume20": 8523.5
       },
       "entry": 648.31,
@@ -12868,11 +12915,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.1884098975674,
+        "rsi14": 51.188402059444336,
         "volumeRatio": 0.87,
         "supportDistancePct": 1.45,
         "resistanceHeadroomPct": 4.91,
-        "atrPct14": 1.9349959813237574,
+        "atrPct14": 1.9349960271447924,
         "avgVolume20": 7929.2
       },
       "entry": 651.2,
@@ -12921,11 +12968,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.26103782696911,
+        "rsi14": 58.26103158842029,
         "volumeRatio": 0.72,
         "supportDistancePct": 2.51,
         "resistanceHeadroomPct": 4.96,
-        "atrPct14": 1.8952014476534509,
+        "atrPct14": 1.895201478944785,
         "avgVolume20": 9946.9
       },
       "entry": 643.58,
@@ -12974,11 +13021,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.24469386200991,
+        "rsi14": 61.244688776731316,
         "volumeRatio": 0.65,
         "supportDistancePct": 4.99,
         "resistanceHeadroomPct": 4.36,
-        "atrPct14": 1.9420905712159906,
+        "atrPct14": 1.9420905943462994,
         "avgVolume20": 10636.35
       },
       "entry": 656.93,
@@ -13030,11 +13077,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 72.6701016041993,
+        "rsi14": 72.67010000411858,
         "volumeRatio": 2.15,
         "supportDistancePct": 8.05,
         "resistanceHeadroomPct": 0.29,
-        "atrPct14": 1.2510190547640232,
+        "atrPct14": 1.251019061603254,
         "avgVolume20": 19365.9
       },
       "entry": 672.16,
@@ -13071,7 +13118,7 @@
       "symbol": "SCB",
       "signalDate": "2026-11-23",
       "fillDate": "2026-11-24",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 81,
       "scoreBucket": "80-100",
       "components": {
@@ -13085,19 +13132,19 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 63.089130076450225,
+        "rsi14": 63.08912931600127,
         "volumeRatio": 1.29,
         "supportDistancePct": 1.97,
         "resistanceHeadroomPct": 0.82,
-        "atrPct14": 1.2882432213140456,
+        "atrPct14": 1.288243224356829,
         "avgVolume20": 19198.7
       },
       "entry": 678.81,
       "stop": 663.81,
       "target1": 692.02,
-      "exitPrice": 689.0,
-      "rMultiple": 0.679,
-      "netRMultiple": 0.289,
+      "exitPrice": 663.81,
+      "rMultiple": -1.0,
+      "netRMultiple": -1.361,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -13107,124 +13154,124 @@
       "costs": {
         "quantity": 66,
         "buyTurnover": 44801.46,
-        "sellTurnover": 45474.0,
+        "sellTurnover": 43811.46,
         "buyBrokerage": 161.29,
-        "sellBrokerage": 163.71,
+        "sellBrokerage": 157.72,
         "buyRegulatoryFee": 6.72,
-        "sellRegulatoryFee": 6.82,
-        "dpCharge": 25.0,
-        "capitalGainsTax": 23.18,
-        "taxableGain": 309.01,
-        "buyTotal": 44969.47,
-        "netProceeds": 45255.3,
-        "netProfit": 285.83,
-        "holdingDays": 1
-      },
-      "exitReason": "time_exit"
-    },
-    {
-      "symbol": "SHIVM",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
-      "setupScore": 82,
-      "scoreBucket": "80-100",
-      "components": {
-        "trend": 20,
-        "momentum": 20,
-        "liquidity": 20,
-        "participation": 2,
-        "location": 20
-      },
-      "riskFlags": [],
-      "signalMetrics": {
-        "rsi14": 51.60343040329639,
-        "volumeRatio": 0.51,
-        "supportDistancePct": 2.94,
-        "resistanceHeadroomPct": 5.67,
-        "atrPct14": 2.495186289173711,
-        "avgVolume20": 259164.05
-      },
-      "entry": 618.94,
-      "stop": 593.16,
-      "target1": 643.21,
-      "exitPrice": 611.8,
-      "rMultiple": -0.277,
-      "netRMultiple": -0.482,
-      "referencePosition": {
-        "capital": 100000.0,
-        "riskPct": 1.0,
-        "quantity": 38,
-        "plannedRiskNpr": 979.64
-      },
-      "costs": {
-        "quantity": 38,
-        "buyTurnover": 23519.72,
-        "sellTurnover": 23248.4,
-        "buyBrokerage": 84.67,
-        "sellBrokerage": 83.69,
-        "buyRegulatoryFee": 3.53,
-        "sellRegulatoryFee": 3.49,
+        "sellRegulatoryFee": 6.57,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 23607.92,
-        "netProceeds": 23136.22,
-        "netProfit": -471.7,
+        "buyTotal": 44969.47,
+        "netProceeds": 43622.17,
+        "netProfit": -1347.3,
+        "holdingDays": 2
+      },
+      "exitReason": "stop"
+    },
+    {
+      "symbol": "SHIVM",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
+      "setupScore": 93,
+      "scoreBucket": "80-100",
+      "components": {
+        "trend": 30,
+        "momentum": 20,
+        "liquidity": 20,
+        "participation": 8,
+        "location": 15
+      },
+      "riskFlags": [],
+      "signalMetrics": {
+        "rsi14": 54.810921716025504,
+        "volumeRatio": 1.2,
+        "supportDistancePct": 4.02,
+        "resistanceHeadroomPct": 4.5,
+        "atrPct14": 2.4307457317187904,
+        "avgVolume20": 255874.7
+      },
+      "entry": 617.0,
+      "stop": 593.22,
+      "target1": 658.79,
+      "exitPrice": 617.0,
+      "rMultiple": 0.0,
+      "netRMultiple": -0.22,
+      "referencePosition": {
+        "capital": 100000.0,
+        "riskPct": 1.0,
+        "quantity": 42,
+        "plannedRiskNpr": 998.76
+      },
+      "costs": {
+        "quantity": 42,
+        "buyTurnover": 25914.0,
+        "sellTurnover": 25914.0,
+        "buyBrokerage": 93.29,
+        "sellBrokerage": 93.29,
+        "buyRegulatoryFee": 3.89,
+        "sellRegulatoryFee": 3.89,
+        "dpCharge": 25.0,
+        "capitalGainsTax": 0.0,
+        "taxableGain": 0,
+        "buyTotal": 26011.18,
+        "netProceeds": 25791.82,
+        "netProfit": -219.36,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "SHIVM",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
       "exitDate": "2026-03-09",
-      "setupScore": 90,
+      "setupScore": 87,
       "scoreBucket": "80-100",
       "components": {
         "trend": 30,
         "momentum": 20,
         "liquidity": 20,
-        "participation": 5,
+        "participation": 2,
         "location": 15
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 54.33506455416526,
-        "volumeRatio": 0.8,
+        "rsi14": 53.83887163495691,
+        "volumeRatio": 0.34,
         "supportDistancePct": 3.24,
-        "resistanceHeadroomPct": 5.35,
-        "atrPct14": 2.109779418104494,
-        "avgVolume20": 179623.65
+        "resistanceHeadroomPct": 3.73,
+        "atrPct14": 2.0594125348383656,
+        "avgVolume20": 163901.7
       },
-      "entry": 618.07,
-      "stop": 593.75,
-      "target1": 640.73,
-      "exitPrice": 640.73,
-      "rMultiple": 0.932,
-      "netRMultiple": 0.659,
+      "entry": 606.41,
+      "stop": 593.82,
+      "target1": 638.78,
+      "exitPrice": 638.78,
+      "rMultiple": 2.571,
+      "netRMultiple": 2.026,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 41,
-        "plannedRiskNpr": 997.12
+        "quantity": 79,
+        "plannedRiskNpr": 994.61
       },
       "costs": {
-        "quantity": 41,
-        "buyTurnover": 25340.87,
-        "sellTurnover": 26269.93,
-        "buyBrokerage": 91.23,
-        "sellBrokerage": 94.57,
-        "buyRegulatoryFee": 3.8,
-        "sellRegulatoryFee": 3.94,
+        "quantity": 79,
+        "buyTurnover": 47906.39,
+        "sellTurnover": 50463.62,
+        "buyBrokerage": 172.46,
+        "sellBrokerage": 166.53,
+        "buyRegulatoryFee": 7.19,
+        "sellRegulatoryFee": 7.57,
         "dpCharge": 25.0,
-        "capitalGainsTax": 53.29,
-        "taxableGain": 710.52,
-        "buyTotal": 25435.9,
-        "netProceeds": 26093.13,
-        "netProfit": 657.23,
-        "holdingDays": 11
+        "capitalGainsTax": 163.39,
+        "taxableGain": 2178.48,
+        "buyTotal": 48086.04,
+        "netProceeds": 50101.13,
+        "netProfit": 2015.1,
+        "holdingDays": 8
       },
       "exitReason": "target1"
     },
@@ -13244,11 +13291,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 58.037307083792236,
+        "rsi14": 57.98707140812553,
         "volumeRatio": 1.12,
         "supportDistancePct": 11.53,
         "resistanceHeadroomPct": 6.57,
-        "atrPct14": 3.0153709882377284,
+        "atrPct14": 3.0145814170930914,
         "avgVolume20": 459293.85
       },
       "entry": 680.64,
@@ -13297,11 +13344,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.003520181373986,
+        "rsi14": 55.97912765730454,
         "volumeRatio": 0.69,
         "supportDistancePct": 6.28,
         "resistanceHeadroomPct": 6.57,
-        "atrPct14": 3.2011380030929444,
+        "atrPct14": 3.2007885734444756,
         "avgVolume20": 535557.9
       },
       "entry": 687.5,
@@ -13350,11 +13397,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 45.10639776055155,
+        "rsi14": 45.091418041704344,
         "volumeRatio": 0.48,
         "supportDistancePct": 3.6,
         "resistanceHeadroomPct": 7.81,
-        "atrPct14": 3.179011651698396,
+        "atrPct14": 3.1788525977053457,
         "avgVolume20": 358638.3
       },
       "entry": 666.0,
@@ -13405,11 +13452,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.90923820132975,
+        "rsi14": 50.902689675675816,
         "volumeRatio": 0.42,
         "supportDistancePct": 3.69,
         "resistanceHeadroomPct": 5.33,
-        "atrPct14": 2.608592144765788,
+        "atrPct14": 2.608522692964211,
         "avgVolume20": 186655.4
       },
       "entry": 679.4,
@@ -13460,11 +13507,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.46182948545439,
+        "rsi14": 45.45828888413637,
         "volumeRatio": 1.49,
         "supportDistancePct": 2.79,
         "resistanceHeadroomPct": 5.67,
-        "atrPct14": 2.365065085445401,
+        "atrPct14": 2.365034119740633,
         "avgVolume20": 118844.5
       },
       "entry": 662.08,
@@ -13513,11 +13560,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 50.182684302156716,
+        "rsi14": 50.17964797452078,
         "volumeRatio": 0.56,
         "supportDistancePct": 6.07,
         "resistanceHeadroomPct": 4.49,
-        "atrPct14": 2.586005225713975,
+        "atrPct14": 2.585978825161975,
         "avgVolume20": 116414.05
       },
       "entry": 680.0,
@@ -13568,11 +13615,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 34.14785735437364,
+        "rsi14": 34.146602010940825,
         "volumeRatio": 0.9,
         "supportDistancePct": 1.74,
         "resistanceHeadroomPct": 13.13,
-        "atrPct14": 2.6621390840558736,
+        "atrPct14": 2.662132160003529,
         "avgVolume20": 104646.7
       },
       "entry": 636.21,
@@ -13623,11 +13670,11 @@
         "near_resistance"
       ],
       "signalMetrics": {
-        "rsi14": 63.37424152733237,
+        "rsi14": 63.37402367992323,
         "volumeRatio": 0.63,
         "supportDistancePct": 9.09,
         "resistanceHeadroomPct": 1.21,
-        "atrPct14": 2.7409237590361375,
+        "atrPct14": 2.7409217333201714,
         "avgVolume20": 92478.95
       },
       "entry": 638.0,
@@ -13678,11 +13725,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.512718041047364,
+        "rsi14": 45.5125803087786,
         "volumeRatio": 0.46,
         "supportDistancePct": 5.91,
         "resistanceHeadroomPct": 6.68,
-        "atrPct14": 2.8743904264757214,
+        "atrPct14": 2.8743894986325995,
         "avgVolume20": 83539.35
       },
       "entry": 638.7,
@@ -13733,11 +13780,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 36.867282023708576,
+        "rsi14": 36.867208242690246,
         "volumeRatio": 1.32,
         "supportDistancePct": 3.52,
         "resistanceHeadroomPct": 9.48,
-        "atrPct14": 2.677917209970708,
+        "atrPct14": 2.6779168186764086,
         "avgVolume20": 61486.5
       },
       "entry": 621.5,
@@ -13786,11 +13833,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.76632509233531,
+        "rsi14": 56.76631794530915,
         "volumeRatio": 0.43,
         "supportDistancePct": 4.85,
         "resistanceHeadroomPct": 8.24,
-        "atrPct14": 2.4408832082650394,
+        "atrPct14": 2.4408831433298745,
         "avgVolume20": 248085.5
       },
       "entry": 680.0,
@@ -13839,11 +13886,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 49.710709105015766,
+        "rsi14": 49.710702976267385,
         "volumeRatio": 0.39,
         "supportDistancePct": 4.86,
         "resistanceHeadroomPct": 9.85,
-        "atrPct14": 2.5787109543587294,
+        "atrPct14": 2.5787109015931766,
         "avgVolume20": 237346.05
       },
       "entry": 671.0,
@@ -13892,11 +13939,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 64.45164959700982,
+        "rsi14": 64.45164693536478,
         "volumeRatio": 1.45,
         "supportDistancePct": 8.67,
         "resistanceHeadroomPct": 5.45,
-        "atrPct14": 1.9606157720287372,
+        "atrPct14": 1.9606157496124166,
         "avgVolume20": 179278.35
       },
       "entry": 690.54,
@@ -13947,11 +13994,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 41.09121085157488,
+        "rsi14": 41.09120942901132,
         "volumeRatio": 0.36,
         "supportDistancePct": 1.65,
         "resistanceHeadroomPct": 7.66,
-        "atrPct14": 2.009900389963375,
+        "atrPct14": 2.0099003802950537,
         "avgVolume20": 162484.55
       },
       "entry": 666.0,
@@ -13986,67 +14033,69 @@
     },
     {
       "symbol": "SPDL",
-      "signalDate": "2026-02-05",
-      "fillDate": "2026-02-08",
-      "exitDate": "2026-02-24",
-      "setupScore": 73,
-      "scoreBucket": "65-79",
+      "signalDate": "2026-02-08",
+      "fillDate": "2026-02-09",
+      "exitDate": "2026-02-25",
+      "setupScore": 60,
+      "scoreBucket": "50-64",
       "components": {
-        "trend": 20,
+        "trend": 10,
         "momentum": 20,
         "liquidity": 20,
-        "participation": 5,
+        "participation": 2,
         "location": 8
       },
-      "riskFlags": [],
+      "riskFlags": [
+        "below_sma50"
+      ],
       "signalMetrics": {
-        "rsi14": 54.251603323089434,
-        "volumeRatio": 0.95,
-        "supportDistancePct": 8.37,
-        "resistanceHeadroomPct": 6.86,
-        "atrPct14": 3.505028195938844,
-        "avgVolume20": 144830.95
+        "rsi14": 51.720957795814485,
+        "volumeRatio": 0.62,
+        "supportDistancePct": 7.75,
+        "resistanceHeadroomPct": 7.6,
+        "atrPct14": 3.60300304579656,
+        "avgVolume20": 146186.9
       },
-      "entry": 402.6,
-      "stop": 372.8,
-      "target1": 437.46,
-      "exitPrice": 400.3,
-      "rMultiple": -0.077,
-      "netRMultiple": -0.204,
+      "entry": 406.04,
+      "stop": 372.72,
+      "target1": 440.39,
+      "exitPrice": 399.0,
+      "rMultiple": -0.211,
+      "netRMultiple": -0.327,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 33,
-        "plannedRiskNpr": 983.4
+        "quantity": 30,
+        "plannedRiskNpr": 999.6
       },
       "costs": {
-        "quantity": 33,
-        "buyTurnover": 13285.8,
-        "sellTurnover": 13209.9,
-        "buyBrokerage": 47.83,
-        "sellBrokerage": 47.56,
-        "buyRegulatoryFee": 1.99,
-        "sellRegulatoryFee": 1.98,
+        "quantity": 30,
+        "buyTurnover": 12181.2,
+        "sellTurnover": 11970.0,
+        "buyBrokerage": 43.85,
+        "sellBrokerage": 43.09,
+        "buyRegulatoryFee": 1.83,
+        "sellRegulatoryFee": 1.8,
         "dpCharge": 25.0,
         "capitalGainsTax": 0.0,
         "taxableGain": 0,
-        "buyTotal": 13335.62,
-        "netProceeds": 13135.36,
-        "netProfit": -200.26,
+        "buyTotal": 12226.88,
+        "netProceeds": 11900.11,
+        "netProfit": -326.77,
         "holdingDays": 16
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "SPDL",
-      "signalDate": "2026-02-25",
-      "fillDate": "2026-02-26",
+      "signalDate": "2026-02-26",
+      "fillDate": "2026-03-01",
       "exitDate": "2026-03-09",
-      "setupScore": 72,
-      "scoreBucket": "65-79",
+      "setupScore": 64,
+      "scoreBucket": "50-64",
       "components": {
         "trend": 10,
-        "momentum": 20,
+        "momentum": 12,
         "liquidity": 20,
         "participation": 2,
         "location": 20
@@ -14055,40 +14104,40 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.045374541254596,
-        "volumeRatio": 0.38,
-        "supportDistancePct": 1.68,
-        "resistanceHeadroomPct": 10.03,
-        "atrPct14": 3.418527006453102,
-        "avgVolume20": 148140.1
+        "rsi14": 42.754156265226875,
+        "volumeRatio": 0.23,
+        "supportDistancePct": 0.68,
+        "resistanceHeadroomPct": 11.14,
+        "atrPct14": 3.369200802638892,
+        "avgVolume20": 125844.5
       },
-      "entry": 398.0,
-      "stop": 382.07,
-      "target1": 420.28,
-      "exitPrice": 420.28,
-      "rMultiple": 1.399,
-      "netRMultiple": 1.092,
+      "entry": 392.3,
+      "stop": 382.32,
+      "target1": 414.81,
+      "exitPrice": 414.81,
+      "rMultiple": 2.256,
+      "netRMultiple": 1.783,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 62,
-        "plannedRiskNpr": 987.66
+        "quantity": 100,
+        "plannedRiskNpr": 998.0
       },
       "costs": {
-        "quantity": 62,
-        "buyTurnover": 24676.0,
-        "sellTurnover": 26057.36,
-        "buyBrokerage": 88.83,
-        "sellBrokerage": 93.81,
-        "buyRegulatoryFee": 3.7,
-        "sellRegulatoryFee": 3.91,
+        "quantity": 100,
+        "buyTurnover": 39230.0,
+        "sellTurnover": 41481.0,
+        "buyBrokerage": 141.23,
+        "sellBrokerage": 149.33,
+        "buyRegulatoryFee": 5.88,
+        "sellRegulatoryFee": 6.22,
         "dpCharge": 25.0,
-        "capitalGainsTax": 87.46,
-        "taxableGain": 1166.11,
-        "buyTotal": 24768.54,
-        "netProceeds": 25847.19,
-        "netProfit": 1078.65,
-        "holdingDays": 11
+        "capitalGainsTax": 144.25,
+        "taxableGain": 1923.33,
+        "buyTotal": 39377.11,
+        "netProceeds": 41156.2,
+        "netProfit": 1779.08,
+        "holdingDays": 8
       },
       "exitReason": "target1"
     },
@@ -14108,11 +14157,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 63.52614352504488,
+        "rsi14": 63.49261305898939,
         "volumeRatio": 0.77,
         "supportDistancePct": 14.5,
         "resistanceHeadroomPct": 4.15,
-        "atrPct14": 4.368227996019044,
+        "atrPct14": 4.368697011378368,
         "avgVolume20": 254594.8
       },
       "entry": 437.3,
@@ -14164,11 +14213,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 42.41751955718705,
+        "rsi14": 42.40117155262287,
         "volumeRatio": 0.29,
         "supportDistancePct": 5.77,
         "resistanceHeadroomPct": 15.89,
-        "atrPct14": 5.11985332271498,
+        "atrPct14": 5.120084283940674,
         "avgVolume20": 262676.9
       },
       "entry": 414.24,
@@ -14219,11 +14268,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.14000070215439,
+        "rsi14": 37.13365433561175,
         "volumeRatio": 0.25,
         "supportDistancePct": 1.93,
         "resistanceHeadroomPct": 10.81,
-        "atrPct14": 4.5312337218564815,
+        "atrPct14": 4.531307158851794,
         "avgVolume20": 85815.05
       },
       "entry": 392.0,
@@ -14274,11 +14323,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.88565423568898,
+        "rsi14": 45.8820194331475,
         "volumeRatio": 0.91,
         "supportDistancePct": 3.69,
         "resistanceHeadroomPct": 7.58,
-        "atrPct14": 3.9600535252519187,
+        "atrPct14": 3.960085376874425,
         "avgVolume20": 44014.75
       },
       "entry": 404.0,
@@ -14329,11 +14378,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.180771239473614,
+        "rsi14": 51.177935603804954,
         "volumeRatio": 0.83,
         "supportDistancePct": 5.11,
         "resistanceHeadroomPct": 5.63,
-        "atrPct14": 3.8882928297821513,
+        "atrPct14": 3.8883144947528767,
         "avgVolume20": 40849.25
       },
       "entry": 406.7,
@@ -14384,11 +14433,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.1225724138551,
+        "rsi14": 45.122305949049554,
         "volumeRatio": 1.38,
         "supportDistancePct": 5.64,
         "resistanceHeadroomPct": 10.9,
-        "atrPct14": 4.602138210407615,
+        "atrPct14": 4.602140749182362,
         "avgVolume20": 30181.55
       },
       "entry": 380.33,
@@ -14437,11 +14486,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 62.914943378737405,
+        "rsi14": 62.91486014178439,
         "volumeRatio": 2.8,
         "supportDistancePct": 11.7,
         "resistanceHeadroomPct": 3.25,
-        "atrPct14": 4.802663417325674,
+        "atrPct14": 4.80266447372738,
         "avgVolume20": 43228.85
       },
       "entry": 380.0,
@@ -14493,11 +14542,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 41.67094514199434,
+        "rsi14": 41.6709091253808,
         "volumeRatio": 0.53,
         "supportDistancePct": 2.57,
         "resistanceHeadroomPct": 13.93,
-        "atrPct14": 5.232182656060022,
+        "atrPct14": 5.232183171954398,
         "avgVolume20": 64117.0
       },
       "entry": 353.1,
@@ -14548,11 +14597,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 54.87931052529865,
+        "rsi14": 54.87930503227705,
         "volumeRatio": 0.88,
         "supportDistancePct": 10.93,
         "resistanceHeadroomPct": 6.56,
-        "atrPct14": 4.003020683410107,
+        "atrPct14": 4.003020742964265,
         "avgVolume20": 25129.45
       },
       "entry": 349.0,
@@ -14603,11 +14652,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.13251476955633,
+        "rsi14": 47.132511938444985,
         "volumeRatio": 2.8,
         "supportDistancePct": 6.83,
         "resistanceHeadroomPct": 11.46,
-        "atrPct14": 3.585707200236431,
+        "atrPct14": 3.585707227805223,
         "avgVolume20": 31279.05
       },
       "entry": 343.63,
@@ -14656,11 +14705,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 59.44264753173439,
+        "rsi14": 59.442646414644244,
         "volumeRatio": 1.69,
         "supportDistancePct": 9.02,
         "resistanceHeadroomPct": 2.46,
-        "atrPct14": 3.56721981823006,
+        "atrPct14": 3.567219829894101,
         "avgVolume20": 48469.35
       },
       "entry": 356.0,
@@ -14697,7 +14746,7 @@
       "symbol": "SPDL",
       "signalDate": "2026-11-24",
       "fillDate": "2026-11-25",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 80,
       "scoreBucket": "80-100",
       "components": {
@@ -14709,19 +14758,19 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 56.35198171216823,
+        "rsi14": 56.351981260176046,
         "volumeRatio": 1.61,
         "supportDistancePct": 7.46,
         "resistanceHeadroomPct": 3.59,
-        "atrPct14": 3.6031588243758383,
+        "atrPct14": 3.6031588292220835,
         "avgVolume20": 43823.25
       },
       "entry": 350.0,
       "stop": 331.74,
       "target1": 389.52,
-      "exitPrice": 367.0,
-      "rMultiple": 0.931,
-      "netRMultiple": 0.702,
+      "exitPrice": 368.0,
+      "rMultiple": 0.986,
+      "netRMultiple": 0.752,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -14731,70 +14780,70 @@
       "costs": {
         "quantity": 54,
         "buyTurnover": 18900.0,
-        "sellTurnover": 19818.0,
+        "sellTurnover": 19872.0,
         "buyBrokerage": 68.04,
-        "sellBrokerage": 71.34,
+        "sellBrokerage": 71.54,
         "buyRegulatoryFee": 2.83,
-        "sellRegulatoryFee": 2.97,
+        "sellRegulatoryFee": 2.98,
         "dpCharge": 25.0,
-        "capitalGainsTax": 56.09,
-        "taxableGain": 747.81,
+        "capitalGainsTax": 60.12,
+        "taxableGain": 801.6,
         "buyTotal": 18970.88,
-        "netProceeds": 19662.6,
-        "netProfit": 691.72,
-        "holdingDays": 0
+        "netProceeds": 19712.36,
+        "netProfit": 741.48,
+        "holdingDays": 1
       },
       "exitReason": "time_exit"
     },
     {
       "symbol": "UPPER",
-      "signalDate": "2026-02-11",
+      "signalDate": "2026-02-12",
       "fillDate": "2026-02-17",
       "exitDate": "2026-03-09",
-      "setupScore": 80,
+      "setupScore": 83,
       "scoreBucket": "80-100",
       "components": {
         "trend": 30,
         "momentum": 20,
         "liquidity": 20,
-        "participation": 2,
-        "location": 8
+        "participation": 10,
+        "location": 3
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 60.007492494746174,
-        "volumeRatio": 0.69,
-        "supportDistancePct": 9.42,
-        "resistanceHeadroomPct": 4.21,
-        "atrPct14": 3.1672096557715044,
-        "avgVolume20": 215731.45
+        "rsi14": 63.305009059911924,
+        "volumeRatio": 1.61,
+        "supportDistancePct": 10.32,
+        "resistanceHeadroomPct": 2.64,
+        "atrPct14": 3.114942631747688,
+        "avgVolume20": 232502.55
       },
-      "entry": 187.52,
-      "stop": 170.6,
-      "target1": 206.52,
-      "exitPrice": 206.52,
-      "rMultiple": 1.123,
-      "netRMultiple": 0.935,
+      "entry": 188.46,
+      "stop": 171.5,
+      "target1": 207.53,
+      "exitPrice": 207.53,
+      "rMultiple": 1.124,
+      "netRMultiple": 0.936,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
-        "quantity": 59,
-        "plannedRiskNpr": 998.28
+        "quantity": 58,
+        "plannedRiskNpr": 983.68
       },
       "costs": {
-        "quantity": 59,
-        "buyTurnover": 11063.68,
-        "sellTurnover": 12184.68,
-        "buyBrokerage": 39.83,
-        "sellBrokerage": 43.86,
-        "buyRegulatoryFee": 1.66,
-        "sellRegulatoryFee": 1.83,
+        "quantity": 58,
+        "buyTurnover": 10930.68,
+        "sellTurnover": 12036.74,
+        "buyBrokerage": 39.35,
+        "sellBrokerage": 43.33,
+        "buyRegulatoryFee": 1.64,
+        "sellRegulatoryFee": 1.81,
         "dpCharge": 25.0,
-        "capitalGainsTax": 75.66,
-        "taxableGain": 1008.82,
-        "buyTotal": 11105.17,
-        "netProceeds": 12038.33,
-        "netProfit": 933.16,
+        "capitalGainsTax": 74.62,
+        "taxableGain": 994.93,
+        "buyTotal": 10971.67,
+        "netProceeds": 11891.98,
+        "netProfit": 920.31,
         "holdingDays": 20
       },
       "exitReason": "target1"
@@ -14817,11 +14866,11 @@
         "rsi_overbought"
       ],
       "signalMetrics": {
-        "rsi14": 71.28203226890565,
+        "rsi14": 71.260846699785,
         "volumeRatio": 0.65,
         "supportDistancePct": 23.43,
         "resistanceHeadroomPct": 3.72,
-        "atrPct14": 3.789364674920289,
+        "atrPct14": 3.7893205896676982,
         "avgVolume20": 737123.0
       },
       "entry": 215.56,
@@ -14872,11 +14921,11 @@
         "high_volatility"
       ],
       "signalMetrics": {
-        "rsi14": 51.855624381445644,
+        "rsi14": 51.84556073873982,
         "volumeRatio": 0.32,
         "supportDistancePct": 9.02,
         "resistanceHeadroomPct": 13.36,
-        "atrPct14": 5.357251727118812,
+        "atrPct14": 5.35723192582438,
         "avgVolume20": 772012.5
       },
       "entry": 216.87,
@@ -14927,11 +14976,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 44.95685591951524,
+        "rsi14": 44.95126053216554,
         "volumeRatio": 0.33,
         "supportDistancePct": 6.39,
         "resistanceHeadroomPct": 9.13,
-        "atrPct14": 4.385349741925711,
+        "atrPct14": 4.385340725954777,
         "avgVolume20": 415008.1
       },
       "entry": 208.5,
@@ -14982,11 +15031,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 51.811090395276395,
+        "rsi14": 51.807740068353176,
         "volumeRatio": 0.62,
         "supportDistancePct": 7.88,
         "resistanceHeadroomPct": 8.35,
-        "atrPct14": 3.934769053839583,
+        "atrPct14": 3.934765092333807,
         "avgVolume20": 235912.6
       },
       "entry": 205.0,
@@ -15037,11 +15086,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 50.96769080424738,
+        "rsi14": 50.96593721329809,
         "volumeRatio": 0.85,
         "supportDistancePct": 7.08,
         "resistanceHeadroomPct": 3.8,
-        "atrPct14": 3.694374639677482,
+        "atrPct14": 3.6943728712945796,
         "avgVolume20": 121776.3
       },
       "entry": 201.28,
@@ -15092,11 +15141,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.07719497495221,
+        "rsi14": 37.07591200912363,
         "volumeRatio": 0.94,
         "supportDistancePct": 2.85,
         "resistanceHeadroomPct": 6.16,
-        "atrPct14": 2.7076737364113317,
+        "atrPct14": 2.707673034578218,
         "avgVolume20": 98943.25
       },
       "entry": 201.05,
@@ -15147,11 +15196,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 37.46776389475309,
+        "rsi14": 37.466530703633225,
         "volumeRatio": 0.57,
         "supportDistancePct": 1.1,
         "resistanceHeadroomPct": 6.16,
-        "atrPct14": 3.066132188902408,
+        "atrPct14": 3.0661315837503866,
         "avgVolume20": 97957.75
       },
       "entry": 198.0,
@@ -15202,11 +15251,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 39.50047038465356,
+        "rsi14": 39.50022737360498,
         "volumeRatio": 1.88,
         "supportDistancePct": 5.38,
         "resistanceHeadroomPct": 9.78,
-        "atrPct14": 2.7699566908619087,
+        "atrPct14": 2.769956524442765,
         "avgVolume20": 68617.05
       },
       "entry": 192.62,
@@ -15257,11 +15306,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 47.17585725380805,
+        "rsi14": 47.17576801299144,
         "volumeRatio": 0.62,
         "supportDistancePct": 3.99,
         "resistanceHeadroomPct": 4.35,
-        "atrPct14": 2.6089217479362525,
+        "atrPct14": 2.6089216758317826,
         "avgVolume20": 78927.9
       },
       "entry": 196.0,
@@ -15312,11 +15361,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 46.28045922859972,
+        "rsi14": 46.280407311017655,
         "volumeRatio": 1.01,
         "supportDistancePct": 1.76,
         "resistanceHeadroomPct": 5.37,
-        "atrPct14": 2.3585235597079883,
+        "atrPct14": 2.3585235274843726,
         "avgVolume20": 72908.9
       },
       "entry": 193.5,
@@ -15367,11 +15416,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 42.141494209013125,
+        "rsi14": 42.141451644995726,
         "volumeRatio": 1.05,
         "supportDistancePct": 2.35,
         "resistanceHeadroomPct": 5.27,
-        "atrPct14": 2.3343823550642853,
+        "atrPct14": 2.3343823308569083,
         "avgVolume20": 59430.65
       },
       "entry": 192.62,
@@ -15422,11 +15471,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 38.8711888839941,
+        "rsi14": 38.87114836497344,
         "volumeRatio": 1.2,
         "supportDistancePct": 1.68,
         "resistanceHeadroomPct": 5.99,
-        "atrPct14": 2.4815120321284523,
+        "atrPct14": 2.481512011113102,
         "avgVolume20": 58674.15
       },
       "entry": 191.38,
@@ -15477,11 +15526,11 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 36.68716192264628,
+        "rsi14": 36.68714426931136,
         "volumeRatio": 0.72,
         "supportDistancePct": 2.77,
         "resistanceHeadroomPct": 9.24,
-        "atrPct14": 2.8933049133368667,
+        "atrPct14": 2.8933049029834783,
         "avgVolume20": 69629.0
       },
       "entry": 184.0,
@@ -15530,11 +15579,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 61.10419070160956,
+        "rsi14": 61.10418552111361,
         "volumeRatio": 0.75,
         "supportDistancePct": 9.19,
         "resistanceHeadroomPct": 6.09,
-        "atrPct14": 3.1823156213579242,
+        "atrPct14": 3.1823156160128145,
         "avgVolume20": 98213.9
       },
       "entry": 191.24,
@@ -15583,11 +15632,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 53.57357389456061,
+        "rsi14": 53.57357114562739,
         "volumeRatio": 1.12,
         "supportDistancePct": 4.89,
         "resistanceHeadroomPct": 8.63,
-        "atrPct14": 2.249668270468216,
+        "atrPct14": 2.249668268219153,
         "avgVolume20": 98389.85
       },
       "entry": 192.4,
@@ -15636,11 +15685,11 @@
       },
       "riskFlags": [],
       "signalMetrics": {
-        "rsi14": 51.55761786206568,
+        "rsi14": 51.5576165543661,
         "volumeRatio": 0.85,
         "supportDistancePct": 2.7,
         "resistanceHeadroomPct": 3.73,
-        "atrPct14": 2.084322017981396,
+        "atrPct14": 2.084322016988125,
         "avgVolume20": 82016.3
       },
       "entry": 192.99,
@@ -15677,7 +15726,7 @@
       "symbol": "UPPER",
       "signalDate": "2026-11-24",
       "fillDate": "2026-11-25",
-      "exitDate": "2026-11-25",
+      "exitDate": "2026-11-26",
       "setupScore": 71,
       "scoreBucket": "65-79",
       "components": {
@@ -15691,19 +15740,19 @@
         "below_sma50"
       ],
       "signalMetrics": {
-        "rsi14": 45.117750675483116,
+        "rsi14": 45.1177499214543,
         "volumeRatio": 0.96,
         "supportDistancePct": 1.15,
         "resistanceHeadroomPct": 4.99,
-        "atrPct14": 1.7704765207796607,
+        "atrPct14": 1.7704765203347752,
         "avgVolume20": 78466.45
       },
       "entry": 191.34,
       "stop": 186.28,
       "target1": 195.77,
-      "exitPrice": 192.0,
-      "rMultiple": 0.13,
-      "netRMultiple": -0.179,
+      "exitPrice": 193.0,
+      "rMultiple": 0.328,
+      "netRMultiple": 0.017,
       "referencePosition": {
         "capital": 100000.0,
         "riskPct": 1.0,
@@ -15713,18 +15762,18 @@
       "costs": {
         "quantity": 197,
         "buyTurnover": 37693.98,
-        "sellTurnover": 37824.0,
+        "sellTurnover": 38021.0,
         "buyBrokerage": 135.7,
-        "sellBrokerage": 136.17,
+        "sellBrokerage": 136.88,
         "buyRegulatoryFee": 5.65,
-        "sellRegulatoryFee": 5.67,
+        "sellRegulatoryFee": 5.7,
         "dpCharge": 25.0,
-        "capitalGainsTax": 0.0,
-        "taxableGain": 0,
+        "capitalGainsTax": 1.36,
+        "taxableGain": 18.09,
         "buyTotal": 37835.33,
-        "netProceeds": 37657.16,
-        "netProfit": -178.17,
-        "holdingDays": 0
+        "netProceeds": 37852.06,
+        "netProfit": 16.73,
+        "holdingDays": 1
       },
       "exitReason": "time_exit"
     }
